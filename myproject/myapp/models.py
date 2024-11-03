@@ -5,7 +5,7 @@ class Authentication(models.Model):
     auth_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.ForeignKey('Users', models.CASCADE, null=True)  # Foreign key is often nullable
     auth_type = models.CharField(max_length=50, blank=True, null=True)  # Optional field
-    auth_token = models.CharField(max_length=255, blank=True, null=True)  # Optional field
+    auth_token = models.CharField(max_length=512, blank=True, null=True)  # Optional field
     biometric_auth_token = models.CharField(max_length=255, blank=True, null=True)  # Optional field
     created_at = models.DateTimeField(auto_now_add=True)  # Timestamp fields usually don’t need null=True
     expires_at = models.DateTimeField(null=True)  # Nullable in case there's no expiration set

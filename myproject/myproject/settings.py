@@ -97,6 +97,8 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
+    'USER_ID_FIELD': 'user_id',  # Set the primary key field to 'user_id'
+    'USER_ID_CLAIM': 'user_id',  # Set the claim for the token to use 'user_id' instead of 'id'
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),  # Token expiry
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
     'ROTATE_REFRESH_TOKENS': True,

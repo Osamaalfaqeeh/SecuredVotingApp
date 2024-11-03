@@ -46,6 +46,16 @@ class RegisterSerializer(serializers.Serializer):
             institution=self.institution,  # Assign institution based on domain
             # role=role  # Assign role based on subdomain
         )
+
+        # Create an initial entry in the Authentication table if needed
+        Authentication.objects.create(
+            user=user,
+            auth_type='JWT',  # Specify auth type
+            auth_token='initial_registration',
+            created_at=datetime.now()
+        )
+
+
         return user
     
 

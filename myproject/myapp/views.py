@@ -8,6 +8,7 @@ from django.contrib.auth.hashers import make_password
 from .models import Users, Institutions, Authentication
 from .serializers import RegisterSerializer, LoginSerializer
 from datetime import datetime, timedelta
+from django.utils import timezone
 # Create your views here.
 
 class LoginView(APIView):
@@ -22,7 +23,7 @@ class LoginView(APIView):
             access_token = validated_data['access']
 
             # Set token expiration (e.g., 7 days for refresh token)
-            expires_at = datetime.now() + timedelta(days=7)
+            expires_at = timezone.now() + timedelta(days=7)
 
             # Create a record in the Authentication table
             Authentication.objects.create(
