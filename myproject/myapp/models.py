@@ -125,6 +125,11 @@ class Users(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     institution = models.ForeignKey(Institutions, models.CASCADE, null=True)  # Nullable foreign key
+    
+    @property
+    def is_authenticated(self):
+        # Return True if the user is considered authenticated
+        return True
 
     class Meta:
         db_table = 'users'
@@ -159,3 +164,15 @@ class VotingGroups(models.Model):
 
     class Meta:
         db_table = 'voting_groups'
+
+
+class BlacklistedToken(models.Model):
+    token = models.CharField(max_length=512)
+    blacklisted_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = 'blacklistedToken'
+    # class Meta:
+    #     constraints = [
+    #         models.UniqueConstraint(fields=['token'], name='unique_blacklisted_token', condition=models.Q(token__length=512))  # Ensures unique tokens
+    #     ]
