@@ -55,7 +55,7 @@ class RegisterSerializer(serializers.Serializer):
             created_at=datetime.now()
         )
 
-
+        
         return user
     
 

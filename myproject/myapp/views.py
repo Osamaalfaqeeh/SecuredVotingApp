@@ -13,6 +13,17 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.exceptions import TokenError
 from rest_framework_simplejwt.views import TokenRefreshView
 import logging
+from django.core.mail import send_mail,EmailMessage
+from django.urls import reverse
+from django.template.loader import render_to_string
+from django.contrib.sites.shortcuts import get_current_site
+from django.utils.http import urlsafe_base64_encode
+from django.utils.encoding import force_bytes
+from .tokens import account_activation_token
+from django.shortcuts import redirect
+from django.utils.http import urlsafe_base64_decode
+from .utils import generate_verification_token, verify_token
+
 # Create your views here.
 
 class LoginView(APIView):
@@ -54,8 +65,9 @@ class RegisterView(APIView):
     def post(self, request):
         serializer = RegisterSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
-            return Response({"message": "User registered successfully."}, status=status.HTTP_201_CREATED)
+            user = serializer.save()
+            send_verification_email(request, user)
+            return Response({"message": "User registered successfully, check your email"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 logger = logging.getLogger(__name__)
@@ -66,7 +78,7 @@ class LogoutView(APIView):
     def post(self, request):
         refresh_token = request.data.get("refresh")
         access_token = request.headers.get("Authorization", "").split(" ")[1]
-        logger.debug(access_token)
+        
 
         if not refresh_token:
             return Response({"error": "Refresh token is required"}, status=status.HTTP_400_BAD_REQUEST)
@@ -107,3 +119,70 @@ class ExampleView(APIView):
     def get(self, request):
         # Only authenticated users will reach this point
         return Response({"message": "Hello, authenticated user!"})
+    
+
+def send_verification_email(request, user):
+    # Generate the token
+    token = generate_verification_token(user.user_id)
+    uid = urlsafe_base64_encode(force_bytes(user.user_id))
+    
+    # Generate the verification link
+    domain = get_current_site(request).domain
+    verification_link = reverse('activate', kwargs={'uidb64': uid, 'token': token})
+    verification_url = f'http://{domain}{verification_link}'
+    
+    # Send the email
+    subject = 'Verify your email'
+    message = render_to_string('registration/activation_email.html', {
+        'user': user,
+        'verification_url': verification_url,
+    })
+    # Send the email
+    email = EmailMessage(
+        subject,
+        message,
+        'noreply@gmail.com',  # Sender's email
+        [user.email],  # Recipient's email
+    )
+    email.content_subtype = "html"  # Main line that ensures HTML content
+    email.send()
+    # send_mail(subject, message, 'osamaalfaqeeh55@gmail.com', [user.email])
+
+
+def activate(request, uidb64, token):
+    try:
+        uid = urlsafe_base64_decode(uidb64).decode()
+        user = Users.objects.get(pk=uid)  # Use the custom Users model
+    except (TypeError, ValueError, OverflowError, Users.DoesNotExist):
+        user = None
+
+    if user is not None and verify_token(token) == str(user.user_id):
+        if user.is_verified:
+            # If the user is already verified, show a message or redirect
+            return redirect('already_verified')  # Redirect to an "already verified" page
+        else:
+            user.is_verified = True
+            user.save()
+            return redirect('activation_success')  # A success page after activation
+    else:
+        return redirect('activation_failed')  # A failure page
+
+def activation_success(request):
+    return render(request, 'registration/activation_success.html')  # Success page template
+
+def activation_failed(request):
+    return render(request, 'registration/activation_failed.html')  # Failure page template
+
+def already_verified(request):
+    return render(request, 'registration/already_verified.html')  # Already verified page template
+
+# class VerifyEmailView(APIView):
+#     def get(self, request, token):
+#         try:
+#             data = signing.loads(token, salt="email-verification-salt", max_age=86400)  # Expires in 24 hours
+#             user = Users.objects.get(user_id=data["user_id"])
+#             user.is_verified = True
+#             user.save()
+#             return Response({"message": "Email verified successfully!"}, status=status.HTTP_200_OK)
+#         except signing.BadSignature:
+#             return Response({"error": "Invalid or expired token"}, status=status.HTTP_400_BAD_REQUEST)

@@ -111,6 +111,16 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': True,
 }
 
+# Email Settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'osamaalfaqeeh55@gmail.com'
+EMAIL_HOST_PASSWORD = 'indi iqsh skzn htbq'
+DEFAULT_FROM_EMAIL = "osamaalfaqeeh55@gmail.com"
+
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

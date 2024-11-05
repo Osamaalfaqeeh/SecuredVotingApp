@@ -10,8 +10,8 @@ class CustomJWTAuthentication(JWTAuthentication):
         result = super().authenticate(request)
         if result is not None:
             user, token = result
-            logger.debug(user)
-            logger.debug(token)
+            if not user.is_verified:
+                raise AuthenticationFailed("Email not verified. Please verify your email.")
             # Check if the token is blacklisted
             if BlacklistedToken.objects.filter(token=str(token)).exists():
                 logger.debug(token)

@@ -125,6 +125,12 @@ class Users(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     institution = models.ForeignKey(Institutions, models.CASCADE, null=True)  # Nullable foreign key
+    is_verified = models.BooleanField(default=False)
+    last_login = models.DateTimeField(null=True, blank=True)
+
+    @staticmethod
+    def get_email_field_name():
+        return 'email'
     
     @property
     def is_authenticated(self):
