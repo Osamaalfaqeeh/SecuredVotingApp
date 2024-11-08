@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, ExampleView, activate, activation_success, activation_failed, already_verified
+from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, ExampleView, activate, activation_success, activation_failed, already_verified,\
+      UnverifiedPageView, ResendVerificationEmailView
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
@@ -11,4 +12,6 @@ urlpatterns = [
     path('activation-success/', activation_success, name='activation_success'),
     path('activation-failed/', activation_failed, name='activation_failed'),
     path('already-verified/', already_verified, name='already_verified'),
+    path('unverified/', UnverifiedPageView.as_view(), name='unverified_page'),
+    path('resend-verification/', ResendVerificationEmailView.as_view(), name='resend_verification'),
 ]

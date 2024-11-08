@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u!glo4lbeix6-=s0qc5)w)hmd#$+xq*(94w)xq=-t0-+--j(x#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.21']
 # AUTH_USER_MODEL = 'myapp.Users'
 
 
@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'myapp.middleware.check_verification_middleware.EmailVerificationMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
@@ -114,8 +115,9 @@ SIMPLE_JWT = {
 # Email Settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 465
-EMAIL_USE_SSL = True
+EMAIL_PORT = 587
+# EMAIL_USE_SSL = True
+EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'osamaalfaqeeh55@gmail.com'
 EMAIL_HOST_PASSWORD = 'indi iqsh skzn htbq'
 DEFAULT_FROM_EMAIL = "osamaalfaqeeh55@gmail.com"

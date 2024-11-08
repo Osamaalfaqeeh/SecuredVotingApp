@@ -23,7 +23,7 @@ from .tokens import account_activation_token
 from django.shortcuts import redirect
 from django.utils.http import urlsafe_base64_decode
 from .utils import generate_verification_token, verify_token
-
+from rest_framework.exceptions import ValidationError
 # Create your views here.
 
 class LoginView(APIView):
@@ -34,6 +34,14 @@ class LoginView(APIView):
         if serializer.is_valid():
             validated_data = serializer.validated_data
             user = validated_data['user']
+            if not user.is_verified:
+                # Return a response that indicates email verification is required
+                return Response({
+                    "error": "Please verify your email before logging in.",
+                    "redirect_to": "unverified_page",  # Indicates to redirect in the mobile app
+                    "resend_verification": True  # Flag for allowing resend of verification email
+                }, status=status.HTTP_403_FORBIDDEN)
+            
             refresh_token = validated_data['refresh']
             access_token = validated_data['access']
 
@@ -175,6 +183,18 @@ def activation_failed(request):
 
 def already_verified(request):
     return render(request, 'registration/already_verified.html')  # Already verified page template
+
+class UnverifiedPageView(APIView):
+    def get(self, request):
+        return Response({"message": "Please verify your email to access the app."})
+
+class ResendVerificationEmailView(APIView):
+    def post(self, request):
+        user = request.user
+        if not user.is_verified:
+            send_verification_email(request, user)
+            return Response({"message": "Verification email resent."})
+        return Response({"error": "Email is already verified."}, status=400)
 
 # class VerifyEmailView(APIView):
 #     def get(self, request, token):
