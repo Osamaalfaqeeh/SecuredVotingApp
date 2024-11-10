@@ -1,5 +1,6 @@
 from django.db import models
 import uuid
+from datetime import datetime
 
 class Authentication(models.Model):
     auth_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -9,6 +10,10 @@ class Authentication(models.Model):
     biometric_auth_token = models.CharField(max_length=255, blank=True, null=True)  # Optional field
     created_at = models.DateTimeField(auto_now_add=True)  # Timestamp fields usually don’t need null=True
     expires_at = models.DateTimeField(null=True)  # Nullable in case there's no expiration set
+    is_active = models.BooleanField(default=True)
+
+    def is_expired(self):
+            return datetime.now() >= self.expires_at
 
     class Meta:
         db_table = 'authentication'
@@ -127,6 +132,7 @@ class Users(models.Model):
     institution = models.ForeignKey(Institutions, models.CASCADE, null=True)  # Nullable foreign key
     is_verified = models.BooleanField(default=False)
     last_login = models.DateTimeField(null=True, blank=True)
+    is_2fa_enabled = models.BooleanField(default=False)
 
     @staticmethod
     def get_email_field_name():

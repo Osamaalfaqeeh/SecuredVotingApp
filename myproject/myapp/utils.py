@@ -1,5 +1,9 @@
 from django.core import signing
 import time
+from django.core.mail import EmailMessage
+from django.template.loader import render_to_string
+from django.core.cache import cache
+import secrets
 # from django.core.mail import send_mail
 # from django.conf import settings
 
@@ -20,6 +24,32 @@ def verify_token(token, max_age=TOKEN_EXPIRATION_TIME):
         return None
     except signing.BadSignature:
         return None
+
+
+def generate_2fa_code():
+    """Generate a cryptographically secure 6-digit code for 2FA."""
+    return str(secrets.randbelow(1000000)).zfill(6)  # Ensures a 6-digit code
+
+def send_2fa_code(user):
+    """Send the 2FA code to the user's email in HTML format."""
+    code = generate_2fa_code()
+    
+    # Store the code in cache with a key based on the user ID and a 5-minute timeout
+    cache.set(f"2fa_code_{user.user_id}", code, timeout=300)  # 5 minutes = 300 seconds
+    
+    # Render HTML email content
+    subject = "Your Two-Factor Authentication Code"
+    message = render_to_string('login/2fa_email.html', {'user': user, 'code': code})
+    
+    email = EmailMessage(
+        subject,
+        message,
+        'noreply@example.com',  # From email address
+        [user.email],           # To email address
+    )
+    email.content_subtype = "html"  # Ensures the email is sent as HTML
+    email.send()
+
 
 # def send_verification_email(user):
 #     token = generate_verification_token(user.user_id)
