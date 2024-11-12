@@ -543,3 +543,51 @@ class ElectionDetailView(APIView):
             return Response(election_data, status=200)
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=404)
+
+class UpdateAboutView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def patch(self, request):
+        user = request.user  # The logged-in user
+
+        # Get the bio from the request or keep the current value if not provided
+        bio = request.data.get('bio', user.bio)
+
+        # Update the user's bio field
+        user.bio = bio
+        user.save()
+
+        return Response({"detail": "Bio updated successfully."}, status=status.HTTP_200_OK)
+    
+
+class ChangePasswordView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def patch(self, request):
+        user = request.user  # The logged-in user
+        current_password = request.data.get('current_password')
+        new_password = request.data.get('new_password')
+
+        # Check if the current password is correct
+        if not check_password(current_password, user.password_hash):
+            return Response({"detail": "Current password is incorrect."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Set the new password and hash it
+        user.password_hash = make_password(new_password)
+        user.save()  # Save the user with the new password
+
+        return Response({"detail": "Password updated successfully."}, status=status.HTTP_200_OK)
+    
+class EditPhoneNumberView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def patch(self, request):
+        user = request.user
+        phone_number = request.data.get('phone_number')
+
+        if phone_number:
+            user.phone_number = phone_number
+            user.save()
+            return Response({"detail": "Phone number updated successfully."}, status=status.HTTP_200_OK)
+        else:
+            return Response({"detail": "Phone number is required."}, status=status.HTTP_400_BAD_REQUEST)
