@@ -29,6 +29,9 @@ ALLOWED_HOSTS = ['192.168.1.21']
 # AUTH_USER_MODEL = 'myapp.Users'
 
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Application definition
 
 INSTALLED_APPS = [

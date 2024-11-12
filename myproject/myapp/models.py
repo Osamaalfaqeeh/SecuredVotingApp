@@ -77,6 +77,7 @@ class Elections(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     icon = models.CharField(max_length=255, blank=True, null=True)  # Optional field
     created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         db_table = 'elections'
@@ -124,7 +125,7 @@ class Users(models.Model):
     bio = models.TextField(blank=True)  # Allow blank bios
     biometric_enabled = models.BooleanField(default=False)
     notification_enabled = models.BooleanField(default=True)
-    profile_photo = models.CharField(max_length=255, blank=True, null=True)  # Optional profile photo
+    profile_photo = models.ImageField(upload_to='profile_pics', null=True, blank=True)  # Optional profile photo
     department = models.ForeignKey(Departments, models.CASCADE, null=True)  # Nullable foreign key
     role = models.ForeignKey(Roles, models.CASCADE, null=True)  # Nullable foreign key
     created_at = models.DateTimeField(auto_now_add=True)

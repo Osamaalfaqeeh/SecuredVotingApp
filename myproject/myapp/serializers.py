@@ -1,6 +1,6 @@
 # serializers.py
 from rest_framework import serializers
-from .models import Users, Authentication, Institutions
+from .models import Users, Authentication, Institutions, Elections
 from django.contrib.auth.hashers import make_password, check_password
 from rest_framework_simplejwt.tokens import RefreshToken
 from datetime import datetime, timedelta
@@ -83,3 +83,23 @@ class LoginSerializer(serializers.Serializer):
         data['user_id'] = user.user_id
         data['user'] = user
         return data
+    
+class ElectionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Elections
+        fields = ['election_name', 'description', 'start_time', 'end_time', 'is_active', 'icon']
+
+    def validate(self, data):
+        if data['start_time'] >= data['end_time']:
+            raise serializers.ValidationError("End date must be after start date.")
+        return data
+    
+
+class ProfilePictureSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Users
+        fields = ['profile_photo']
+# class GroupSerializer(serializers.ModelSerializer):
+#     # class Meta:
+#     #     model = Group
+#     #     fields = ['name', 'election']
