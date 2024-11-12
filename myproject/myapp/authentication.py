@@ -1,5 +1,6 @@
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.exceptions import AuthenticationFailed
+from rest_framework_api_key.permissions import HasAPIKey
 from .models import BlacklistedToken, Users
 import logging
 
@@ -7,6 +8,13 @@ logger = logging.getLogger(__name__)
 
 class CustomJWTAuthentication(JWTAuthentication):
     def authenticate(self, request):
+        api_key = request.headers.get('Authorization')
+        if api_key:
+            # Handle API key authentication if provided
+            if not HasAPIKey().has_permission(request, self):
+                raise AuthenticationFailed('Invalid API key')
+            return None  # If using API key, you might want to skip JWT here
+        
         result = super().authenticate(request)
         if result is not None:
             user, token = result
@@ -14,10 +22,7 @@ class CustomJWTAuthentication(JWTAuthentication):
                 raise AuthenticationFailed("Email not verified. Please verify your email.")
             # Check if the token is blacklisted
             if BlacklistedToken.objects.filter(token=str(token)).exists():
-                logger.debug(token)
                 raise AuthenticationFailed("Token has been blacklisted")
-            else:
-                logger.debug(user)
         return result
 
     def get_user(self, validated_token):
