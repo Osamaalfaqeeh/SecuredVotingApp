@@ -61,11 +61,15 @@ class LoginView(APIView):
 
             # Set token expiration (e.g., 7 days for refresh token)
             expires_at = timezone.now() + timedelta(days=7)
-
+            biometric_authenticated = request.data.get('biometric_authenticated', False)
+            if biometric_authenticated:
+                auth_type_value = 'Biom'
+            else:
+                auth_type_value = 'JWT'
             # Create a record in the Authentication table
             Authentication.objects.create(
                 user=user,
-                auth_type='JWT',
+                auth_type=auth_type_value,
                 auth_token=refresh_token,  # Storing the refresh token
                 created_at=datetime.now(),
                 expires_at=expires_at
@@ -219,6 +223,27 @@ class CheckVerificationStatus(APIView):
         user = request.user
         return Response({
             "is_verified": user.is_verified
+        }, status=200)
+
+
+class ToggleBiometricAuthView(APIView):
+    permission_classes = [IsAuthenticated]  # Ensure the user is authenticated
+
+    def patch(self, request):
+        user = request.user  # Get the currently authenticated user
+        
+        # Check if the user is requesting to enable or disable biometric authentication
+        enable_biometric = request.data.get('enable_biometric', None)
+        
+        if enable_biometric is None:
+            return Response({"detail": "No action provided for biometric authentication."}, status=400)
+        
+        # Update the user's biometric authentication setting
+        user.biometric_enabled = enable_biometric
+        user.save()
+
+        return Response({
+            "detail": f"Biometric authentication {'enabled' if enable_biometric else 'disabled'} successfully."
         }, status=200)
 
 
