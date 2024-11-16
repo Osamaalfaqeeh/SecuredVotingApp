@@ -8,12 +8,11 @@ logger = logging.getLogger(__name__)
 
 class CustomJWTAuthentication(JWTAuthentication):
     def authenticate(self, request):
-        api_key = request.headers.get('Authorization')
-        if api_key:
-            # Handle API key authentication if provided
-            if not HasAPIKey().has_permission(request, self):
-                raise AuthenticationFailed('Invalid API key')
-            return None  # If using API key, you might want to skip JWT here
+        # api_key = request.headers.get('Authorization')
+        # if api_key:
+        #     # Handle API key authentication if provided
+        #     if not HasAPIKey().has_permission(request, self):
+        #         raise AuthenticationFailed('Invalid API key')
         
         result = super().authenticate(request)
         if result is not None:

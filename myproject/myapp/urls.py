@@ -1,7 +1,8 @@
 from django.urls import path
 from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, ExampleView, activate, activation_success, activation_failed, already_verified,\
       UnverifiedPageView, ResendVerificationEmailView, Verify2FACodeView, CreateElectionView, EditElectionView, CreateGroupView, AllowGroupToVoteView, SearchUsersByName,\
-      UpdateProfilePictureView, ListGroupsView, ListUsersInGroupView
+      UpdateProfilePictureView, ListGroupsView, ListUsersInGroupView, EditPhoneNumberView, ChangePasswordView, UpdateAboutView, ProfileView, ElectionDetailView, CheckEligibilityView,\
+      CastVoteView, AddCandidatesToElectionView, ElectionWinnerView
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
@@ -25,8 +26,19 @@ urlpatterns = [
     path('create-group/', CreateGroupView.as_view(), name='create_group'),
     path('list-group/', ListGroupsView.as_view(), name='list_group'),
     path('list-user-in-group/<group_id>/', ListUsersInGroupView.as_view(), name='list_user_in_group'),
-    path('allow-group-to-vote/<uuid:election_id>/', AllowGroupToVoteView.as_view(), name='allow_group_to_vote'),
+    path('allow-group-to-vote/<election_id>/', AllowGroupToVoteView.as_view(), name='allow_group_to_vote'),
+    path('add-candidate-to-election',AddCandidatesToElectionView.as_view(), name='add_candidate_to_election'),
 
+
+    path('edit-phone-number/', EditPhoneNumberView.as_view(), name='edit_phone_number'),
+    path('change-password/', ChangePasswordView.as_view(), name='change_password'),
+    path('update-about/', UpdateAboutView.as_view(), name='update_about'),
+    path('profile-picture/', ProfileView.as_view(), name='profile_photo'),
+    path('election-detail/', ElectionDetailView.as_view(), name='election_detail'),
+
+    path('check-eligibility/', CheckEligibilityView.as_view(), name='check_eligibility'),
+    path('cast-vote/<election_id>/', CastVoteView.as_view(), name='cast_vote'),
+    path('election-winner/<election_id>/', ElectionWinnerView.as_view(), name='election_winner'),
     # User search endpoint
     path('search-users/', SearchUsersByName.as_view(), name='search_users'),
 

@@ -4,6 +4,7 @@ from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.core.cache import cache
 import secrets
+import hashlib
 # from django.core.mail import send_mail
 # from django.conf import settings
 
@@ -50,7 +51,18 @@ def send_2fa_code(user):
     email.content_subtype = "html"  # Ensures the email is sent as HTML
     email.send()
 
+def generate_anonymous_id(user_id, election_id):
+    """
+    Generate an anonymous ID for a user in a specific election using the user ID and election ID.
+    This ensures that the anonymous ID is stable for the same user and election.
+    """
+    # Combine user ID and election ID into a string
+    combined_data = f"{user_id}-{election_id}"
 
+    # Hash the combined data to create a unique, irreversible anonymous ID
+    anonymous_id = hashlib.sha256(combined_data.encode()).hexdigest()
+
+    return anonymous_id
 # def send_verification_email(user):
 #     token = generate_verification_token(user.user_id)
 #     verification_link = f"{settings.FRONTEND_URL}/verify-email/{token}"

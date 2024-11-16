@@ -154,9 +154,18 @@ class Votes(models.Model):
     candidate = models.ForeignKey(Users, models.CASCADE, null=True)  # Nullable if the candidate is deleted
     vote_token = models.CharField(unique=True, max_length=255)
     timestamp = models.DateTimeField(auto_now_add=True)
-
+    
     class Meta:
         db_table = 'votes'
+
+
+class VotingSession(models.Model):
+    anonymous_id = models.CharField(max_length=255, unique=True)
+    has_voted = models.BooleanField(default=False)  # To track if the user has voted
+    timestamp = models.DateTimeField(auto_now_add=True)  # Track when the session was created
+
+    class Meta:
+        db_table = 'voting_sessions'
 
 
 class VotingGroupMembers(models.Model):

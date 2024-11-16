@@ -5,7 +5,8 @@ from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
-from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups
+from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
+VotingSession
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -22,10 +23,13 @@ from django.utils.encoding import force_bytes
 from .tokens import account_activation_token
 from django.shortcuts import redirect
 from django.utils.http import urlsafe_base64_decode
-from .utils import generate_verification_token, verify_token, send_2fa_code
-from rest_framework.exceptions import ValidationError
+from .utils import generate_verification_token, verify_token, send_2fa_code, generate_anonymous_id
+from rest_framework.exceptions import ValidationError, PermissionDenied
 from django.core.cache import cache
 from .permissions import IsAdmin
+from django.db import IntegrityError
+import secrets
+from django.db.models import Count
 # Create your views here.
 
 class LoginView(APIView):
@@ -591,3 +595,134 @@ class EditPhoneNumberView(APIView):
             return Response({"detail": "Phone number updated successfully."}, status=status.HTTP_200_OK)
         else:
             return Response({"detail": "Phone number is required."}, status=status.HTTP_400_BAD_REQUEST)
+        
+
+class CastVoteView(APIView):
+    permission_classes = [IsAuthenticated]  # Ensure the user is authenticated
+
+    def post(self, request, election_id):
+        user = request.user  # Get the currently authenticated user
+
+        # Check if the election exists
+        try:
+            election = Elections.objects.get(election_id=election_id)
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found."}, status=404)
+
+        # Ensure the election is active
+        if not election.is_active:
+            raise PermissionDenied("Voting is not allowed for this election or it has ended.")
+
+        # Ensure the user is eligible to vote in this election
+        if not self.is_user_eligible(user, election):
+            raise PermissionDenied("You are not eligible to vote in this election.")
+
+        anonymous_id = generate_anonymous_id(user.user_id, election_id)
+
+        # Check if the user has already voted
+        try:
+            session = VotingSession.objects.get(anonymous_id=anonymous_id)
+            if session:
+                if session.has_voted:
+                    return Response({"detail": "You have already voted in this election."}, status=400)
+        except VotingSession.DoesNotExist:
+            # If no session exists, create a new one
+            VotingSession.objects.create(anonymous_id=anonymous_id)
+
+
+        # Get the candidate the user wants to vote for
+        candidate_id = request.data.get('candidate_id')
+        try:
+            candidate = Users.objects.get(user_id=candidate_id)
+        except Users.DoesNotExist:
+            return Response({"detail": "Candidate not found."}, status=404)
+        
+        # Check if the candidate is a valid candidate for this election
+        if not Candidates.objects.filter(candidate=candidate, election=election).exists():
+            return Response({"detail": "The selected candidate is not part of this election."}, status=400)
+
+        # Generate a unique vote token for anonymity
+        vote_token = secrets.token_hex(32)
+
+        # Cast the vote and store it in the database
+        try:
+            vote = Votes.objects.create(
+                election=election,
+                candidate=candidate,
+                vote_token=vote_token,
+                timestamp=timezone.now(),
+            )
+        except IntegrityError:
+            return Response({"detail": "An error occurred while saving your vote."}, status=500)
+        
+        session.has_voted = True
+        session.save()
+
+        return Response({"detail": "Vote cast successfully."}, status=201)
+
+    def is_user_eligible(self, user, election):
+        
+        eligible_groups = ElectionVotingGroups.objects.filter(election=election)
+        
+        # Check if the user is in any of the eligible voting groups
+        for group in eligible_groups:
+            if VotingGroupMembers.objects.filter(group_id=group.group, user=user).exists():
+                return True
+            
+        if ElectionGroups.objects.filter(election=election, user=user).exists():
+            return True
+        # If no eligible group found for the user
+        return False
+    
+
+class CheckEligibilityView(APIView):
+    permission_classes = [IsAuthenticated]  # Ensure only authenticated users can check eligibility
+
+    def get(self, request, election_id):
+        user = request.user
+
+        # Retrieve the election
+        try:
+            election = Elections.objects.get(id=election_id)
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found."}, status=404)
+
+        # Check if the user is eligible to vote (e.g., is part of an eligible group or election)
+        if not VotingGroups.objects.filter(election=election, users=user).exists():
+            raise PermissionDenied("You are not eligible to vote in this election.")
+
+        return Response({"detail": "You are eligible to vote in this election."}, status=200)
+    
+class ElectionWinnerView(APIView):
+    def get(self, request, election_id):
+        # Retrieve the election based on the given election_id
+        try:
+            election = Elections.objects.get(election_id=election_id)
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found."}, status=404)
+
+        # Count the votes for each candidate in the election
+        vote_counts = (Votes.objects.filter(election=election)
+            .values('candidate')  # Group by candidate
+            .annotate(vote_count=Count('vote_id'))  # Count votes for each candidate
+            .order_by('-vote_count')  # Order by vote count in descending order
+        )
+
+        # If there are no votes, return a message
+        if not vote_counts:
+            return Response({"detail": "No votes have been cast in this election."}, status=200)
+
+        # Get the candidate with the most votes
+        winner = vote_counts[0]
+
+        # Retrieve the candidate object
+        winning_candidate = Users.objects.get(user_id=winner['candidate'])
+
+        # Return the result
+        return Response({
+            "election_name": election.election_name,
+            "winner": {
+                "candidate_name": f"{winning_candidate.firstname} {winning_candidate.lastname}",
+                "votes": winner['vote_count']
+            }
+        }, status=200)
