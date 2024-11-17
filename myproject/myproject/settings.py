@@ -103,6 +103,14 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.UserRateThrottle',  # Per-user rate limiting
+        'rest_framework.throttling.AnonRateThrottle',  # For anonymous users
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'user': '10/minute',  # Allow 5 requests per minute per user
+        'anon': '5/minute',  # Allow 2 requests per minute for anonymous users
+    },
 }
 
 SIMPLE_JWT = {

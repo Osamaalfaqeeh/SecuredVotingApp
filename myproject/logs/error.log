@@ -64,3 +64,85 @@ INFO 2024-11-17 20:45:36,999 views User try50@std.psut.edu.jo logged in successf
 INFO 2024-11-17 20:45:37,023 basehttp "POST /api/auth/login/ HTTP/1.1" 200 631
 INFO 2024-11-17 20:46:21,154 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\utils.py changed, reloading.
 INFO 2024-11-17 20:46:22,075 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:55:15,386 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:55:19,309 views Login attempt from IP: 192.168.1.21 for user: try0@std.psut.edu.jo
+ERROR 2024-11-17 20:55:19,427 views Invalid login attempt for try0@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-11-17 20:55:19,429 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 20:55:19,430 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-11-17 20:55:25,673 views Login attempt from IP: 192.168.1.21 for user: try0@std.psut.edu.jo
+ERROR 2024-11-17 20:55:25,801 views Invalid login attempt for try0@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-11-17 20:55:25,802 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 20:55:25,803 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+WARNING 2024-11-17 20:55:27,961 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 20:55:27,962 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+WARNING 2024-11-17 20:55:34,937 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 20:55:34,938 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+WARNING 2024-11-17 20:55:50,709 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 20:55:50,710 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+INFO 2024-11-17 21:04:12,698 views Login attempt from IP: 192.168.1.21 for user: try0@std.psut.edu.jo
+ERROR 2024-11-17 21:04:12,918 views Invalid login attempt for try0@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-11-17 21:04:12,920 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:04:12,920 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-11-17 21:04:15,315 views Login attempt from IP: 192.168.1.21 for user: try0@std.psut.edu.jo
+ERROR 2024-11-17 21:04:15,397 views Invalid login attempt for try0@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-11-17 21:04:15,427 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:04:15,428 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+WARNING 2024-11-17 21:04:16,784 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:04:16,784 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+WARNING 2024-11-17 21:04:18,494 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:04:18,496 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+WARNING 2024-11-17 21:04:22,491 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:04:22,491 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+WARNING 2024-11-17 21:04:23,876 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:04:23,877 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+WARNING 2024-11-17 21:06:26,189 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:06:26,190 basehttp "POST /api/auth/login/ HTTP/1.1" 400 73
+WARNING 2024-11-17 21:06:32,834 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:06:32,834 basehttp "POST /api/auth/login/ HTTP/1.1" 400 73
+WARNING 2024-11-17 21:06:34,147 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:06:34,149 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+WARNING 2024-11-17 21:06:41,810 log Method Not Allowed: /api/auth/login/
+WARNING 2024-11-17 21:06:41,810 basehttp "GET /api/auth/login/ HTTP/1.1" 405 5560
+INFO 2024-11-17 21:06:42,121 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-11-17 21:06:42,121 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-11-17 21:06:42,130 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2024-11-17 21:06:42,133 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-11-17 21:06:42,136 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-11-17 21:06:42,144 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2024-11-17 21:06:42,144 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-11-17 21:06:42,165 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-11-17 21:06:42,178 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2024-11-17 21:06:42,178 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2024-11-17 21:06:42,215 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2024-11-17 21:06:42,230 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2024-11-17 21:06:42,316 log Not Found: /favicon.ico
+WARNING 2024-11-17 21:06:42,316 basehttp "GET /favicon.ico HTTP/1.1" 404 2535
+INFO 2024-11-17 21:06:48,274 views Login attempt from IP: 192.168.1.80 for user: None
+ERROR 2024-11-17 21:06:48,412 views Invalid login attempt for None: {'email': [ErrorDetail(string='This field is required.', code='required')], 'password': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2024-11-17 21:06:48,417 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:06:48,417 basehttp "POST /api/auth/login/ HTTP/1.1" 400 5634
+WARNING 2024-11-17 21:06:51,272 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:06:51,273 basehttp "POST /api/auth/login/ HTTP/1.1" 429 5627
+WARNING 2024-11-17 21:06:55,916 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:06:55,916 basehttp "POST /api/auth/login/ HTTP/1.1" 429 5627
+WARNING 2024-11-17 21:06:59,285 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:06:59,286 basehttp "POST /api/auth/login/ HTTP/1.1" 429 5627
+WARNING 2024-11-17 21:07:35,512 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:07:35,517 basehttp "POST /api/auth/login/ HTTP/1.1" 400 73
+WARNING 2024-11-17 21:07:39,322 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:07:39,322 basehttp "POST /api/auth/login/ HTTP/1.1" 400 73
+WARNING 2024-11-17 21:07:42,207 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:07:42,208 basehttp "POST /api/auth/login/ HTTP/1.1" 429 69
+INFO 2024-11-17 21:07:46,205 views Login attempt from IP: 192.168.1.80 for user: None
+ERROR 2024-11-17 21:07:46,243 views Invalid login attempt for None: {'email': [ErrorDetail(string='This field is required.', code='required')], 'password': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2024-11-17 21:07:46,248 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:07:46,249 basehttp "POST /api/auth/login/ HTTP/1.1" 400 5634
+INFO 2024-11-17 21:07:49,103 views Login attempt from IP: 192.168.1.80 for user: None
+ERROR 2024-11-17 21:07:49,144 views Invalid login attempt for None: {'email': [ErrorDetail(string='This field is required.', code='required')], 'password': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2024-11-17 21:07:49,148 log Bad Request: /api/auth/login/
+WARNING 2024-11-17 21:07:49,149 basehttp "POST /api/auth/login/ HTTP/1.1" 400 5634
+WARNING 2024-11-17 21:07:50,882 log Too Many Requests: /api/auth/login/
+WARNING 2024-11-17 21:07:50,883 basehttp "POST /api/auth/login/ HTTP/1.1" 429 5627
+INFO 2024-11-17 21:07:59,097 basehttp - Broken pipe from ('192.168.1.80', 61189)
+INFO 2024-11-17 21:28:46,318 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2024-11-17 21:28:47,867 autoreload Watching for file changes with StatReloader
