@@ -4,16 +4,22 @@ from .models import Users, Authentication, Institutions, Elections
 from django.contrib.auth.hashers import make_password, check_password
 from rest_framework_simplejwt.tokens import RefreshToken
 from datetime import datetime, timedelta
+from django.core.validators import validate_email
 
 class RegisterSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
     firstname = serializers.CharField(max_length=100)
     lastname = serializers.CharField(max_length=100)
-    phone_number = serializers.CharField(max_length=20, required=False)
+    phone_number = serializers.CharField(max_length=15, required=False)
 
     def validate_email(self, value):
         # Check if the email already exists
+        try:
+            validate_email(value)
+        except serializers.ValidationError:
+            raise serializers.ValidationError("Invalid email format.")
+        
         if Users.objects.filter(email=value).exists():
             raise serializers.ValidationError("A user with this email already exists.")
 
