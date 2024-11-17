@@ -1,0 +1,66 @@
+ERROR 2024-11-17 20:24:05,090 <console> This is a test error log!
+ERROR 2024-11-17 20:27:40,338 <console> This is a test error log!
+INFO 2024-11-17 20:28:50,983 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:28:53,687 views Login attempt from IP: 192.168.1.21 for user: try50@std.psut.edu.jo
+INFO 2024-11-17 20:28:54,683 views User try50@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-17 20:28:54,689 basehttp "POST /api/auth/login/ HTTP/1.1" 200 631
+ERROR 2024-11-17 20:32:30,117 <console> This is a test error log!
+INFO 2024-11-17 20:36:32,541 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:36:36,956 views Login attempt from IP: 192.168.1.21 for user: None
+INFO 2024-11-17 20:36:38,033 views User try50@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-17 20:36:38,090 basehttp "POST /api/auth/login/ HTTP/1.1" 200 631
+INFO 2024-11-17 20:36:52,470 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-17 20:36:53,302 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:37:14,945 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-17 20:37:16,120 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-17 20:37:22,779 log Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 43, in post
+    x = x/0
+        ~^~
+ZeroDivisionError: division by zero
+ERROR 2024-11-17 20:37:22,872 basehttp "POST /api/auth/login/ HTTP/1.1" 500 98779
+INFO 2024-11-17 20:38:01,916 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-17 20:38:02,983 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:41:38,442 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2024-11-17 20:41:39,515 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:42:05,348 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2024-11-17 20:42:06,282 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:42:19,124 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2024-11-17 20:42:20,324 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:42:29,245 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2024-11-17 20:42:30,880 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:44:40,108 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2024-11-17 20:44:41,400 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:44:46,173 views Login attempt from IP: 192.168.1.21 for user: try50@std.psut.edu.jo
+INFO 2024-11-17 20:44:47,659 views User try50@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-17 20:44:47,687 basehttp "POST /api/auth/login/ HTTP/1.1" 200 631
+INFO 2024-11-17 20:45:30,078 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2024-11-17 20:45:31,515 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 20:45:35,789 views Login attempt from IP: 192.168.1.21 for user: try50@std.psut.edu.jo
+INFO 2024-11-17 20:45:36,999 views User try50@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-17 20:45:37,023 basehttp "POST /api/auth/login/ HTTP/1.1" 200 631
+INFO 2024-11-17 20:46:21,154 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\utils.py changed, reloading.
+INFO 2024-11-17 20:46:22,075 autoreload Watching for file changes with StatReloader

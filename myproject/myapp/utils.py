@@ -63,10 +63,12 @@ def generate_anonymous_id(user_id, election_id):
     anonymous_id = hashlib.sha256(combined_data.encode()).hexdigest()
 
     return anonymous_id
-# def send_verification_email(user):
-#     token = generate_verification_token(user.user_id)
-#     verification_link = f"{settings.FRONTEND_URL}/verify-email/{token}"
-#     subject = "Email Verification"
-#     message = f"Please click the following link to verify your email: {verification_link}"
-    
-#     send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [user.email], fail_silently=False)
+
+def get_client_ip(request):
+        """Return the client's IP address."""
+        x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip = x_forwarded_for.split(',')[0]
+        else:
+            ip = request.META.get('REMOTE_ADDR')
+        return ip

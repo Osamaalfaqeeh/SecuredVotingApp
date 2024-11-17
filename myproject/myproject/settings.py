@@ -130,18 +130,43 @@ DEFAULT_FROM_EMAIL = "osamaalfaqeeh55@gmail.com"
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
     'handlers': {
         'console': {
+            'level': 'INFO',
             'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'logs/error.log',
+            'formatter': 'verbose',
         },
     },
     'loggers': {
-        '': {
-            'handlers': ['console'],
+        'django': {
+            'handlers': ['console','file'],
             'level': 'DEBUG',
+            'propagate': True,
+        },
+        'myapp': {  # Custom logger for your app
+            'handlers': ['console','file'],
+            'level': 'INFO',
+            'propagate': False,
         },
     },
 }
+
 
 CACHES = {
     'default': {

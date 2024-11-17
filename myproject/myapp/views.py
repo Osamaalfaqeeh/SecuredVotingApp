@@ -6,7 +6,7 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession
+VotingSession, Logs
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -23,7 +23,7 @@ from django.utils.encoding import force_bytes
 from .tokens import account_activation_token
 from django.shortcuts import redirect
 from django.utils.http import urlsafe_base64_decode
-from .utils import generate_verification_token, verify_token, send_2fa_code, generate_anonymous_id
+from .utils import generate_verification_token, verify_token, send_2fa_code, generate_anonymous_id, get_client_ip
 from rest_framework.exceptions import ValidationError, PermissionDenied
 from django.core.cache import cache
 from .permissions import IsAdmin
@@ -32,10 +32,27 @@ import secrets
 from django.db.models import Count
 # Create your views here.
 
+logger = logging.getLogger('myapp')
+
 class LoginView(APIView):
     permission_classes = []
 
     def post(self, request):
+        ip_address = get_client_ip(request)
+        
+        # Log the login attempt (system-level logging using Django logger)
+        logger.info(f"Login attempt from IP: {ip_address} for user: {request.data.get('email')}")
+
+        # Log to the database (detailed, custom log for auditing purposes)
+        log_entry = Logs(
+            user=None,  # None because the user is not authenticated yet
+            action="User login attempt",
+            status="Pending",
+            ip_address=ip_address,
+            additional_info={"email": request.data.get("email")}
+        )
+        log_entry.save()
+
         serializer = LoginSerializer(data=request.data)
         if serializer.is_valid():
             validated_data = serializer.validated_data
@@ -56,6 +73,16 @@ class LoginView(APIView):
                     "requires_2fa": True
                 }, status=status.HTTP_200_OK)
             
+            log_entry = Logs(
+                user=user,
+                action="User login success",
+                status="Success",
+                ip_address=ip_address
+            )
+            log_entry.save()
+            # Log success with Django logger
+            logger.info(f"User {user.email} logged in successfully from IP: {ip_address}")
+
             refresh_token = validated_data['refresh']
             access_token = validated_data['access']
 
@@ -81,6 +108,18 @@ class LoginView(APIView):
                 'access': access_token,
                 'user_id': user.user_id
             }, status=status.HTTP_200_OK)
+
+        # If login failed due to invalid serializer data
+        log_entry = Logs(
+            user=None,
+            action="User login attempt",
+            status="Failure",
+            ip_address=ip_address,
+            error_message=str(serializer.errors)
+        )
+        log_entry.save()
+        # Log the failure with Django logger
+        logger.error(f"Invalid login attempt for {request.data.get('email')}: {serializer.errors}")
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -308,6 +347,20 @@ class CreateElectionView(APIView):
     permission_classes = [IsAuthenticated, IsAdmin]  # Ensure only admins can access this view
 
     def post(self, request):
+        ip_address = get_client_ip(request)
+
+        # Log the election creation attempt (system-level logging using Django logger)
+        logger.info(f"Admin {request.user.email} is creating an election")
+
+        # Log to the database (detailed, custom log for auditing purposes)
+        log_entry = Logs(
+            user=request.user,
+            action="Create election attempt",
+            status="Pending",
+            ip_address=ip_address,
+            additional_info={"election_name": request.data.get("election_name")}
+        )
+        log_entry.save()
         # Get the election data from the request
         serializer = ElectionSerializer(data=request.data)
         if serializer.is_valid():
@@ -344,12 +397,34 @@ class CreateElectionView(APIView):
                     user = Users.objects.get(user_id=user_id)
                     # Link the user to the election via ElectionGroups
                     ElectionGroups.objects.create(election=election, user=user)
+            # Log success in the database
+            log_entry = Logs(
+                user=request.user,
+                action="Create election success",
+                status="Success",
+                ip_address=ip_address
+            )
+            log_entry.save()
+            # Log success with Django logger
+            logger.info(f"Election {election.election_name} created successfully by admin {request.user.email}")
 
             return Response({
                 "detail": "Election created successfully.",
                 "election_id": str(election.election_id),
                 "title": election.election_name,
             }, status=status.HTTP_201_CREATED)
+        
+         # Log failure if serializer is invalid
+        log_entry = Logs(
+            user=request.user,
+            action="Create election attempt",
+            status="Failure",
+            ip_address=ip_address,
+            error_message=str(serializer.errors)
+        )
+        log_entry.save()
+        # Log failure with Django logger
+        logger.error(f"Election creation failed: {serializer.errors}")
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
