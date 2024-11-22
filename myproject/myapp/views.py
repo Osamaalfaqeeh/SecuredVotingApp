@@ -101,12 +101,13 @@ class LoginView(APIView):
                 created_at=datetime.now(),
                 expires_at=expires_at
             )
-
+            role = user.role.role_name
             # Return response with tokens
             return Response({
                 'refresh': refresh_token,
                 'access': access_token,
-                'user_id': user.user_id
+                'user_id': user.user_id,
+                'role': role
             }, status=status.HTTP_200_OK)
 
         # If login failed due to invalid serializer data
@@ -133,6 +134,7 @@ class RegisterView(APIView):
             user = serializer.save()
             send_verification_email(request, user)
             return Response({"message": "User registered successfully, check your email"}, status=status.HTTP_201_CREATED)
+        print(serializer.errors)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 logger = logging.getLogger(__name__)
@@ -428,6 +430,28 @@ class CreateElectionView(APIView):
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class GetNonAdminUsersView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]  # Ensure only authenticated admins can access this view
+
+    def get(self, request):
+        # Get the requesting user's id (the admin making the request)
+        admin_user = request.user
+        
+        # Fetch all users except the admin
+        users = Users.objects.exclude(user_id=admin_user.user_id)  # Exclude the admin user
+        
+        # Serialize the user data (this can be customized based on the fields you want)
+        user_data = []
+        for user in users:
+            user_data.append({
+                'user_id': str(user.user_id),
+                'firstname': user.firstname,
+                'lastname': user.lastname,
+                'email': user.email,
+                'profile_photo': user.profile_photo.url if user.profile_photo else None  # Add profile photo if available
+            })
+
+        return Response({'users': user_data}, status=status.HTTP_200_OK)
 
 class CreateGroupView(APIView):
     permission_classes = [IsAuthenticated, IsAdmin]
@@ -622,7 +646,7 @@ class ElectionDetailView(APIView):
         try:
             election = Elections.objects.get(election_id=election_id)
             # Check if the election is still open based on the end time
-            is_open = election.end_time > datetime.now()
+            is_open = election.end_time > timezone.now()
 
             # Fetch candidates related to this election
             candidates = Candidates.objects.filter(election=election)
@@ -635,8 +659,8 @@ class ElectionDetailView(APIView):
                 "is_open": is_open,  # Whether voting is still open
                 "candidates": [
                     {
-                        "candidate_id": candidate.id,
-                        "candidate_name": f"{candidate.candidate.first_name} {candidate.candidate.last_name}",  # Access user details via the candidate field
+                        "candidate_id": candidate.candidate.user_id,
+                        "candidate_name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",  # Access user details via the candidate field
                         "bio": candidate.candidate.bio if candidate.candidate.bio else "No bio available",  # Candidate bio from the User model
                         "profile_photo": candidate.candidate.profile_photo.url if candidate.candidate.profile_photo else None  # Candidate profile photo from the User model
                     }
@@ -647,6 +671,107 @@ class ElectionDetailView(APIView):
             return Response(election_data, status=200)
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=404)
+
+
+
+class ElectionEditView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]  # Ensure only admins can access this view
+
+    def get(self, request, election_id):
+        try:
+            # Retrieve the election based on election_id
+            election = Elections.objects.get(election_id=election_id)
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Fetch the candidates for the election
+        candidates = Candidates.objects.filter(election=election)
+
+        # Fetch the users who can vote in this election (based on ElectionGroups)
+        eligible_users = ElectionGroups.objects.filter(election=election)
+        
+        # Extract relevant user details for those who can vote (exclude admin users)
+        users_who_can_vote = [user.user for user in eligible_users]
+
+        # Serialize the election data (optional, if you want to use a serializer)
+        election_data = {
+            "election_id": str(election.election_id),
+            "election_name": election.election_name,
+            "description": election.description,
+            "start_time": election.start_time,
+            "end_time": election.end_time,
+            "candidates": [
+                {
+                    "user_id": str(candidate.candidate.user_id),
+                    "candidate_name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",
+                    "candidate_email": candidate.candidate.email,
+                }
+                for candidate in candidates
+            ],
+            "users_who_can_vote": [
+                {
+                    "user_id": str(user.user_id),
+                    "user_name": f"{user.firstname} {user.lastname}",
+                    "user_email": user.email,
+                }
+                for user in users_who_can_vote
+            ]
+        }
+
+        return Response({"election": election_data}, status=status.HTTP_200_OK)
+
+
+class ActiveElectionsView(APIView):
+    permission_classes = [IsAuthenticated]
+    def get(self, request):
+        # Fetch active elections (you can add your custom filters if needed)
+        elections = Elections.objects.filter(is_active=True,end_time__gt=timezone.now())  # Only active elections
+        
+        if not elections:
+            return Response({"message": "No active elections available."}, status=status.HTTP_200_OK)
+
+        # Serialize the election data
+        election_data = []
+        for election in elections:
+            candidates = Candidates.objects.filter(election=election)
+            election_data.append({
+                "election_id": str(election.election_id),
+                "election_name": election.election_name,
+                "description": election.description,
+                "start_time": election.start_time,
+                "end_time": election.end_time,
+                "icon": election.icon,  # You can also include a URL for the icon if it's uploaded
+                "participants": candidates.count(),  # For example, the number of candidates
+                "time_left": str(election.end_time - timezone.now()),  # Calculate time left
+            })
+
+        return Response({"elections": election_data}, status=status.HTTP_200_OK)
+    
+class DeleteElectionView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]  # Ensure only admins can access this view
+
+    def delete(self, request, election_id):
+        try:
+            # Retrieve the election
+            election = Elections.objects.get(election_id=election_id)
+
+            # Check if the election exists
+            if not election:
+                return Response({"detail": "Election not found."}, status=status.HTTP_404_NOT_FOUND)
+
+            # Optionally, delete related models (if needed)
+            # You can choose to delete candidates, election groups, or handle them differently
+            Candidates.objects.filter(election=election).delete()  # Delete all candidates related to this election
+            ElectionGroups.objects.filter(election=election).delete()  # Delete all groups related to this election
+
+            # Delete the election itself
+            election.delete()
+
+            return Response({"detail": "Election and associated data deleted successfully."}, status=status.HTTP_204_NO_CONTENT)
+        
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found."}, status=status.HTTP_404_NOT_FOUND)
+        
 
 class UpdateAboutView(APIView):
     permission_classes = [IsAuthenticated]
@@ -800,7 +925,7 @@ class ElectionWinnerView(APIView):
             election = Elections.objects.get(election_id=election_id)
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=404)
-
+        
         # Count the votes for each candidate in the election
         vote_counts = (Votes.objects.filter(election=election)
             .values('candidate')  # Group by candidate
@@ -826,3 +951,126 @@ class ElectionWinnerView(APIView):
                 "votes": winner['vote_count']
             }
         }, status=200)
+
+
+class CheckVotingStatusView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, election_id):
+        user = request.user
+
+        # Generate anonymous voting session ID
+        anonymous_id = generate_anonymous_id(user.user_id, election_id)
+
+        # Check if the user has already voted
+        try:
+            session = VotingSession.objects.get(anonymous_id=anonymous_id)
+            if session:
+                if session.has_voted:
+                    return Response({"has_voted": True}, status=200)
+        except VotingSession.DoesNotExist:
+            pass
+
+        return Response({"has_voted": False}, status=200)
+    
+class InactiveElectionsView(APIView):
+    permission_classes = [IsAuthenticated]  # Add any additional permission checks as required
+
+    def get(self, request):
+        # Retrieve all inactive elections
+        elections = Elections.objects.filter(is_active=False)
+
+        # Prepare the response data
+        elections_data = []
+        for election in elections:
+            # Get the winner by fetching the candidate with the most votes
+            winner_data = None
+            winner_votes = 0
+
+            # Fetch the candidates for the election from the Candidates model
+            candidates = Candidates.objects.filter(election=election)
+
+            if candidates.exists():
+                winner = None
+                for candidate in candidates:
+                    # Get the total votes for each candidate
+                    total_votes = Votes.objects.filter(election=election, candidate=candidate.candidate).count()
+
+                    # Determine the winner by checking the highest vote count
+                    if total_votes > winner_votes:
+                        winner_votes = total_votes
+                        winner = candidate.candidate
+
+                if winner:
+                    # Add the winner's details (name, profile photo, and number of votes)
+                    winner_data = {
+                        "name": f"{winner.firstname} {winner.lastname}",
+                        "profile_photo": winner.profile_photo.url if winner.profile_photo else None,
+                        "votes": winner_votes,
+                    }
+
+            # Prepare election details to return
+            elections_data.append({
+                "election_id": str(election.election_id),
+                "election_name": election.election_name,
+                "end_time": election.end_time.isoformat(),  # Ensure the time is in ISO format
+                "winner": winner_data
+            })
+
+        return Response({"elections": elections_data}, status=status.HTTP_200_OK)
+
+
+class ElectionResultView(APIView):
+    permission_classes = [IsAuthenticated]  # Add any additional permission checks as required
+
+    def get(self, request, election_id):
+        try:
+            # Retrieve the specific election (inactive ones)
+            election = Elections.objects.get(election_id=election_id, is_active=False)
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found or active."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Fetch candidates for the election
+        candidates = Candidates.objects.filter(election=election)
+
+        # Initialize winner data
+        winner_data = None
+        winner_votes = 0
+
+        # Prepare a list to store candidate details
+        candidates_data = []
+
+        for candidate in candidates:
+            # Get the total votes for each candidate
+            total_votes = Votes.objects.filter(election=election, candidate=candidate.candidate).count()
+
+            # Determine the winner by checking the highest vote count
+            if total_votes > winner_votes:
+                winner_votes = total_votes
+                winner_data = {
+                    "name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",
+                    "profile_photo": candidate.candidate.profile_photo.url if candidate.candidate.profile_photo else None,
+                    "votes": winner_votes
+                }
+
+            # Add candidate details
+            candidates_data.append({
+                "candidate_id": str(candidate.candidate.user_id),
+                "candidate_name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",
+                "candidate_email": candidate.candidate.email,
+                "profile_photo": candidate.candidate.profile_photo.url if candidate.candidate.profile_photo else None,
+                "votes": total_votes
+            })
+
+        # Prepare the election data to return
+        election_data = {
+            "election_id": str(election.election_id),
+            "election_name": election.election_name,
+            "description": election.description,
+            "start_time": election.start_time.isoformat(),
+            "end_time": election.end_time.isoformat(),
+            "candidates": candidates_data,
+            "winner": winner_data
+        }
+
+        return Response({"election": election_data}, status=status.HTTP_200_OK)
