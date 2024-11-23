@@ -274,7 +274,7 @@ class ToggleBiometricAuthView(APIView):
         user = request.user  # Get the currently authenticated user
         
         # Check if the user is requesting to enable or disable biometric authentication
-        enable_biometric = request.data.get('enable_biometric', None)
+        enable_biometric = request.data.get('isBiometricEnabled', None)
         
         if enable_biometric is None:
             return Response({"detail": "No action provided for biometric authentication."}, status=400)
@@ -291,8 +291,8 @@ class ToggleBiometricAuthView(APIView):
 class Toggle2FAView(APIView):
     permission_classes = [IsAuthenticated]
 
-    def post(self, request):
-        enable_2fa = request.data.get("enable_2fa")
+    def patch(self, request):
+        enable_2fa = request.data.get("isTwoFactorEnabled")
         user = request.user
         user.is_2fa_enabled = enable_2fa
         user.save()
@@ -635,7 +635,9 @@ class ProfileView(APIView):
         user = request.user
         # Return only the profile picture URL
         user_data = {
-            'profile_photo': user.profile_photo.url if user.profile_photo else None
+            'profilePhoto': user.profile_photo.url if user.profile_photo else None,
+            'isBiometricEnabled': user.biometric_enabled,
+            'isTwoFactorEnabled': user.is_2fa_enabled
         }
         return Response(user_data, status=status.HTTP_200_OK)
 
@@ -776,6 +778,12 @@ class DeleteElectionView(APIView):
 class UpdateAboutView(APIView):
     permission_classes = [IsAuthenticated]
 
+    def get(self, request):
+        user = request.user
+
+        return Response({"about": user.bio}, status=status.HTTP_200_OK)
+
+
     def patch(self, request):
         user = request.user  # The logged-in user
 
@@ -809,6 +817,10 @@ class ChangePasswordView(APIView):
     
 class EditPhoneNumberView(APIView):
     permission_classes = [IsAuthenticated]
+
+    def get(self,request):
+        user = request.user
+        return Response({"phoneNumber": user.phone_number}, status=status.HTTP_200_OK)
 
     def patch(self, request):
         user = request.user

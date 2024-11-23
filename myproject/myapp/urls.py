@@ -3,7 +3,7 @@ from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, 
       UnverifiedPageView, ResendVerificationEmailView, Verify2FACodeView, CreateElectionView, EditElectionView, CreateGroupView, AllowGroupToVoteView, SearchUsersByName,\
       UpdateProfilePictureView, ListGroupsView, ListUsersInGroupView, EditPhoneNumberView, ChangePasswordView, UpdateAboutView, ProfileView, ElectionDetailView, CheckEligibilityView,\
       CastVoteView, AddCandidatesToElectionView, ElectionWinnerView, ActiveElectionsView, GetNonAdminUsersView, ElectionEditView, DeleteElectionView, CheckVotingStatusView,\
-      InactiveElectionsView, ElectionResultView
+      InactiveElectionsView, ElectionResultView, Toggle2FAView, ToggleBiometricAuthView
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
@@ -18,6 +18,9 @@ urlpatterns = [
     path('unverified/', UnverifiedPageView.as_view(), name='unverified_page'),
     path('resend-verification/', ResendVerificationEmailView.as_view(), name='resend_verification'),
     path('verify-2fa/', Verify2FACodeView.as_view(), name='verify2facode'),
+    path('profile/biometric/',ToggleBiometricAuthView.as_view(),name='toggle_biometric'),
+    path('profile/two-factor/',Toggle2FAView.as_view(),name='toggle_tfa'),
+    
 
     # Election endpoints
     path('create-election/', CreateElectionView.as_view(), name='create_election'),
@@ -33,10 +36,10 @@ urlpatterns = [
     path('add-candidate-to-election',AddCandidatesToElectionView.as_view(), name='add_candidate_to_election'),
 
 
-    path('edit-phone-number/', EditPhoneNumberView.as_view(), name='edit_phone_number'),
-    path('change-password/', ChangePasswordView.as_view(), name='change_password'),
-    path('update-about/', UpdateAboutView.as_view(), name='update_about'),
-    path('profile-picture/', ProfileView.as_view(), name='profile_photo'),
+    path('profile/phone-number/', EditPhoneNumberView.as_view(), name='edit_phone_number'),
+    path('profile/change-password/', ChangePasswordView.as_view(), name='change_password'),
+    path('profile/about/', UpdateAboutView.as_view(), name='update_about'),
+    path('profile/', ProfileView.as_view(), name='profile_photo'),
     path('election-detail/<election_id>/', ElectionDetailView.as_view(), name='election_detail'),
     path('active-elections/', ActiveElectionsView.as_view(), name='active_elections'),
 
