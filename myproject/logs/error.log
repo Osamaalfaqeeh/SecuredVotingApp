@@ -3155,3 +3155,274 @@ Traceback (most recent call last):
 django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
 WARNING 2024-11-23 18:39:34,760 log Bad Request: /demo/dishes/pasta
 WARNING 2024-11-23 18:39:34,760 basehttp "GET /demo/dishes/pasta HTTP/1.1" 400 77422
+INFO 2024-11-24 01:32:54,777 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 01:33:55,297 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 01:33:57,462 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 01:34:06,868 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 01:34:08,833 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 01:34:17,594 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 01:34:19,764 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 01:34:53,732 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 01:34:56,043 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-24 01:38:35,295 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1126, in post
+    settings.DEFAULT_FROM_EMAIL,
+    ^^^^^^^^
+NameError: name 'settings' is not defined. Did you mean: 'self.settings'?
+ERROR 2024-11-24 01:38:35,544 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 104224
+INFO 2024-11-24 01:38:53,163 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 01:38:54,981 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-24 01:39:03,339 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1126, in post
+    self.settings.DEFAULT_FROM_EMAIL,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'DEFAULT_FROM_EMAIL'
+ERROR 2024-11-24 01:39:03,363 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 108496
+INFO 2024-11-24 01:40:26,142 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 01:40:28,882 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 01:40:43,944 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2024-11-24 02:03:39,305 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2024-11-24 15:13:50,879 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 15:14:05,048 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 15:14:12,654 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 15:14:13,785 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 15:15:19,141 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 15:15:20,037 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 15:18:06,976 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-11-24 15:18:08,742 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 15:33:50,521 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+WARNING 2024-11-24 15:34:24,542 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:34:24,543 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+WARNING 2024-11-24 15:34:28,414 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:34:28,415 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+WARNING 2024-11-24 15:34:36,093 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:34:36,094 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+WARNING 2024-11-24 15:34:41,950 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:34:41,950 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+WARNING 2024-11-24 15:35:28,185 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:35:28,186 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+WARNING 2024-11-24 15:35:37,978 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:35:37,978 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+WARNING 2024-11-24 15:37:45,124 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:37:45,125 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+WARNING 2024-11-24 15:38:05,420 log Not Found: /api/auth/verify-otp/
+WARNING 2024-11-24 15:38:05,420 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 404 14144
+INFO 2024-11-24 15:38:32,105 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-11-24 15:38:36,067 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-24 15:38:52,767 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 15:38:52,768 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 40
+WARNING 2024-11-24 15:38:59,303 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 15:38:59,304 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 40
+WARNING 2024-11-24 15:40:12,517 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 15:40:12,518 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 40
+WARNING 2024-11-24 15:40:50,419 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 15:40:50,420 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 40
+WARNING 2024-11-24 15:43:55,995 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 15:43:56,008 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 40
+INFO 2024-11-24 15:53:16,604 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2024-11-24 16:03:00,600 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2024-11-24 16:07:34,443 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+WARNING 2024-11-24 16:07:59,030 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:07:59,033 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+WARNING 2024-11-24 16:08:03,769 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:08:03,770 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+WARNING 2024-11-24 16:08:09,816 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:08:09,816 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+WARNING 2024-11-24 16:08:40,977 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:08:40,977 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+WARNING 2024-11-24 16:09:10,358 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:09:10,359 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+WARNING 2024-11-24 16:09:21,266 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:09:21,267 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+WARNING 2024-11-24 16:10:32,856 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:10:32,857 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+INFO 2024-11-24 16:11:29,130 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 16:11:33,544 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-24 16:11:47,323 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:11:47,324 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+INFO 2024-11-24 16:15:19,638 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2024-11-24 16:15:41,750 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 72
+WARNING 2024-11-24 16:16:08,436 log Not Found: /api/auth/reset-password-with-otp/
+WARNING 2024-11-24 16:16:08,436 basehttp "POST /api/auth/reset-password-with-otp/ HTTP/1.1" 404 14173
+WARNING 2024-11-24 16:16:58,751 log Bad Request: /api/auth/reset-password/
+WARNING 2024-11-24 16:16:58,752 basehttp "POST /api/auth/reset-password/ HTTP/1.1" 400 55
+WARNING 2024-11-24 16:17:02,376 log Bad Request: /api/auth/reset-password/
+WARNING 2024-11-24 16:17:02,377 basehttp "POST /api/auth/reset-password/ HTTP/1.1" 400 55
+WARNING 2024-11-24 16:17:57,479 log Bad Request: /api/auth/reset-password/
+WARNING 2024-11-24 16:17:57,479 basehttp "POST /api/auth/reset-password/ HTTP/1.1" 400 55
+WARNING 2024-11-24 16:19:54,387 log Bad Request: /api/auth/reset-password/
+WARNING 2024-11-24 16:19:54,388 basehttp "POST /api/auth/reset-password/ HTTP/1.1" 400 55
+INFO 2024-11-24 16:28:31,562 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2024-11-24 16:28:56,498 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 72
+INFO 2024-11-24 16:29:12,757 basehttp "POST /api/auth/reset-password/ HTTP/1.1" 200 50
+INFO 2024-11-24 16:29:43,484 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:29:44,797 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:29:45,093 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:29:46,687 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:29:49,417 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:29:49,528 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:30:03,573 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+ERROR 2024-11-24 16:30:04,494 views Invalid login attempt for testnumber2@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-11-24 16:30:04,503 log Bad Request: /api/auth/login/
+WARNING 2024-11-24 16:30:04,503 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-11-24 16:30:31,480 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-24 16:30:35,782 autoreload Watching for file changes with StatReloader
+INFO 2024-11-24 16:34:10,828 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:34:11,701 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:34:11,757 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:34:12,081 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:34:38,042 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:34:38,960 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:34:39,045 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:34:39,845 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:34:41,188 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:37:40,539 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+WARNING 2024-11-24 16:37:51,653 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:37:51,662 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+INFO 2024-11-24 16:38:00,617 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 72
+INFO 2024-11-24 16:39:32,492 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+WARNING 2024-11-24 16:39:43,227 log Bad Request: /api/auth/verify-otp/
+WARNING 2024-11-24 16:39:43,237 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 400 25
+INFO 2024-11-24 16:40:04,477 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 72
+WARNING 2024-11-24 16:40:17,436 log Not Found: /api/auth/reset-password-with-otp/
+WARNING 2024-11-24 16:40:17,436 basehttp "POST /api/auth/reset-password-with-otp/ HTTP/1.1" 404 14173
+INFO 2024-11-24 16:40:54,391 basehttp "POST /api/auth/reset-password/ HTTP/1.1" 200 50
+INFO 2024-11-24 16:42:54,995 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+ERROR 2024-11-24 16:42:55,798 views Invalid login attempt for testnumber2@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-11-24 16:42:55,800 log Bad Request: /api/auth/login/
+WARNING 2024-11-24 16:42:55,800 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-11-24 16:42:58,864 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:42:59,726 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:42:59,741 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:42:59,972 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:43:02,007 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:43:02,126 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:43:18,515 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2024-11-24 16:43:43,200 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 72
+INFO 2024-11-24 16:43:53,134 basehttp "POST /api/auth/reset-password/ HTTP/1.1" 200 50
+INFO 2024-11-24 16:46:39,005 views Login attempt from IP: 192.168.1.21 for user: Testnumber1@std.psut.edu.jo
+INFO 2024-11-24 16:46:40,171 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:46:40,216 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-11-24 16:46:40,476 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:46:40,803 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:46:52,088 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:46:53,040 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:46:53,166 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:46:53,709 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:46:54,252 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:46:54,364 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:46:54,714 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:46:55,255 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:46:55,364 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:46:55,981 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:51:06,740 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:51:13,143 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:51:13,256 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:51:20,382 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:51:23,552 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:51:27,293 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:51:28,562 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:51:28,618 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:51:45,392 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:51:46,157 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:51:46,191 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:51:46,460 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:51:51,473 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:51:54,987 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:51:55,035 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:52:18,244 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:52:19,224 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:52:22,204 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:52:22,293 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:52:25,587 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:52:26,179 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:52:26,308 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:52:26,849 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:52:27,384 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:52:27,864 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:52:27,965 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:52:58,424 views Login attempt from IP: 192.168.1.21 for user: Testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:52:59,203 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:52:59,227 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:53:00,039 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:53:01,143 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:53:01,996 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:53:05,512 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:54:02,407 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:54:03,348 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:54:03,354 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:54:04,378 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:54:05,516 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:54:14,102 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:54:14,178 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:56:05,324 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 16:56:06,053 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 16:56:06,072 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 16:56:06,951 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 16:56:09,645 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:56:11,754 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 16:56:11,882 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 16:56:14,307 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-24 16:56:14,814 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 595
+INFO 2024-11-24 18:14:26,230 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 18:14:27,220 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-24 18:14:27,260 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-24 18:14:28,227 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 593
+INFO 2024-11-24 18:14:29,265 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 18:14:29,399 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-24 18:14:31,147 basehttp "PATCH /api/auth/profile/two-factor/ HTTP/1.1" 200 57
+INFO 2024-11-24 18:16:38,504 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 593
+INFO 2024-11-24 18:16:39,073 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-24 18:16:39,144 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-11-24 18:16:52,552 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 18:16:56,876 basehttp "POST /api/auth/login/ HTTP/1.1" 200 62
+INFO 2024-11-24 18:16:57,135 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-24 18:17:00,983 basehttp "POST /api/auth/login/ HTTP/1.1" 200 62

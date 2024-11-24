@@ -3,7 +3,7 @@ from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, 
       UnverifiedPageView, ResendVerificationEmailView, Verify2FACodeView, CreateElectionView, EditElectionView, CreateGroupView, AllowGroupToVoteView, SearchUsersByName,\
       UpdateProfilePictureView, ListGroupsView, ListUsersInGroupView, EditPhoneNumberView, ChangePasswordView, UpdateAboutView, ProfileView, ElectionDetailView, CheckEligibilityView,\
       CastVoteView, AddCandidatesToElectionView, ElectionWinnerView, ActiveElectionsView, GetNonAdminUsersView, ElectionEditView, DeleteElectionView, CheckVotingStatusView,\
-      InactiveElectionsView, ElectionResultView, Toggle2FAView, ToggleBiometricAuthView
+      InactiveElectionsView, ElectionResultView, Toggle2FAView, ToggleBiometricAuthView, ForgotPasswordWithOTPView, VerifyOTPView, ResetPasswordView
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
@@ -20,7 +20,9 @@ urlpatterns = [
     path('verify-2fa/', Verify2FACodeView.as_view(), name='verify2facode'),
     path('profile/biometric/',ToggleBiometricAuthView.as_view(),name='toggle_biometric'),
     path('profile/two-factor/',Toggle2FAView.as_view(),name='toggle_tfa'),
-    
+    path('forgot-password-with-otp/', ForgotPasswordWithOTPView.as_view(), name='forgot_password_with_otp'),
+    path('verify-otp/', VerifyOTPView.as_view(), name='verify_otp'),
+    path('reset-password/', ResetPasswordView.as_view(), name='reset_password'),
 
     # Election endpoints
     path('create-election/', CreateElectionView.as_view(), name='create_election'),

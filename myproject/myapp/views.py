@@ -30,6 +30,7 @@ from .permissions import IsAdmin
 from django.db import IntegrityError
 import secrets
 from django.db.models import Count
+import myproject.settings
 # Create your views here.
 
 logger = logging.getLogger('myapp')
@@ -1086,3 +1087,107 @@ class ElectionResultView(APIView):
         }
 
         return Response({"election": election_data}, status=status.HTTP_200_OK)
+
+class ForgotPasswordWithOTPView(APIView):
+    permission_classes = []
+
+    def post(self, request):
+        email = request.data.get("email")
+        if not email:
+            return Response({"detail": "Email is required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            user = Users.objects.get(email=email)
+        except Users.DoesNotExist:
+            return Response({"detail": "User with this email does not exist."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Generate a secure 6-digit OTP using the secrets module
+        otp = secrets.token_hex(3)  # 6-character OTP (3 bytes)
+
+        # Set OTP expiration time (e.g., 10 minutes from now)
+        expires_at = timezone.now() + timedelta(minutes=10)
+
+        # Cache the OTP with an expiration time of 10 minutes
+        cache.set(f"otp_{user.user_id}", otp, timeout=600)  # 600 seconds = 10 minutes
+
+        # Prepare the email content using the HTML template
+        email_subject = "Password Reset OTP"
+        email_message = render_to_string(
+            'forgot password/otp.html',  # Path to the template
+            {
+                'user': user,  # Pass the user context to the template
+                'code': otp     # Pass the OTP to the template
+            }
+        )
+
+        # Send the email with HTML content
+        send_mail(
+            email_subject,
+            email_message,  # HTML content of the email
+            myproject.settings.DEFAULT_FROM_EMAIL,
+            [email],
+            html_message=email_message,  # Make sure to set the HTML message as well
+        )
+
+        return Response({"detail": "OTP has been sent to your email."}, status=status.HTTP_200_OK)
+    
+
+class VerifyOTPView(APIView):
+    permission_classes = []
+
+    def post(self, request):
+        otp = request.data.get("otp")
+        email = request.data.get("email")  # Use the email to get the user_id
+
+        if not otp or not email:
+            return Response({"detail": "OTP and email are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            # Fetch the user by email to get the user_id
+            user = Users.objects.get(email=email)
+        except Users.DoesNotExist:
+            return Response({"detail": "User with this email does not exist."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Retrieve OTP from cache using the user_id
+        cached_otp = cache.get(f"otp_{user.user_id}")
+        print(cached_otp);
+        if cached_otp != otp:
+            return Response({"detail": "Invalid OTP."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # OTP is valid, allow user to reset password
+        return Response({"detail": "OTP verified successfully. You can now reset your password."}, status=status.HTTP_200_OK)
+
+
+
+class ResetPasswordView(APIView):
+    permission_classes = []
+
+    def post(self, request):
+        otp = request.data.get("otp")
+        new_password = request.data.get("new_password")
+        email = request.data.get("email")  # We get the email again to get the user_id
+
+        if not otp or not new_password or not email:
+            return Response({"detail": "OTP, new password, and email are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            # Fetch the user by email to get the user_id
+            user = Users.objects.get(email=email)
+        except Users.DoesNotExist:
+            return Response({"detail": "User not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Retrieve OTP from cache
+        cached_otp = cache.get(f"otp_{user.user_id}")
+
+        # Validate OTP
+        if cached_otp != otp:
+            return Response({"detail": "Invalid OTP."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Hash the new password and save
+        user.password_hash = make_password(new_password)
+        user.save()
+
+        # Delete OTP from cache after use
+        cache.delete(f"otp_{user.user_id}")
+
+        return Response({"detail": "Password has been successfully reset."}, status=status.HTTP_200_OK)
