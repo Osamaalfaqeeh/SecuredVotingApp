@@ -133,7 +133,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'osamaalfaqeeh55@gmail.com'
 EMAIL_HOST_PASSWORD = 'indi iqsh skzn htbq'
 DEFAULT_FROM_EMAIL = "osamaalfaqeeh55@gmail.com"
-
+ADMIN_EMAIL = "osamaalfaqeeh55@gmail.com"
 
 LOGGING = {
     'version': 1,

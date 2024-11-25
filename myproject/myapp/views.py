@@ -6,7 +6,7 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession, Logs
+VotingSession, Logs, Roles
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -30,7 +30,10 @@ from .permissions import IsAdmin
 from django.db import IntegrityError
 import secrets
 from django.db.models import Count
-import myproject.settings
+from myproject import settings
+import uuid
+from django.http import HttpResponse
+from django.contrib import messages
 # Create your views here.
 
 logger = logging.getLogger('myapp')
@@ -65,13 +68,14 @@ class LoginView(APIView):
                     "error": "Please verify your email before logging in.",
                     "redirect_to": "unverified_page",  # Indicates to redirect in the mobile app
                     "resend_verification": True  # Flag for allowing resend of verification email
-                }, status=status.HTTP_403_FORBIDDEN)
+                }, status=status.HTTP_200_OK)
             
             if user.is_2fa_enabled:
                 send_2fa_code(user)
                 return Response({
                     "message": "2FA code sent to your email.",
-                    "requires_2fa": True
+                    "requires_2fa": True,
+                    "user_id": user.user_id,
                 }, status=status.HTTP_200_OK)
             
             log_entry = Logs(
@@ -311,7 +315,9 @@ class Verify2FACodeView(APIView):
         if not code:
             return Response({"error": "2FA code is required."}, status=status.HTTP_400_BAD_REQUEST)
         
+        print(request.data);
         user_id = request.data.get("user_id")
+        print(code + user_id)
         # user = request.user
         user = Users.objects.get(user_id=user_id)
         # Retrieve the code from cache
@@ -340,7 +346,8 @@ class Verify2FACodeView(APIView):
             return Response({
                 "refresh": str(refresh_token),
                 "access": str(access_token),
-                "user_id": user.user_id
+                "user_id": user.user_id,
+                "role": user.role.role_name
             }, status=status.HTTP_200_OK)
         
         return Response({"error": "Invalid or expired 2FA code"}, status=status.HTTP_400_BAD_REQUEST)
@@ -1124,7 +1131,7 @@ class ForgotPasswordWithOTPView(APIView):
         send_mail(
             email_subject,
             email_message,  # HTML content of the email
-            myproject.settings.DEFAULT_FROM_EMAIL,
+            settings.DEFAULT_FROM_EMAIL,
             [email],
             html_message=email_message,  # Make sure to set the HTML message as well
         )
@@ -1191,3 +1198,90 @@ class ResetPasswordView(APIView):
         cache.delete(f"otp_{user.user_id}")
 
         return Response({"detail": "Password has been successfully reset."}, status=status.HTTP_200_OK)
+
+
+class RequestAdminAccessView(APIView):
+    permission_classes = [IsAuthenticated]
+    def post(self, request):
+        user = request.user  # Get the currently authenticated user
+
+        # Check if the user is already an admin
+        if user.role.role_name == 'admin':
+            return Response({"message": "You are already an admin."}, status=400)
+
+        # Generate a unique token for the admin request
+        token = str(uuid.uuid4())  # Generate a unique token
+
+        # Store the token in the cache with an expiration time (e.g., 24 hours)
+        expires_at = timezone.now() + timedelta(hours=24)
+        cache.set(f'admin_request_token_{token}', user.user_id, timeout=86400)  # 86400 seconds = 24 hours
+
+        # Send the email to the admin
+        admin_email = settings.ADMIN_EMAIL  # Use your admin email from settings
+        domain = get_current_site(request).domain
+        # Generate the approval link
+        approval_link = f"{f'http://{domain}/api/auth'}/approve-admin-access/{token}/"
+        email_message = render_to_string(
+                'admin/admin_approval_email.html',  # Email template
+                {'user': user, 'approval_link': approval_link}
+            )
+        # Send the email
+        send_mail(
+            'Admin Access Request',
+            email_message,
+            'no-reply@yourdomain.com',
+            [admin_email],
+            html_message=email_message,
+            fail_silently=False,
+        )
+
+        return Response({"Admin access request sent for approval."}, status=201)
+
+
+def ApproveAdminAccessView(request, token):
+    print(token);
+    # Retrieve the user_id from the cache using the token
+    user_id = cache.get(f'admin_request_token_{token}')
+    print(user_id)
+    if not user_id:
+        return HttpResponse("Invalid or expired token.", status=400)
+
+    # Retrieve the user object
+    try:
+        user = Users.objects.get(user_id=user_id)
+    except Users.DoesNotExist:
+        return HttpResponse("User not found.", status=404)
+
+    # Check if the token has expired (optional, but we could also rely on the cache expiration time)
+    if cache.get(f'admin_request_token_{token}') != user_id:
+        return HttpResponse("Token has expired.", status=400)
+
+    # Update the user's role to admin
+    try:
+        admin_role = Roles.objects.get(role_name='admin')  # Assuming you have a role named 'admin'
+    except Roles.DoesNotExist:
+        return HttpResponse("Admin role not found.", status=404)
+
+    user.role = admin_role
+    user.save()
+
+    # Clear the token from the cache after approval
+    cache.delete(f'admin_request_token_{token}')
+
+    send_mail(
+        'Admin Access Granted',
+        render_to_string(
+            'admin/admin_approval_confirmation.html',  # Email template
+            {'user': user}  # Passing the user object to the email template
+        ),
+        'no-reply@yourdomain.com',
+        [user.email],
+        fail_silently=False,
+    )
+
+    # Redirect to a success page or show a success message
+    messages.success(request, f'{user.email} has been granted admin access.')
+    return redirect('approve_success')  # Replace with the actual URL name for your success page
+
+def approve_success(request):
+    return render(request, 'admin/success.html') 
