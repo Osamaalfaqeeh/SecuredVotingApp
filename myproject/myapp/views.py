@@ -6,7 +6,7 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession, Logs, Roles
+VotingSession, Logs, Roles, ElectionPosition, CandidatePosition
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -382,14 +382,19 @@ class CreateElectionView(APIView):
             if 'icon' in request.FILES:
                 election.icon = request.FILES['icon']
                 election.save()
+            
+            # Create positions (e.g., President, Vice President)
+            position_names = request.data.get('position_names', [])
+            for position_name in position_names:
+                ElectionPosition.objects.create(election=election, position_name=position_name)
 
-            # Get the list of selected candidates (user IDs)
-            candidate_ids = request.data.get('candidate_ids', [])
-            if candidate_ids:
-                candidates = Users.objects.filter(user_id__in=candidate_ids)
+            # Create candidates for each position
+            candidate_ids = request.data.get('candidate_ids', {})
+            for position_name, candidates in candidate_ids.items():
+                position = ElectionPosition.objects.get(election=election, position_name=position_name)
+                candidates = Users.objects.filter(user_id__in=candidates)
                 for candidate in candidates:
-                    # Link each selected user as a candidate for the election
-                    Candidates.objects.create(election=election, candidate=candidate)
+                    CandidatePosition.objects.create(election_position=position, candidate=candidate)
 
             # Get the list of selected voting groups (group IDs)
             group_ids = request.data.get('group_ids', [])
@@ -655,26 +660,33 @@ class ElectionDetailView(APIView):
     def get(self, request, election_id):
         try:
             election = Elections.objects.get(election_id=election_id)
+            print(election_id)
             # Check if the election is still open based on the end time
             is_open = election.end_time > timezone.now()
 
-            # Fetch candidates related to this election
-            candidates = Candidates.objects.filter(election=election)
-
-            # Return election details along with candidates
+            # Fetch positions related to this election
+            positions = ElectionPosition.objects.filter(election=election)
+            print(positions)
             election_data = {
                 "election_name": election.election_name,
                 "description": election.description,
                 "end_time": election.end_time,
                 "is_open": is_open,  # Whether voting is still open
-                "candidates": [
+                "positions": [
                     {
-                        "candidate_id": candidate.candidate.user_id,
-                        "candidate_name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",  # Access user details via the candidate field
-                        "bio": candidate.candidate.bio if candidate.candidate.bio else "No bio available",  # Candidate bio from the User model
-                        "profile_photo": candidate.candidate.profile_photo.url if candidate.candidate.profile_photo else None  # Candidate profile photo from the User model
+                        "id": position.id,
+                        "position_name": position.position_name,
+                        "candidates": [
+                            {
+                                "candidate_id": candidate_position.candidate.user_id,
+                                "candidate_name": f"{candidate_position.candidate.firstname} {candidate_position.candidate.lastname}",
+                                "bio": candidate_position.candidate.bio if candidate_position.candidate.bio else "No bio available",
+                                "profile_photo": candidate_position.candidate.profile_photo.url if candidate_position.candidate.profile_photo else None
+                            }
+                            for candidate_position in CandidatePosition.objects.filter(election_position=position)
+                        ]
                     }
-                    for candidate in candidates
+                    for position in positions
                 ],
             }
 
@@ -862,18 +874,23 @@ class CastVoteView(APIView):
         if not self.is_user_eligible(user, election):
             raise PermissionDenied("You are not eligible to vote in this election.")
 
-        anonymous_id = generate_anonymous_id(user.user_id, election_id)
+        # Get the position the user is voting for
+        position_id = request.data.get('position_id')
+        try:
+            position = ElectionPosition.objects.get(id=position_id, election=election)
+        except ElectionPosition.DoesNotExist:
+            return Response({"detail": "Position not found."}, status=404)
 
-        # Check if the user has already voted
+        anonymous_id = generate_anonymous_id(user.user_id, election_id, position_id)
+
+        # Check if the user has already voted for this position
         try:
             session = VotingSession.objects.get(anonymous_id=anonymous_id)
-            if session:
-                if session.has_voted:
-                    return Response({"detail": "You have already voted in this election."}, status=400)
+            if session.has_voted:
+                return Response({"detail": "You have already voted for this position."}, status=400)
         except VotingSession.DoesNotExist:
             # If no session exists, create a new one
-            VotingSession.objects.create(anonymous_id=anonymous_id)
-
+            session = VotingSession.objects.create(anonymous_id=anonymous_id)
 
         # Get the candidate the user wants to vote for
         candidate_id = request.data.get('candidate_id')
@@ -881,10 +898,10 @@ class CastVoteView(APIView):
             candidate = Users.objects.get(user_id=candidate_id)
         except Users.DoesNotExist:
             return Response({"detail": "Candidate not found."}, status=404)
-        
-        # Check if the candidate is a valid candidate for this election
-        if not Candidates.objects.filter(candidate=candidate, election=election).exists():
-            return Response({"detail": "The selected candidate is not part of this election."}, status=400)
+
+        # Check if the candidate is a valid candidate for this position in this election
+        if not CandidatePosition.objects.filter(candidate=candidate, election_position=position).exists():
+            return Response({"detail": "The selected candidate is not part of this position."}, status=400)
 
         # Generate a unique vote token for anonymity
         vote_token = secrets.token_hex(32)
@@ -894,12 +911,14 @@ class CastVoteView(APIView):
             vote = Votes.objects.create(
                 election=election,
                 candidate=candidate,
+                election_position=position,
                 vote_token=vote_token,
                 timestamp=timezone.now(),
             )
         except IntegrityError:
             return Response({"detail": "An error occurred while saving your vote."}, status=500)
-        
+
+        # Mark this user as having voted for the position
         session.has_voted = True
         session.save()
 
@@ -918,6 +937,16 @@ class CastVoteView(APIView):
             return True
         # If no eligible group found for the user
         return False
+    
+
+class ElectionPositionsView(APIView):
+    def get(self, request, election_id):
+        positions = ElectionPosition.objects.filter(election_id=election_id)
+        data = [
+            {"position_name": position.position_name, "position_id": position.id}
+            for position in positions
+        ]
+        return Response(data)
     
 
 class CheckEligibilityView(APIView):

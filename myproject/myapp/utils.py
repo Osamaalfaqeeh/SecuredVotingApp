@@ -51,13 +51,13 @@ def send_2fa_code(user):
     email.content_subtype = "html"  # Ensures the email is sent as HTML
     email.send()
 
-def generate_anonymous_id(user_id, election_id):
+def generate_anonymous_id(user_id, election_id, position_id):
     """
     Generate an anonymous ID for a user in a specific election using the user ID and election ID.
     This ensures that the anonymous ID is stable for the same user and election.
     """
     # Combine user ID and election ID into a string
-    combined_data = f"{user_id}-{election_id}"
+    combined_data = f"{user_id}-{election_id}-{position_id}"
 
     # Hash the combined data to create a unique, irreversible anonymous ID
     anonymous_id = hashlib.sha256(combined_data.encode()).hexdigest()

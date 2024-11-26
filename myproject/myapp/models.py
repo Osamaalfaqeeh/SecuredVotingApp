@@ -148,10 +148,25 @@ class Users(models.Model):
         db_table = 'users'
 
 
+class ElectionPosition(models.Model):
+    position_name = models.CharField(max_length=255)
+    election = models.ForeignKey(Elections, related_name='positions', on_delete=models.CASCADE)
+    description = models.TextField(blank=True, null=True)
+
+    class Meta:
+        db_table = 'election_positions'
+
+
+class CandidatePosition(models.Model):
+    election_position = models.ForeignKey(ElectionPosition, related_name='candidates', on_delete=models.CASCADE)
+    candidate = models.ForeignKey(Users, related_name='candidate_positions', on_delete=models.CASCADE)
+
+
 class Votes(models.Model):
     vote_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     election = models.ForeignKey(Elections, models.CASCADE, null=True)  # Nullable if the election is deleted
     candidate = models.ForeignKey(Users, models.CASCADE, null=True)  # Nullable if the candidate is deleted
+    election_position = models.ForeignKey(ElectionPosition, models.CASCADE,null=True)
     vote_token = models.CharField(unique=True, max_length=255)
     timestamp = models.DateTimeField(auto_now_add=True)
     
