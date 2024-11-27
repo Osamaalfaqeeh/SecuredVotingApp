@@ -7726,3 +7726,381 @@ INFO 2024-11-27 19:39:53,832 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
 INFO 2024-11-27 19:39:55,635 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
 INFO 2024-11-27 19:39:56,351 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
 INFO 2024-11-27 19:39:56,415 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 19:50:37,511 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 20:01:19,111 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:03:48,029 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:03:48,773 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:06:41,656 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:06:42,484 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:06:42,563 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:06:43,297 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:06:43,859 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:06:43,942 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:06:50,830 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:06:51,117 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:06:51,283 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:06:51,827 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:06:52,183 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:06:52,245 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:06:53,189 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:06:53,636 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:06:53,696 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:06:54,500 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:06:55,129 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:06:55,932 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:06:57,228 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:06:57,768 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:06:57,825 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:06:58,183 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:06:58,676 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:07:02,427 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:07:03,561 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:07:03,709 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:07:05,802 basehttp "GET /api/auth/profile/edit-personal-info/ HTTP/1.1" 200 75
+WARNING 2024-11-27 20:11:13,401 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-11-27 20:11:13,417 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 183
+INFO 2024-11-27 20:11:13,516 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-11-27 20:11:13,772 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:11:14,451 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:11:14,526 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:11:18,612 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:11:19,747 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:11:19,813 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:13:31,975 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:13:32,399 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:13:32,487 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:15:22,465 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-27 20:15:23,359 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-27 20:15:23,432 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 20:15:25,000 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:15:27,058 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:15:27,144 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:30:39,513 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:41:45,949 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:41:46,135 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 20:41:51,746 basehttp "PUT /api/auth/update-profile-picture/ HTTP/1.1" 200 50
+INFO 2024-11-27 20:41:51,796 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:41:52,037 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 108
+INFO 2024-11-27 20:42:02,942 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:42:03,793 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:42:03,876 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 108
+INFO 2024-11-27 20:45:34,865 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-27 20:45:36,279 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-27 20:45:36,405 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 20:45:37,969 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:45:39,453 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:45:39,648 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 108
+INFO 2024-11-27 20:46:02,287 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 20:46:07,643 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 20:46:28,808 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+ERROR 2024-11-27 20:46:29,204 log Internal Server Error: /api/auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\utils\encoders.py", line 52, in default
+    return obj.decode()
+           ^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaf in position 7: invalid start byte
+ERROR 2024-11-27 20:46:29,269 basehttp "GET /api/auth/profile/ HTTP/1.1" 500 112900
+INFO 2024-11-27 20:46:29,641 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:46:30,649 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+ERROR 2024-11-27 20:46:30,941 log Internal Server Error: /api/auth/profile/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\utils\encoders.py", line 52, in default
+    return obj.decode()
+           ^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaf in position 7: invalid start byte
+ERROR 2024-11-27 20:46:31,048 basehttp "GET /api/auth/profile/ HTTP/1.1" 500 112900
+INFO 2024-11-27 20:46:40,640 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:46:44,912 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 20:46:46,109 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 20:46:57,171 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:46:57,389 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 108
+INFO 2024-11-27 20:48:56,736 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:48:58,654 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:48:58,768 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 108
+INFO 2024-11-27 20:49:53,911 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 20:49:56,093 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 20:50:03,345 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:50:04,306 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:50:05,358 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:50:05,902 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 108
+INFO 2024-11-27 20:51:52,931 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 20:51:54,206 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 20:52:21,637 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:52:22,325 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:52:22,439 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 20:52:22,722 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-11-27 20:52:24,319 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:52:25,162 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:52:25,361 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 20:53:35,281 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 20:53:36,489 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 20:57:44,518 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:57:45,819 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:57:46,224 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 20:57:47,398 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:57:48,049 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:57:48,139 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 20:57:49,166 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:57:49,680 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:57:49,775 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 20:57:55,042 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 20:57:56,430 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 20:58:02,905 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4150
+INFO 2024-11-27 20:58:03,905 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:58:04,671 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:58:05,038 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 20:58:07,317 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:58:08,225 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:58:08,368 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 20:59:32,287 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 20:59:33,519 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 20:59:33,681 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 21:01:34,142 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-27 21:01:35,397 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-27 21:01:35,483 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 21:01:36,593 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:01:38,798 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:01:39,503 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 21:01:39,651 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+WARNING 2024-11-27 21:01:39,965 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:01:39,966 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:01:40,087 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:01:40,136 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:01:40,721 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:01:40,813 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:01:40,891 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:01:40,939 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:01:41,005 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:01:41,008 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:02:04,140 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:02:04,140 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:02:04,451 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:02:04,452 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:02:04,518 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:02:04,519 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:02:04,568 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:02:04,569 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+WARNING 2024-11-27 21:02:04,630 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2024-11-27 21:02:04,631 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 2868
+INFO 2024-11-27 21:03:44,772 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 21:03:46,618 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 21:03:56,338 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:03:56,560 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:03:57,057 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:03:57,773 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 21:03:57,889 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 21:04:38,353 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:04:38,969 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 21:04:39,086 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 21:04:42,036 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:04:42,747 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 21:04:42,913 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 21:06:27,149 basehttp "GET /api/auth/profile/edit-personal-info/ HTTP/1.1" 200 75
+INFO 2024-11-27 21:08:21,303 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-27 21:08:22,133 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-27 21:08:22,204 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 21:08:22,497 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:08:24,732 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 21:08:24,858 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 21:16:12,148 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:16:13,009 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 21:16:13,118 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 21:16:17,529 views Login attempt from IP: 203.82.54.66 for user: Kha20200416@std.psut.edu.jo
+INFO 2024-11-27 21:16:18,676 views User Kha20200416@std.psut.edu.jo logged in successfully from IP: 203.82.54.66
+INFO 2024-11-27 21:16:18,814 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 21:16:20,401 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:16:28,664 basehttp "GET /api/auth/election-detail/1b0b021b-2eaa-4fca-a790-a4cffe304773/ HTTP/1.1" 200 800
+INFO 2024-11-27 21:16:52,934 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:16:54,958 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+INFO 2024-11-27 21:16:57,366 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+INFO 2024-11-27 21:21:44,529 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+INFO 2024-11-27 21:21:52,480 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:21:53,363 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:21:56,448 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+INFO 2024-11-27 21:22:08,070 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:22:29,037 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:22:30,845 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+INFO 2024-11-27 21:23:09,263 views Login attempt from IP: 203.82.54.66 for user: Kha20200416@std.psut.edu.jo
+INFO 2024-11-27 21:23:10,107 views User Kha20200416@std.psut.edu.jo logged in successfully from IP: 203.82.54.66
+INFO 2024-11-27 21:23:10,124 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 21:23:11,460 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:23:15,108 basehttp "GET /api/auth/election-detail/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1118
+INFO 2024-11-27 21:23:20,082 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:23:24,269 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+INFO 2024-11-27 21:37:02,951 views Login attempt from IP: 203.82.54.66 for user: Kha20200416@std.psut.edu.jo
+INFO 2024-11-27 21:37:03,852 views User Kha20200416@std.psut.edu.jo logged in successfully from IP: 203.82.54.66
+INFO 2024-11-27 21:37:03,870 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 21:37:05,209 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:37:08,397 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:37:10,047 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+INFO 2024-11-27 21:39:51,051 views Login attempt from IP: 203.82.54.66 for user: Kha20200416@std.psut.edu.jo
+INFO 2024-11-27 21:39:51,970 views User Kha20200416@std.psut.edu.jo logged in successfully from IP: 203.82.54.66
+INFO 2024-11-27 21:39:51,987 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 21:39:53,387 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 21:39:56,179 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 21:39:57,599 basehttp "GET /api/auth/election-results/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 200 948
+WARNING 2024-11-27 22:11:08,352 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-11-27 22:11:08,356 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 183
+INFO 2024-11-27 22:11:08,533 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-11-27 22:11:08,708 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:11:09,277 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:11:09,417 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:11:11,718 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:11:12,677 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:11:13,067 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:11:24,574 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:11:25,319 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:11:25,409 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:11:27,607 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:11:28,357 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:11:28,609 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:11:59,446 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:12:00,113 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:12:00,262 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:12:48,820 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:12:49,573 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:12:49,741 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:12:51,829 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:12:52,609 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:12:52,703 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:19:07,724 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:19:08,658 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:19:08,823 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:20:41,150 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:20:42,243 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:20:42,374 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:20:56,956 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:20:58,632 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:20:58,753 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:21:01,072 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:21:01,783 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:21:01,880 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:22:13,865 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 22:22:15,989 autoreload Watching for file changes with StatReloader
+INFO 2024-11-27 22:22:25,476 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-11-27 22:22:26,631 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-27 22:29:05,711 log Bad Request: /api/auth/update-profile-picture/
+WARNING 2024-11-27 22:29:05,717 basehttp "DELETE /api/auth/update-profile-picture/ HTTP/1.1" 400 42
+WARNING 2024-11-27 22:34:00,946 log Bad Request: /api/auth/update-profile-picture/
+WARNING 2024-11-27 22:34:00,947 basehttp "DELETE /api/auth/update-profile-picture/ HTTP/1.1" 400 42
+WARNING 2024-11-27 22:35:15,370 log Bad Request: /api/auth/update-profile-picture/
+WARNING 2024-11-27 22:35:15,570 basehttp "DELETE /api/auth/update-profile-picture/ HTTP/1.1" 400 42
+INFO 2024-11-27 22:36:07,160 views Login attempt from IP: 203.82.54.66 for user: Kha20200416@std.psut.edu.jo
+INFO 2024-11-27 22:36:08,242 views User Kha20200416@std.psut.edu.jo logged in successfully from IP: 203.82.54.66
+INFO 2024-11-27 22:36:08,317 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 22:36:09,909 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:40:10,481 basehttp "GET /api/auth/election-detail/1b0b021b-2eaa-4fca-a790-a4cffe304773/ HTTP/1.1" 200 800
+INFO 2024-11-27 22:40:17,871 basehttp "GET /api/auth/election-detail/28680482-8348-4493-8773-6f307b75170e/ HTTP/1.1" 200 184
+INFO 2024-11-27 22:40:43,965 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-11-27 22:40:44,334 basehttp "GET /api/auth/election-detail/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1118
+INFO 2024-11-27 22:40:45,126 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-11-27 22:40:45,171 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 22:40:46,283 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:40:48,105 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:40:48,195 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:41:08,552 basehttp "PUT /api/auth/update-profile-picture/ HTTP/1.1" 200 50
+INFO 2024-11-27 22:41:08,651 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:41:09,796 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:41:18,937 basehttp "GET /api/auth/election-detail/0fcaa7ba-9160-4a76-be72-d78704803566/ HTTP/1.1" 200 167
+INFO 2024-11-27 22:41:44,931 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:41:45,528 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:41:45,625 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:42:59,958 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:43:00,585 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:43:00,655 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:43:55,051 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-11-27 22:44:05,225 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:44:06,092 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:44:06,180 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:44:11,087 basehttp "DELETE /api/auth/update-profile-picture/ HTTP/1.1" 200 50
+INFO 2024-11-27 22:44:15,721 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:44:16,398 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:44:16,595 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:44:56,986 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:44:57,552 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:44:57,671 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:45:41,804 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:46:37,816 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:46:40,590 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:46:41,217 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:46:41,328 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-11-27 22:47:15,042 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:47:17,294 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:47:51,854 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:48:52,932 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:49:13,145 views Login attempt from IP: 203.82.54.66 for user: Kha20200416@std.psut.edu.jo
+INFO 2024-11-27 22:49:14,068 views User Kha20200416@std.psut.edu.jo logged in successfully from IP: 203.82.54.66
+INFO 2024-11-27 22:49:14,127 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-11-27 22:49:15,476 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+WARNING 2024-11-27 22:50:28,364 log Bad Request: /api/auth/update-profile-picture/
+WARNING 2024-11-27 22:50:28,365 basehttp "DELETE /api/auth/update-profile-picture/ HTTP/1.1" 400 42
+INFO 2024-11-27 22:50:31,645 basehttp "PUT /api/auth/update-profile-picture/ HTTP/1.1" 200 50
+INFO 2024-11-27 22:50:31,956 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:50:32,421 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:50:36,625 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:50:37,404 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:50:37,528 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:50:39,325 basehttp "DELETE /api/auth/update-profile-picture/ HTTP/1.1" 200 50
+INFO 2024-11-27 22:50:52,987 basehttp "PUT /api/auth/update-profile-picture/ HTTP/1.1" 200 50
+INFO 2024-11-27 22:50:53,117 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:50:53,278 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:51:00,430 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:51:01,142 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-11-27 22:51:01,260 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-11-27 22:51:02,070 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207
+INFO 2024-11-27 22:51:02,865 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 4157
+INFO 2024-11-27 22:51:05,260 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 207

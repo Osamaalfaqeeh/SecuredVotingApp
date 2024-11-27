@@ -685,6 +685,18 @@ class UpdateProfilePictureView(APIView):
             serializer.save()
             return Response({"detail": "Profile picture updated successfully."}, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    def delete(self, request):
+        user = request.user
+
+        # Check if the user has a profile picture
+        if user.profile_photo:
+            user.profile_photo.delete(save=False)  # Delete the image file
+            user.profile_photo = None
+            user.save()
+            return Response({"detail": "Profile picture deleted successfully."}, status=status.HTTP_200_OK)
+
+        return Response({"detail": "No profile picture to delete."}, status=status.HTTP_400_BAD_REQUEST)
 
 class ProfileView(APIView):
     permission_classes = [IsAuthenticated]
@@ -692,8 +704,15 @@ class ProfileView(APIView):
     def get(self, request):
         user = request.user
         # Return only the profile picture URL
+       
+        profile_photo_url = (
+            request.build_absolute_uri(user.profile_photo.url)
+            if user.profile_photo
+            else None
+        )
+        print(profile_photo_url)
         user_data = {
-            'profilePhoto': user.profile_photo.url if user.profile_photo else None,
+            'profilePhoto': profile_photo_url,
             'isBiometricEnabled': user.biometric_enabled,
             'isTwoFactorEnabled': user.is_2fa_enabled
         }
