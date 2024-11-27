@@ -1,3 +1,4 @@
+import base64
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -34,6 +35,7 @@ from myproject import settings
 import uuid
 from django.http import HttpResponse
 from django.contrib import messages
+from django.core.files.base import ContentFile
 # Create your views here.
 
 logger = logging.getLogger('myapp')
@@ -379,15 +381,31 @@ class CreateElectionView(APIView):
             election = serializer.save()
 
             # Handle election icon upload (if you have file handling)
-            if 'icon' in request.FILES:
-                election.icon = request.FILES['icon']
+            # if 'icon' in request.FILES:
+            #     election.icon = request.FILES['icon']
+            #     election.save()
+
+            # icon_base64 = request.data.get('icon', None)
+            # if icon_base64:
+            #     try:
+            #         # Decode the Base64 string and save as an image file
+            #         format, imgstr = icon_base64.split(';base64,')
+            #         ext = format.split('/')[-1]  # Extract file extension
+            #         file_name = f"election_icons/{election.election_id}.{ext}"
+            #         election.icon.save(file_name, ContentFile(base64.b64decode(imgstr)))
+            #     except Exception as e:
+            #         raise ValidationError(f"Invalid Base64 image data: {e}")
+
+            icon_base64 = request.data.get('icon', None)
+            if icon_base64:
+                election.icon = icon_base64  # Store the Base64 string as-is
                 election.save()
             
             # Create positions (e.g., President, Vice President)
             position_names = request.data.get('position_names', [])
             for position_name in position_names:
                 ElectionPosition.objects.create(election=election, position_name=position_name)
-
+        
             # Create candidates for each position
             candidate_ids = request.data.get('candidate_ids', {})
             for position_name, candidates in candidate_ids.items():
@@ -832,7 +850,14 @@ class ActiveElectionsView(APIView):
 
         # Serialize the election data
         election_data = []
+        
         for election in elections:
+            icon_url = None
+            # if hasattr(election, "icon"):
+            #     if isinstance(election.icon, str) and election.icon.startswith("data:image"):  # Base64
+            #         icon_url = election.icon  # Include Base64 string directly
+            #     elif election.icon:  # File
+            #         icon_url = request.build_absolute_uri(election.icon.url)
             candidates = Candidates.objects.filter(election=election)
             election_data.append({
                 "election_id": str(election.election_id),

@@ -75,7 +75,7 @@ class Elections(models.Model):
     end_time = models.DateTimeField()
     created_by = models.ForeignKey('Users', models.CASCADE, db_column='created_by', null=True)  # Foreign key can be nullable
     updated_at = models.DateTimeField(auto_now=True)
-    icon = models.CharField(max_length=255, blank=True, null=True)  # Optional field
+    icon = models.TextField(null=True, blank=True) # Optional field
     created_at = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
     allow_self_vote = models.BooleanField(default=False)
