@@ -64,6 +64,10 @@ def generate_anonymous_id(user_id, election_id, position_id):
 
     return anonymous_id
 
+def generate_anonymous_id_for_referendum(user_id, election_id):
+    data = f"{user_id}:{election_id}"
+    return hashlib.sha256(data.encode()).hexdigest()
+
 def get_client_ip(request):
         """Return the client's IP address."""
         x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')

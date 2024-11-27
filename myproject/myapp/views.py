@@ -6,7 +6,7 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession, Logs, Roles, ElectionPosition, CandidatePosition
+VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -23,7 +23,7 @@ from django.utils.encoding import force_bytes
 from .tokens import account_activation_token
 from django.shortcuts import redirect
 from django.utils.http import urlsafe_base64_decode
-from .utils import generate_verification_token, verify_token, send_2fa_code, generate_anonymous_id, get_client_ip
+from .utils import generate_verification_token, verify_token, send_2fa_code, generate_anonymous_id, get_client_ip, generate_anonymous_id_for_referendum
 from rest_framework.exceptions import ValidationError, PermissionDenied
 from django.core.cache import cache
 from .permissions import IsAdmin
@@ -412,6 +412,23 @@ class CreateElectionView(APIView):
                     user = Users.objects.get(user_id=user_id)
                     # Link the user to the election via ElectionGroups
                     ElectionGroups.objects.create(election=election, user=user)
+            
+            # Handle referendum questions
+            referendum_questions = request.data.get('referendum_questions', [])
+            for question_data in referendum_questions:
+                question = ReferendumQuestion.objects.create(
+                    election=election,
+                    question_text=question_data['question_text'],
+                    is_mandatory=question_data.get('is_mandatory', True)
+                )
+                for option_data in question_data.get('options', []):
+                # Ensure that we extract the plain text from the option_data dictionary
+                    option_text = option_data.get('option_text', '').strip()
+                    if option_text:  # Only create options with non-empty text
+                        ReferendumOption.objects.create(
+                            question=question,
+                            option_text=option_text
+                        )
             # Log success in the database
             log_entry = Logs(
                 user=request.user,
@@ -625,7 +642,35 @@ class SearchUsersByName(APIView):
              } for user in users]
 
         return Response({"users": user_data}, status=200)
-    
+
+
+class EditPersonalInformationView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+        return Response({
+            # "success": True,
+            # "data": {
+            
+                "first_name": user.firstname,
+                "last_name": user.lastname,
+                "phone_number": user.phone_number,  # Assuming `phone_number` is in a related profile model
+            
+        },status=200)
+
+    def post(self, request):
+        user = request.user
+        user.firstname = request.data.get('first_name', user.firstname)
+        user.lastname = request.data.get('last_name', user.lastname)
+        user.phone_number = request.data.get('phone_number', user.phone_number)
+        user.save()
+        return Response({
+            # "success": True,
+            "message": "Profile updated successfully"
+        })
+
+
 class UpdateProfilePictureView(APIView):
     permission_classes = [IsAuthenticated]  # Ensure only authenticated users can update their profile picture
 
@@ -666,6 +711,9 @@ class ElectionDetailView(APIView):
 
             # Fetch positions related to this election
             positions = ElectionPosition.objects.filter(election=election)
+
+            referendum_questions = ReferendumQuestion.objects.filter(election=election)
+            print(referendum_questions);
             print(positions)
             election_data = {
                 "election_name": election.election_name,
@@ -687,6 +735,17 @@ class ElectionDetailView(APIView):
                         ]
                     }
                     for position in positions
+                ],
+                "referendum_questions": [
+                    {
+                        "id": question.id,
+                        "question_text": question.question_text,
+                        "options": [
+                            {"id": option.id, "option_text": option.option_text}
+                            for option in ReferendumOption.objects.filter(question=question)
+                        ],
+                    }
+                    for question in referendum_questions
                 ],
             }
 
@@ -938,6 +997,74 @@ class CastVoteView(APIView):
         # If no eligible group found for the user
         return False
     
+
+class SubmitReferendumView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, election_id):
+        try:
+            election = Elections.objects.get(election_id=election_id)
+
+            # Ensure the election is still open
+            if election.end_time < timezone.now():
+                return Response(
+                    {"detail": "This election is closed."},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            user_id = request.user
+            anonymous_id = generate_anonymous_id_for_referendum(user_id, election_id)
+
+            # Check if the user has already submitted
+            existing_votes = ReferendumVote.objects.filter(anonymous_id=anonymous_id)
+            if existing_votes.exists():
+                return Response(
+                    {"detail": "You have already submitted your referendum votes."},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            # Get the referendum answers from the request
+            referendum_answers = request.data.get('answers', [])
+            if not isinstance(referendum_answers, list):
+                return Response(
+                    {"detail": "Invalid format for referendum answers."},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            print(referendum_answers)
+            # Save the referendum votes
+            for answer in referendum_answers:
+                question_id = answer.get('question_id')
+                selected_option = answer.get('answer')
+
+                if not question_id or not selected_option:
+                    return Response(
+                        {"detail": "Both question_id and answer are required."},
+                        status=status.HTTP_400_BAD_REQUEST
+                    )
+                 # Ensure the question exists
+                try:
+                    question = ReferendumQuestion.objects.get(id=question_id)
+                except ReferendumQuestion.DoesNotExist:
+                    return Response(
+                        {"detail": f"Question with ID {question_id} not found."},
+                        status=status.HTTP_400_BAD_REQUEST
+                    )
+                
+                ReferendumVote.objects.create(
+                    anonymous_id = anonymous_id,
+                    question_id=question,
+                    selected_option=selected_option
+                )
+                print("after creating")
+
+            return Response({"detail": "Referendum votes submitted successfully."}, status=status.HTTP_201_CREATED)
+
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found."}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response(
+                {"detail": f"An error occurred: {str(e)}"},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
 
 class ElectionPositionsView(APIView):
     def get(self, request, election_id):
@@ -1296,15 +1423,16 @@ def ApproveAdminAccessView(request, token):
 
     # Clear the token from the cache after approval
     cache.delete(f'admin_request_token_{token}')
-
-    send_mail(
-        'Admin Access Granted',
-        render_to_string(
+    email_message = render_to_string(
             'admin/admin_approval_confirmation.html',  # Email template
             {'user': user}  # Passing the user object to the email template
         ),
+    send_mail(
+        'Admin Access Granted',
+        email_message,
         'no-reply@yourdomain.com',
         [user.email],
+        html_message= email_message,
         fail_silently=False,
     )
 

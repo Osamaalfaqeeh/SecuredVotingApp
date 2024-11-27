@@ -78,6 +78,7 @@ class Elections(models.Model):
     icon = models.CharField(max_length=255, blank=True, null=True)  # Optional field
     created_at = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
+    allow_self_vote = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'elections'
@@ -160,6 +161,35 @@ class ElectionPosition(models.Model):
 class CandidatePosition(models.Model):
     election_position = models.ForeignKey(ElectionPosition, related_name='candidates', on_delete=models.CASCADE)
     candidate = models.ForeignKey(Users, related_name='candidate_positions', on_delete=models.CASCADE)
+
+
+class ReferendumQuestion(models.Model):
+    id = models.AutoField(primary_key=True)
+    election = models.ForeignKey(Elections, related_name="referendum_questions", on_delete=models.CASCADE)
+    question_text = models.TextField()
+    is_mandatory = models.BooleanField(default=True)  # If the question is mandatory to answer
+
+    class Meta:
+        db_table = "referendum_questions"
+
+class ReferendumOption(models.Model):
+    id = models.AutoField(primary_key=True)
+    question = models.ForeignKey(ReferendumQuestion, related_name="options", on_delete=models.CASCADE)
+    option_text = models.CharField(max_length=255)
+
+    class Meta:
+        db_table = "referendum_options"
+
+class ReferendumVote(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    anonymous_id = models.CharField(max_length=255, unique=True, null=True)
+    question_id = models.ForeignKey(ReferendumQuestion, on_delete=models.CASCADE, null =True)
+    selected_option = models.CharField(max_length=255)  # Store the option chosen by the user
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = 'referendum_votes'
 
 
 class Votes(models.Model):

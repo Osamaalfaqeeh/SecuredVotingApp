@@ -1,6 +1,6 @@
 # serializers.py
 from rest_framework import serializers
-from .models import Users, Authentication, Institutions, Elections
+from .models import Users, Authentication, Institutions, Elections, ReferendumOption, ReferendumQuestion, Roles
 from django.contrib.auth.hashers import make_password, check_password
 from rest_framework_simplejwt.tokens import RefreshToken
 from datetime import datetime, timedelta
@@ -41,7 +41,7 @@ class RegisterSerializer(serializers.Serializer):
         # Determine role based on the subdomain
         email = validated_data['email']
         # role = 'student' if email.startswith("std.") else 'instructor'
-
+        role = Roles.objects.get(role_name = 'user')
         # Create user with the specified data and institution
         user = Users.objects.create(
             email=email,
@@ -50,6 +50,7 @@ class RegisterSerializer(serializers.Serializer):
             lastname=validated_data['lastname'],
             phone_number=validated_data.get('phone_number'),
             institution=self.institution,  # Assign institution based on domain
+            role = role,
             # role=role  # Assign role based on subdomain
         )
 
@@ -90,10 +91,25 @@ class LoginSerializer(serializers.Serializer):
         data['user'] = user
         return data
     
+
+class ReferendumOptionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ReferendumOption
+        fields = ['id', 'option_text']
+
+class ReferendumQuestionSerializer(serializers.ModelSerializer):
+    options = ReferendumOptionSerializer(many=True,write_only =True)
+
+    class Meta:
+        model = ReferendumQuestion
+        fields = ['id', 'question_text', 'is_mandatory', 'options']
+
 class ElectionSerializer(serializers.ModelSerializer):
+    referendum_questions = ReferendumQuestionSerializer(many=True, read_only=True)
+    allow_self_vote = serializers.BooleanField(default=False, write_only=True)
     class Meta:
         model = Elections
-        fields = ['election_name', 'description', 'start_time', 'end_time', 'is_active', 'icon']
+        fields = ['election_name', 'description', 'start_time', 'end_time', 'is_active', 'icon','allow_self_vote', 'referendum_questions']
 
     def validate(self, data):
         if data['start_time'] >= data['end_time']:
