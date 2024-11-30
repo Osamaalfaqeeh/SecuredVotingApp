@@ -83,6 +83,15 @@ class Elections(models.Model):
     class Meta:
         db_table = 'elections'
 
+class ElectionApproval(models.Model):
+    election = models.OneToOneField(Elections, on_delete=models.CASCADE, related_name="approval")
+    approved_options = models.JSONField(default=list)  # Store the selected options as a list
+    approved_by = models.ForeignKey('Users', on_delete=models.CASCADE)
+    approved_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = "election_approvals"
+
 
 class Institutions(models.Model):
     institution_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

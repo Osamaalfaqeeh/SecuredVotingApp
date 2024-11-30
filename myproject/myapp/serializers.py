@@ -5,6 +5,7 @@ from django.contrib.auth.hashers import make_password, check_password
 from rest_framework_simplejwt.tokens import RefreshToken
 from datetime import datetime, timedelta
 from django.core.validators import validate_email
+from django.utils.timezone import make_aware, is_naive
 
 class RegisterSerializer(serializers.Serializer):
     email = serializers.EmailField()
@@ -114,6 +115,11 @@ class ElectionSerializer(serializers.ModelSerializer):
     def validate(self, data):
         if data['start_time'] >= data['end_time']:
             raise serializers.ValidationError("End date must be after start date.")
+        if is_naive(data['start_time']):
+            data['start_time'] = make_aware(data['start_time'])
+
+        if is_naive(data['end_time']):
+            data['end_time'] = make_aware(data['end_time'])
         return data
     
 

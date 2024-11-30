@@ -7,7 +7,7 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote
+VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote, ElectionApproval
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -856,13 +856,7 @@ class ActiveElectionsView(APIView):
         election_data = []
         
         for election in elections:
-            icon_url = None
-            # if hasattr(election, "icon"):
-            #     if isinstance(election.icon, str) and election.icon.startswith("data:image"):  # Base64
-            #         icon_url = election.icon  # Include Base64 string directly
-            #     elif election.icon:  # File
-            #         icon_url = request.build_absolute_uri(election.icon.url)
-            candidates = Candidates.objects.filter(election=election)
+            candidates = Candidates.objects.filter(election=election.election_id)
             election_data.append({
                 "election_id": str(election.election_id),
                 "election_name": election.election_name,
@@ -871,7 +865,7 @@ class ActiveElectionsView(APIView):
                 "end_time": election.end_time,
                 "icon": election.icon,  # You can also include a URL for the icon if it's uploaded
                 "participants": candidates.count(),  # For example, the number of candidates
-                "time_left": str(election.end_time - timezone.now()),  # Calculate time left
+                "time_left": str(election.end_time - timezone.localtime()),  # Calculate time left
             })
 
         return Response({"elections": election_data}, status=status.HTTP_200_OK)
@@ -1237,12 +1231,125 @@ class InactiveElectionsView(APIView):
             elections_data.append({
                 "election_id": str(election.election_id),
                 "election_name": election.election_name,
+                "description": election.description,
+                "start_time": election.start_time.isoformat(),
                 "end_time": election.end_time.isoformat(),  # Ensure the time is in ISO format
                 "winner": winner_data
             })
 
         return Response({"elections": elections_data}, status=status.HTTP_200_OK)
 
+
+class AdminElectionResultView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]  # Admin-only access
+
+    def get(self, request, election_id):
+        try:
+            # Fetch the election and ensure it's inactive
+            election = Elections.objects.get(election_id=election_id, is_active=False)
+
+            # Fetch all positions for the election
+            positions = ElectionPosition.objects.filter(election=election)
+            positions_data = []
+
+            for position in positions:
+                # Fetch all candidates for the position
+                candidates = CandidatePosition.objects.filter(election_position=position)
+
+                # Fetch votes and group by candidate
+                votes_count = Votes.objects.filter(election_position=position).values(
+                    'candidate__user_id'
+                ).annotate(votes=Count('vote_id'))
+
+                # Convert votes_count to a dictionary for quick lookup
+                votes_dict = {vote['candidate__user_id']: vote['votes'] for vote in votes_count}
+
+                # Total votes for the position
+                total_votes = sum(votes_dict.values())
+
+                # Prepare candidates data
+                candidates_data = []
+                for candidate in candidates:
+                    user = candidate.candidate
+                    votes = votes_dict.get(user.user_id, 0)  # Default to 0 if no votes
+                    candidates_data.append({
+                        "candidate_id": str(user.user_id),
+                        "candidate_name": f"{user.firstname} {user.lastname}",
+                        "votes": votes,
+                        "percentage": round((votes / total_votes) * 100, 2) if total_votes > 0 else 0.0,
+                        "profile_photo": request.build_absolute_uri(user.profile_photo.url)
+                        if user.profile_photo else None,
+                    })
+
+                # Sort candidates by votes (highest to lowest)
+                candidates_data.sort(key=lambda x: x['votes'], reverse=True)
+
+                positions_data.append({
+                    "position_name": position.position_name,
+                    "candidates": candidates_data,
+                })
+
+            # Fetch referendum questions and results
+            referendum_questions = ReferendumQuestion.objects.filter(election=election)
+            referendum_data = []
+            for question in referendum_questions:
+                options = ReferendumOption.objects.filter(question=question)
+                total_votes = ReferendumVote.objects.filter(question_id=question).count()
+
+                options_data = []
+                for option in options:
+                    votes = ReferendumVote.objects.filter(
+                        question_id=question, selected_option=option.option_text
+                    ).count()
+                    options_data.append({
+                        "option_id": option.id,
+                        "option_text": option.option_text,
+                        "votes": votes,
+                        "percentage": round((votes / total_votes) * 100, 2) if total_votes > 0 else 0.0,
+                    })
+
+                referendum_data.append({
+                    "question_id": question.id,
+                    "question_text": question.question_text,
+                    "options": options_data,
+                })
+
+            return Response({
+                "election_id": str(election.election_id),
+                "election_name": election.election_name,
+                "start_time": election.start_time,
+                "end_time": election.end_time,
+                "description": election.description,
+                "positions": positions_data,
+                "referendum": referendum_data,
+            }, status=status.HTTP_200_OK)
+
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found or still active."}, status=status.HTTP_404_NOT_FOUND)
+
+class ApproveElectionResultsView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]
+
+    def post(self, request, election_id):
+        try:
+            election = Elections.objects.get(election_id=election_id, is_active=False)
+            approved_options = request.data.get("approved_options", [])
+
+            if not approved_options:
+                return Response({"detail": "No options selected."}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Save or update the approval
+            ElectionApproval.objects.update_or_create(
+                election=election,
+                defaults={
+                    "approved_options": approved_options,
+                    "approved_by": request.user,
+                },
+            )
+
+            return Response({"success": True, "message": "Election results approved."}, status=status.HTTP_200_OK)
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found or still active."}, status=status.HTTP_404_NOT_FOUND)
 
 class ElectionResultView(APIView):
     permission_classes = [IsAuthenticated]  # Add any additional permission checks as required
