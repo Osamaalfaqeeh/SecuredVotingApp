@@ -496,7 +496,9 @@ class GetNonAdminUsersView(APIView):
                 'firstname': user.firstname,
                 'lastname': user.lastname,
                 'email': user.email,
-                'profile_photo': user.profile_photo.url if user.profile_photo else None  # Add profile photo if available
+                'profile_photo': request.build_absolute_uri(user.profile_photo.url)
+                                    if user.profile_photo
+                                    else None # Add profile photo if available # Add profile photo if available
             })
 
         return Response({'users': user_data}, status=status.HTTP_200_OK)
@@ -766,7 +768,9 @@ class ElectionDetailView(APIView):
                                 "candidate_id": candidate_position.candidate.user_id,
                                 "candidate_name": f"{candidate_position.candidate.firstname} {candidate_position.candidate.lastname}",
                                 "bio": candidate_position.candidate.bio if candidate_position.candidate.bio else "No bio available",
-                                "profile_photo": candidate_position.candidate.profile_photo.url if candidate_position.candidate.profile_photo else None
+                                "profile_photo": request.build_absolute_uri(candidate_position.candidate.profile_photo.url)
+                                    if candidate_position.candidate.profile_photo
+                                    else None
                             }
                             for candidate_position in CandidatePosition.objects.filter(election_position=position)
                         ]
@@ -785,7 +789,7 @@ class ElectionDetailView(APIView):
                     for question in referendum_questions
                 ],
             }
-
+            print(election_data)
             return Response(election_data, status=200)
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=404)
