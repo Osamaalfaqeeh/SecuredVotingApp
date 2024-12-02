@@ -110,7 +110,7 @@ class ElectionSerializer(serializers.ModelSerializer):
     allow_self_vote = serializers.BooleanField(default=False, write_only=True)
     class Meta:
         model = Elections
-        fields = ['election_name', 'description', 'start_time', 'end_time', 'is_active', 'icon','allow_self_vote', 'referendum_questions']
+        fields = ['election_name', 'description', 'start_time', 'end_time', 'is_active', 'icon','allow_self_vote', 'referendum_questions','positions']
 
     def validate(self, data):
         if data['start_time'] >= data['end_time']:

@@ -566,11 +566,55 @@ class EditElectionView(APIView):
         serializer = ElectionSerializer(election, data=request.data, partial=True)
         if serializer.is_valid():
             # Update election icon if a new one is provided
-            if 'icon' in request.FILES:
-                election.icon = request.FILES['icon']
+            if 'icon' in request.data:
+                election.icon = request.data['icon']
+
+            # Save basic election data
             serializer.save()
-            return Response({"detail": "Election updated successfully."}, status=status.HTTP_200_OK)
+
+
+            position_names = request.data.get('position_names', [])
+            ElectionPosition.objects.filter(election=election).delete()
+            for position_name in position_names:
+                
+                ElectionPosition.objects.create(election=election, position_name=position_name)
         
+            # Create candidates for each position
+            candidate_ids = request.data.get('candidate_ids', {})
+            for position_name, candidates in candidate_ids.items():
+                position = ElectionPosition.objects.get(election=election, position_name=position_name)
+                CandidatePosition.objects.filter(election_position=position).delete()
+                position = ElectionPosition.objects.get(election=election, position_name=position_name)
+                candidates = Users.objects.filter(user_id__in=candidates)
+                for candidate in candidates:
+                    CandidatePosition.objects.create(election_position=position, candidate=candidate)
+            
+
+            # Handle referendum questions
+            if 'referendum_questions' in request.data:
+                ReferendumQuestion.objects.filter(election=election).delete()
+                for question_data in request.data['referendum_questions']:
+                    question = ReferendumQuestion.objects.create(
+                        election=election,
+                        question_text=question_data['question_text'],
+                        is_mandatory=question_data.get('is_mandatory', True)
+                    )
+                    if 'options' in question_data:
+                        for option_data in question_data['options']:
+                            ReferendumOption.objects.create(
+                                question=question,
+                                option_text=option_data['option_text']
+                            )
+
+            # Handle eligible users
+            if 'user_ids' in request.data:
+                ElectionGroups.objects.filter(election=election).delete()
+                for user_id in request.data['user_ids']:
+                    user = Users.objects.get(user_id=user_id)
+                    ElectionGroups.objects.create(user=user, election=election)
+
+            return Response({"detail": "Election updated successfully."}, status=status.HTTP_200_OK)
+
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
@@ -806,30 +850,44 @@ class ElectionEditView(APIView):
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=status.HTTP_404_NOT_FOUND)
 
-        # Fetch the candidates for the election
-        candidates = Candidates.objects.filter(election=election)
+    # Fetch the positions for the election
+        positions = election.positions.all()
 
-        # Fetch the users who can vote in this election (based on ElectionGroups)
+        # Prepare data for positions and their candidates
+        positions_data = [
+            {
+                "position_name": position.position_name,
+                "position_id": str(position.id),
+                "description": position.description,
+                "candidates": [
+                    {
+                        "user_id": str(candidate.candidate.user_id),
+                        "candidate_name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",
+                        "candidate_email": candidate.candidate.email,
+                    }
+                    for candidate in position.candidates.all()
+                ],
+            }
+            for position in positions
+        ]
+
+        # Fetch users who can vote
         eligible_users = ElectionGroups.objects.filter(election=election)
-        
-        # Extract relevant user details for those who can vote (exclude admin users)
         users_who_can_vote = [user.user for user in eligible_users]
 
-        # Serialize the election data (optional, if you want to use a serializer)
+        # Fetch referendum questions
+        referendum_questions = ReferendumQuestion.objects.filter(election=election)
+
+        # Serialize the election data
         election_data = {
             "election_id": str(election.election_id),
             "election_name": election.election_name,
             "description": election.description,
-            "start_time": election.start_time,
-            "end_time": election.end_time,
-            "candidates": [
-                {
-                    "user_id": str(candidate.candidate.user_id),
-                    "candidate_name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",
-                    "candidate_email": candidate.candidate.email,
-                }
-                for candidate in candidates
-            ],
+            "start_time": election.start_time.isoformat(),
+            "end_time": election.end_time.isoformat(),
+            "icon": election.icon,
+            "allow_self_vote": election.allow_self_vote,
+            "positions": positions_data,
             "users_who_can_vote": [
                 {
                     "user_id": str(user.user_id),
@@ -837,7 +895,17 @@ class ElectionEditView(APIView):
                     "user_email": user.email,
                 }
                 for user in users_who_can_vote
-            ]
+            ],
+            "referendum_questions": [
+                {
+                    "question_text": question.question_text,
+                    "options": [
+                        {"option_text": option.option_text}
+                        for option in ReferendumOption.objects.filter(question=question)
+                    ],
+                }
+                for question in referendum_questions
+            ],
         }
 
         return Response({"election": election_data}, status=status.HTTP_200_OK)
@@ -1190,6 +1258,54 @@ class CheckVotingStatusView(APIView):
             pass
 
         return Response({"has_voted": False}, status=200)
+
+
+class AdminInactiveElectionsView(APIView):
+    permission_classes = [IsAuthenticated,IsAdmin]  # Add any additional permission checks as required
+
+    def get(self, request):
+        # Retrieve all inactive elections
+        elections = Elections.objects.filter(is_active=True,end_time__lt = timezone.now())
+
+        # Prepare the response data
+        elections_data = []
+        for election in elections:
+            # Get the winner by fetching the candidate with the most votes
+            winner_data = None
+            winner_votes = 0
+
+            # Fetch the candidates for the election from the Candidates model
+            candidates = Candidates.objects.filter(election=election)
+
+            if candidates.exists():
+                winner = None
+                for candidate in candidates:
+                    # Get the total votes for each candidate
+                    total_votes = Votes.objects.filter(election=election, candidate=candidate.candidate).count()
+
+                    # Determine the winner by checking the highest vote count
+                    if total_votes > winner_votes:
+                        winner_votes = total_votes
+                        winner = candidate.candidate
+
+                if winner:
+                    # Add the winner's details (name, profile photo, and number of votes)
+                    winner_data = {
+                        "name": f"{winner.firstname} {winner.lastname}",
+                        "profile_photo": winner.profile_photo.url if winner.profile_photo else None,
+                        "votes": winner_votes,
+                    }
+
+            # Prepare election details to return
+            elections_data.append({
+                "election_id": str(election.election_id),
+                "election_name": election.election_name,
+                "description": election.description,
+                "start_time": election.start_time.isoformat(),
+                "end_time": election.end_time.isoformat(),  # Ensure the time is in ISO format
+                "winner": winner_data
+            })
+        return Response({"elections": elections_data}, status=status.HTTP_200_OK)
     
 class InactiveElectionsView(APIView):
     permission_classes = [IsAuthenticated]  # Add any additional permission checks as required
@@ -1246,7 +1362,7 @@ class AdminElectionResultView(APIView):
     def get(self, request, election_id):
         try:
             # Fetch the election and ensure it's inactive
-            election = Elections.objects.get(election_id=election_id, is_active=False)
+            election = Elections.objects.get(election_id=election_id, is_active=True, end_time__lt = timezone.now())
 
             # Fetch all positions for the election
             positions = ElectionPosition.objects.filter(election=election)
@@ -1332,7 +1448,7 @@ class ApproveElectionResultsView(APIView):
 
     def post(self, request, election_id):
         try:
-            election = Elections.objects.get(election_id=election_id, is_active=False)
+            election = Elections.objects.get(election_id=election_id, is_active=True, end_time__lt = timezone.now())
             approved_options = request.data.get("approved_options", [])
 
             if not approved_options:
@@ -1346,6 +1462,8 @@ class ApproveElectionResultsView(APIView):
                     "approved_by": request.user,
                 },
             )
+            election.is_active = False
+            election.save()
 
             return Response({"success": True, "message": "Election results approved."}, status=status.HTTP_200_OK)
         except Elections.DoesNotExist:
