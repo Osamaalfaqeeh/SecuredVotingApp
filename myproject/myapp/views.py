@@ -801,6 +801,7 @@ class ElectionDetailView(APIView):
             election_data = {
                 "election_name": election.election_name,
                 "description": election.description,
+                "start_time": election.start_time,
                 "end_time": election.end_time,
                 "is_open": is_open,  # Whether voting is still open
                 "positions": [
@@ -1611,7 +1612,6 @@ class UserElectionResultView(APIView):
                 })
 
             response_data["referendum_results"] = referendum_results
-        print(response_data)
         return Response(response_data, status=status.HTTP_200_OK)
 
 class ForgotPasswordWithOTPView(APIView):

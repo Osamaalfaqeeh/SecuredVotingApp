@@ -14263,3 +14263,112 @@ WARNING 2024-12-03 23:36:55,030 log Unauthorized: /api/auth/user-election-result
 WARNING 2024-12-03 23:36:55,031 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
 INFO 2024-12-03 23:36:55,229 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
 INFO 2024-12-03 23:36:55,909 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1484
+INFO 2024-12-03 23:42:24,489 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 23:43:32,069 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-03 23:43:32,770 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-03 23:43:34,125 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-03 23:43:34,791 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-03 23:43:35,373 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-03 23:43:36,298 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-03 23:43:36,384 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-03 23:45:03,960 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-03 23:45:05,254 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-03 23:45:05,342 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-03 23:49:03,916 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-03 23:49:04,265 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-03 23:49:04,369 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-03 23:49:05,766 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-03 23:49:21,230 views Login attempt from IP: 192.168.1.21 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-03 23:49:22,161 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-03 23:49:22,278 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-03 23:49:22,559 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-03 23:49:22,748 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-03 23:49:24,240 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5139
+INFO 2024-12-03 23:49:25,450 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-03 23:49:25,503 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-03 23:49:26,295 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5139
+INFO 2024-12-03 23:49:36,747 basehttp "GET /api/auth/admin-election-result/64c9fcd7-eff2-49d9-9aa0-b79f568755fd/ HTTP/1.1" 200 905
+INFO 2024-12-03 23:49:42,312 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-03 23:50:24,580 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-03 23:50:50,804 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-03 23:51:10,635 views Admin testnumber1@std.psut.edu.jo is creating an election
+ERROR 2024-12-03 23:51:10,713 views Election creation failed: {'positions': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2024-12-03 23:51:10,716 log Bad Request: /api/auth/create-election/
+WARNING 2024-12-03 23:51:10,716 basehttp "POST /api/auth/create-election/ HTTP/1.1" 400 41
+INFO 2024-12-03 23:51:27,046 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-03 23:51:50,815 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-03 23:51:52,138 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 23:52:04,545 views Admin testnumber1@std.psut.edu.jo is creating an election
+INFO 2024-12-03 23:52:04,780 views Election Cyber Club Election 2024 (test) created successfully by admin testnumber1@std.psut.edu.jo
+INFO 2024-12-03 23:52:04,782 basehttp "POST /api/auth/create-election/ HTTP/1.1" 201 138
+INFO 2024-12-03 23:52:04,897 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-03 23:52:07,483 basehttp "GET /api/auth/election-edit/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 1415
+INFO 2024-12-03 23:52:09,913 basehttp "PUT /api/auth/edit-election/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 43
+INFO 2024-12-03 23:52:09,991 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-03 23:52:15,129 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-03 23:52:22,518 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-03 23:57:30,535 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:04:31,372 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:06:45,786 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:08:02,186 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:12:38,314 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:12:44,663 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:12:47,149 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:13:11,853 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:13:24,472 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:14:14,643 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5139
+INFO 2024-12-04 00:14:15,531 basehttp "GET /api/auth/admin-election-result/0fcaa7ba-9160-4a76-be72-d78704803566/ HTTP/1.1" 200 231
+INFO 2024-12-04 00:14:17,347 basehttp "GET /api/auth/admin-election-result/019ef876-de8d-4636-ad92-ba3a969b03a0/ HTTP/1.1" 200 736
+INFO 2024-12-04 00:16:13,776 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:16:14,763 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 758
+INFO 2024-12-04 00:17:51,035 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 00:17:52,217 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 00:20:49,474 log Unauthorized: /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/
+WARNING 2024-12-04 00:20:49,475 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 401 183
+INFO 2024-12-04 00:20:49,569 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-04 00:20:49,670 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:23:13,766 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 00:23:13,823 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-04 00:23:14,864 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-04 00:23:30,365 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-04 00:23:31,124 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 00:23:31,171 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-04 00:23:31,472 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:24:08,730 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-04 00:24:09,475 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 00:24:09,500 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-04 00:24:10,375 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:24:11,650 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-04 00:24:12,393 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 00:24:12,462 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-04 00:24:12,870 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-04 00:24:13,849 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:25:46,458 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-04 00:25:47,185 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 00:25:47,192 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-04 00:25:48,156 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:27:02,911 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-04 00:27:03,700 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:27:04,768 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-04 00:27:05,129 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:29:26,719 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:29:28,262 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:29:29,563 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:29:30,924 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:30:56,581 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:31:06,376 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-04 00:31:07,134 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:31:07,659 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 00:31:07,765 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-04 00:31:08,028 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-04 00:31:08,945 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:31:49,353 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:36:32,342 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:37:01,346 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:37:10,633 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:37:16,771 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:37:19,533 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:38:02,971 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:38:04,751 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:38:06,359 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:38:07,447 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
