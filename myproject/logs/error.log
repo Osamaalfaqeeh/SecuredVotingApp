@@ -12315,3 +12315,1951 @@ INFO 2024-12-02 19:55:00,040 basehttp "GET /api/auth/election-edit/6c7061b1-a97a
 INFO 2024-12-02 19:55:01,438 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
 INFO 2024-12-02 19:55:47,261 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
 INFO 2024-12-02 19:55:48,115 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 19:57:15,687 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:01:10,443 views Login attempt from IP: 192.168.1.21 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-02 20:01:11,131 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-02 20:01:11,151 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-02 20:01:11,848 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 98321
+INFO 2024-12-02 20:01:12,130 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 98321
+INFO 2024-12-02 20:01:13,089 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5103
+INFO 2024-12-02 20:01:15,583 basehttp "GET /api/auth/admin-election-result/1f28c3b9-eb90-460d-bb20-6b787f213fde/ HTTP/1.1" 200 224
+INFO 2024-12-02 20:01:17,593 basehttp "GET /api/auth/admin-election-result/0fcaa7ba-9160-4a76-be72-d78704803566/ HTTP/1.1" 200 231
+INFO 2024-12-02 20:01:18,972 basehttp "GET /api/auth/admin-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1203
+INFO 2024-12-02 20:01:29,409 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-02 20:01:46,700 basehttp "POST /api/auth/approve-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 55
+INFO 2024-12-02 20:01:55,032 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-02 20:01:55,087 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-02 20:01:55,976 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 4878
+INFO 2024-12-02 20:02:02,892 basehttp "GET /api/auth/admin-election-result/019ef876-de8d-4636-ad92-ba3a969b03a0/ HTTP/1.1" 200 736
+INFO 2024-12-02 20:02:05,308 basehttp "GET /api/auth/admin-election-result/0fcaa7ba-9160-4a76-be72-d78704803566/ HTTP/1.1" 200 231
+INFO 2024-12-02 20:02:07,434 basehttp "GET /api/auth/admin-election-result/1b0b021b-2eaa-4fca-a790-a4cffe304773/ HTTP/1.1" 200 960
+INFO 2024-12-02 20:02:13,350 basehttp "GET /api/auth/admin-election-result/1f28c3b9-eb90-460d-bb20-6b787f213fde/ HTTP/1.1" 200 224
+INFO 2024-12-02 20:02:14,961 basehttp "GET /api/auth/admin-election-result/1b0b021b-2eaa-4fca-a790-a4cffe304773/ HTTP/1.1" 200 960
+INFO 2024-12-02 20:02:17,511 basehttp "GET /api/auth/admin-election-result/0fcaa7ba-9160-4a76-be72-d78704803566/ HTTP/1.1" 200 231
+INFO 2024-12-02 20:02:18,902 basehttp "GET /api/auth/admin-election-result/1b0b021b-2eaa-4fca-a790-a4cffe304773/ HTTP/1.1" 200 960
+INFO 2024-12-02 20:02:22,591 basehttp "GET /api/auth/admin-election-result/01978a27-b29f-44e1-9eb0-4a26fcc813be/ HTTP/1.1" 200 252
+INFO 2024-12-02 20:02:23,918 basehttp "GET /api/auth/admin-election-result/019ef876-de8d-4636-ad92-ba3a969b03a0/ HTTP/1.1" 200 736
+INFO 2024-12-02 20:02:31,449 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-02 20:02:31,501 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-02 20:02:32,733 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-02 20:02:44,184 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-02 20:02:44,860 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-02 20:02:44,865 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-02 20:02:45,004 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 98321
+INFO 2024-12-02 20:02:46,730 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 3264
+INFO 2024-12-02 20:02:47,493 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 98321
+INFO 2024-12-02 20:02:50,540 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 3264
+INFO 2024-12-02 20:02:51,038 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 98321
+INFO 2024-12-02 20:03:24,584 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-02 20:03:24,748 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-02 20:03:26,419 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 3264
+WARNING 2024-12-02 20:03:28,402 log Forbidden: /api/auth/admin-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/
+WARNING 2024-12-02 20:03:28,402 basehttp "GET /api/auth/admin-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/ HTTP/1.1" 403 63
+INFO 2024-12-02 20:04:51,705 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 20:04:52,807 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:05:15,920 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-02 20:05:16,866 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:16:01,563 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 20:16:02,468 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:17:10,881 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-02 20:17:11,915 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-02 20:17:22,835 log Forbidden: /api/auth/admin-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/
+WARNING 2024-12-02 20:17:22,837 basehttp "GET /api/auth/admin-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/ HTTP/1.1" 403 63
+WARNING 2024-12-02 20:18:03,903 log Forbidden: /api/auth/admin-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/
+WARNING 2024-12-02 20:18:03,921 basehttp "GET /api/auth/admin-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/ HTTP/1.1" 403 63
+WARNING 2024-12-02 20:18:05,795 log Forbidden: /api/auth/admin-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:18:05,797 basehttp "GET /api/auth/admin-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 403 63
+WARNING 2024-12-02 20:20:16,642 log Not Found: /api/auth/user-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/
+WARNING 2024-12-02 20:20:16,643 basehttp "GET /api/auth/user-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:20:23,738 log Not Found: /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:20:23,738 basehttp "GET /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:20:28,500 log Not Found: /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/
+WARNING 2024-12-02 20:20:28,501 basehttp "GET /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:20:30,727 log Not Found: /api/auth/user-election-result/2d1c198c-f02f-43de-9851-f6e29ab15a8c/
+WARNING 2024-12-02 20:20:30,728 basehttp "GET /api/auth/user-election-result/2d1c198c-f02f-43de-9851-f6e29ab15a8c/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:36,044 log Not Found: /api/auth/user-election-result/310b31ea-2eca-4937-bb94-49092b11138c/
+WARNING 2024-12-02 20:21:36,045 basehttp "GET /api/auth/user-election-result/310b31ea-2eca-4937-bb94-49092b11138c/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:38,087 log Not Found: /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/
+WARNING 2024-12-02 20:21:38,091 basehttp "GET /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:39,626 log Not Found: /api/auth/user-election-result/12d04926-1e78-4812-966a-b763fba82af7/
+WARNING 2024-12-02 20:21:39,628 basehttp "GET /api/auth/user-election-result/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:40,973 log Not Found: /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:21:40,974 basehttp "GET /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:42,226 log Not Found: /api/auth/user-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/
+WARNING 2024-12-02 20:21:42,226 basehttp "GET /api/auth/user-election-result/0536629f-c7c3-4b40-8329-506cfa2629af/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:44,214 log Not Found: /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/
+WARNING 2024-12-02 20:21:44,217 basehttp "GET /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:49,871 log Not Found: /api/auth/user-election-result/8ff10761-c0e1-4aa3-aeab-4921631eef90/
+WARNING 2024-12-02 20:21:49,872 basehttp "GET /api/auth/user-election-result/8ff10761-c0e1-4aa3-aeab-4921631eef90/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:51,807 log Not Found: /api/auth/user-election-result/7ec360ac-9c3a-42ff-a7d4-a2a5b5fde193/
+WARNING 2024-12-02 20:21:51,808 basehttp "GET /api/auth/user-election-result/7ec360ac-9c3a-42ff-a7d4-a2a5b5fde193/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:53,524 log Not Found: /api/auth/user-election-result/734fc95b-c208-44b2-a57f-bcf5ed72c42c/
+WARNING 2024-12-02 20:21:53,525 basehttp "GET /api/auth/user-election-result/734fc95b-c208-44b2-a57f-bcf5ed72c42c/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:55,244 log Not Found: /api/auth/user-election-result/727dc388-feea-4682-b8e0-49fb79b6899c/
+WARNING 2024-12-02 20:21:55,245 basehttp "GET /api/auth/user-election-result/727dc388-feea-4682-b8e0-49fb79b6899c/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:56,888 log Not Found: /api/auth/user-election-result/660277b3-5813-452d-bb1e-161ef01c5e57/
+WARNING 2024-12-02 20:21:56,889 basehttp "GET /api/auth/user-election-result/660277b3-5813-452d-bb1e-161ef01c5e57/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:21:58,820 log Not Found: /api/auth/user-election-result/465d961f-5fb0-4812-9aac-0441b917f6b0/
+WARNING 2024-12-02 20:21:58,821 basehttp "GET /api/auth/user-election-result/465d961f-5fb0-4812-9aac-0441b917f6b0/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:22:00,792 log Not Found: /api/auth/user-election-result/389e0aa6-f023-4120-bc61-4c163f2d6863/
+WARNING 2024-12-02 20:22:00,793 basehttp "GET /api/auth/user-election-result/389e0aa6-f023-4120-bc61-4c163f2d6863/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:22:02,690 log Not Found: /api/auth/user-election-result/310b31ea-2eca-4937-bb94-49092b11138c/
+WARNING 2024-12-02 20:22:02,691 basehttp "GET /api/auth/user-election-result/310b31ea-2eca-4937-bb94-49092b11138c/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:22:04,523 log Not Found: /api/auth/user-election-result/2d1c198c-f02f-43de-9851-f6e29ab15a8c/
+WARNING 2024-12-02 20:22:04,524 basehttp "GET /api/auth/user-election-result/2d1c198c-f02f-43de-9851-f6e29ab15a8c/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:22:06,590 log Not Found: /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/
+WARNING 2024-12-02 20:22:06,591 basehttp "GET /api/auth/user-election-result/282ce699-10ea-4e8f-8bbf-229e32f519c9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:22:08,421 log Not Found: /api/auth/user-election-result/12d04926-1e78-4812-966a-b763fba82af7/
+WARNING 2024-12-02 20:22:08,423 basehttp "GET /api/auth/user-election-result/12d04926-1e78-4812-966a-b763fba82af7/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:22:10,375 log Not Found: /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:22:10,377 basehttp "GET /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:23:21,124 log Not Found: /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:23:21,127 basehttp "GET /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16692
+INFO 2024-12-02 20:30:40,706 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 20:30:41,662 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:30:50,567 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-02 20:30:50,635 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+ERROR 2024-12-02 20:30:51,866 log Internal Server Error: /api/auth/voting-history/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1345, in get
+    approved_election = ElectionApproval.objects.get(election=election)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp.models.ElectionApproval.DoesNotExist: ElectionApproval matching query does not exist.
+ERROR 2024-12-02 20:30:51,877 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 500 110702
+INFO 2024-12-02 20:30:53,245 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-02 20:30:53,320 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+ERROR 2024-12-02 20:30:53,930 log Internal Server Error: /api/auth/voting-history/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1345, in get
+    approved_election = ElectionApproval.objects.get(election=election)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp.models.ElectionApproval.DoesNotExist: ElectionApproval matching query does not exist.
+ERROR 2024-12-02 20:30:53,936 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 500 110702
+INFO 2024-12-02 20:31:40,583 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 20:31:41,426 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:31:51,960 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-02 20:31:52,085 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-02 20:31:52,772 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+WARNING 2024-12-02 20:31:54,510 log Not Found: /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:31:54,514 basehttp "GET /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:32:41,093 log Not Found: /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:32:41,115 basehttp "GET /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16692
+INFO 2024-12-02 20:34:28,363 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 20:34:29,168 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-02 20:34:40,032 log Not Found: /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:34:40,033 basehttp "GET /api/auth/user-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16692
+WARNING 2024-12-02 20:35:28,492 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:35:28,492 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-02 20:35:28,548 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-02 20:35:28,623 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 115
+INFO 2024-12-02 20:36:56,484 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 20:36:57,470 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:37:03,356 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 115
+INFO 2024-12-02 20:37:33,562 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 115
+INFO 2024-12-02 20:38:25,592 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 115
+WARNING 2024-12-02 20:51:06,913 log Forbidden: /api/auth/admin-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:51:06,914 basehttp "GET /api/auth/admin-election-result/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 403 63
+INFO 2024-12-02 20:51:48,795 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 115
+INFO 2024-12-02 20:52:52,127 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 20:52:53,168 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 20:53:16,342 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 185
+WARNING 2024-12-02 20:56:10,094 log Not Found: /api/auth/election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 20:56:10,097 basehttp "GET /api/auth/election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 404 16680
+INFO 2024-12-02 20:56:47,347 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 185
+INFO 2024-12-02 20:59:34,940 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 185
+INFO 2024-12-02 21:01:03,346 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 21:01:04,538 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 21:01:15,060 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+INFO 2024-12-02 21:01:17,129 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+INFO 2024-12-02 21:02:02,005 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 21:02:02,825 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 21:02:13,220 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+INFO 2024-12-02 21:02:14,628 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+INFO 2024-12-02 21:06:02,154 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 21:06:03,198 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-02 21:06:14,016 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-02 21:06:14,018 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-02 21:06:14,079 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-02 21:06:14,149 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+INFO 2024-12-02 21:06:43,762 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-02 21:06:44,801 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 21:06:51,274 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+WARNING 2024-12-03 12:28:25,770 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-03 12:28:25,772 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-03 12:28:25,935 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-03 12:28:25,998 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+INFO 2024-12-03 12:28:50,897 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 204
+INFO 2024-12-03 12:40:52,631 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 12:40:54,360 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 12:43:03,633 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 12:44:56,117 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 12:44:58,708 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 12:46:00,349 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 12:53:27,648 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 13:18:28,445 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:18:29,500 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-03 13:18:40,692 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-03 13:18:40,693 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-03 13:18:40,732 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-03 13:18:40,813 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 13:20:20,626 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:20:21,877 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 13:20:37,590 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 13:25:37,534 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1520
+INFO 2024-12-03 13:28:07,863 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:28:08,746 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 13:28:19,981 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:29:19,577 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:36:21,040 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:36:35,415 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:36:58,036 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:37:58,677 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:37:59,748 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 13:38:06,527 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:38:22,582 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:40:23,256 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:45:38,102 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:45:39,319 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 13:48:15,594 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+WARNING 2024-12-03 13:49:53,095 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-03 13:49:53,096 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-03 13:49:53,155 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-03 13:49:53,241 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:50:54,629 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:53:30,394 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:54:37,919 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:54:58,968 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:56:03,262 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 13:57:24,998 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:57:25,992 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 13:57:55,992 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:57:56,942 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 13:58:07,685 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:58:08,502 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 13:58:34,569 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 13:58:35,657 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 13:58:47,046 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1542, in get
+    candidates_data.sort(key=lambda x: x["votes"], reverse=True)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1542, in <lambda>
+    candidates_data.sort(key=lambda x: x["votes"], reverse=True)
+                                       ~^^^^^^^^^
+KeyError: 'votes'
+ERROR 2024-12-03 13:58:47,052 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 110042
+ERROR 2024-12-03 13:58:49,507 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1542, in get
+    candidates_data.sort(key=lambda x: x["votes"], reverse=True)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1542, in <lambda>
+    candidates_data.sort(key=lambda x: x["votes"], reverse=True)
+                                       ~^^^^^^^^^
+KeyError: 'votes'
+ERROR 2024-12-03 13:58:49,511 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 110042
+INFO 2024-12-03 14:00:05,978 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:00:06,906 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:00:17,634 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1542, in get
+    candidates_data.sort(key=lambda x: x[candidate_votes], reverse=True)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1542, in <lambda>
+    candidates_data.sort(key=lambda x: x[candidate_votes], reverse=True)
+                                       ~^^^^^^^^^^^^^^^^^
+KeyError: 1
+ERROR 2024-12-03 14:00:17,641 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 110134
+INFO 2024-12-03 14:00:28,392 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:00:29,274 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:00:39,521 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1547, in get
+    top_candidate = max(candidates_data, key=lambda x: x["votes"], default=None)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1547, in <lambda>
+    top_candidate = max(candidates_data, key=lambda x: x["votes"], default=None)
+                                                       ~^^^^^^^^^
+KeyError: 'votes'
+ERROR 2024-12-03 14:00:39,527 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 109611
+INFO 2024-12-03 14:00:54,506 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:00:55,553 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:01:05,597 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1041
+INFO 2024-12-03 14:01:20,929 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:01:21,823 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:01:41,807 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1542, in get
+    candidates_data.sort(key=lambda candidate_votes: candidate_votes, reverse=True)
+TypeError: '<' not supported between instances of 'dict' and 'dict'
+ERROR 2024-12-03 14:01:41,813 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106304
+INFO 2024-12-03 14:10:07,161 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:10:08,326 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:10:15,542 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:10:16,363 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:10:30,887 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:10:30,916 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181849
+INFO 2024-12-03 14:13:41,898 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:13:42,864 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:13:53,632 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:13:53,646 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181849
+INFO 2024-12-03 14:15:55,205 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:15:56,081 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:16:06,183 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:16:06,210 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181849
+INFO 2024-12-03 14:16:46,293 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:16:47,142 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:16:57,683 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:16:57,707 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181849
+INFO 2024-12-03 14:18:24,713 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:18:25,845 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:18:31,714 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:18:31,786 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181849
+INFO 2024-12-03 14:19:17,003 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:19:17,772 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:19:23,915 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:19:25,289 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:19:37,091 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:19:37,146 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181849
+INFO 2024-12-03 14:24:03,066 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:24:03,854 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:24:09,157 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:24:09,866 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:24:26,950 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:24:27,707 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:24:42,986 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:24:43,702 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-03 14:24:53,844 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-03 14:24:53,846 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-03 14:24:53,894 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+ERROR 2024-12-03 14:24:54,030 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:24:54,047 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181844
+INFO 2024-12-03 14:25:09,032 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:25:09,892 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:25:20,635 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 166
+INFO 2024-12-03 14:25:29,960 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:25:30,726 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:26:31,073 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:26:31,990 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:26:42,273 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:26:42,297 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181844
+INFO 2024-12-03 14:27:08,261 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:27:09,033 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:27:25,050 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:27:25,072 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181844
+INFO 2024-12-03 14:27:53,280 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:27:54,209 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:28:04,500 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2761, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\uuid.py", line 175, in __init__
+    hex = hex.replace('urn:', '').replace('uuid:', '')
+          ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'replace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2745, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\__init__.py", line 2763, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["“{'candidate_id': '579fba90-600d-4b7b-b0c2-f65dd63d9fcd', 'candidate_name': 'Ahmed test2222', 'profile_photo': None}” is not a valid UUID."]
+ERROR 2024-12-03 14:28:04,518 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 181850
+INFO 2024-12-03 14:28:22,904 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:28:23,902 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:28:33,995 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate.user_id, election_position=position).count()
+                                                                        ^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'user_id'
+ERROR 2024-12-03 14:28:34,001 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106611
+INFO 2024-12-03 14:28:49,565 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:28:50,527 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:29:00,565 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate.candidate_id, election_position=position).count()
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'candidate_id'
+ERROR 2024-12-03 14:29:00,593 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106661
+INFO 2024-12-03 14:29:19,745 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:29:20,664 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:29:28,117 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1548, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate.candidate.user_id, election_position=position).count()
+                                                                        ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'candidate'
+ERROR 2024-12-03 14:29:28,126 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106647
+INFO 2024-12-03 14:29:38,985 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:29:39,846 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:29:50,122 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1549, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate.candidate.user_id, election_position=position).count()
+                                                                        ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'candidate'
+ERROR 2024-12-03 14:29:50,131 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106619
+INFO 2024-12-03 14:30:12,071 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:30:12,913 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:30:27,533 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1549, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate=candidate['candidate_id'], election_position=position).count()
+                                                                        ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:30:27,538 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106204
+INFO 2024-12-03 14:35:15,070 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:35:16,057 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:35:27,597 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1549, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate_id=candidate["candidate_id"], election_position=position).count()
+                                                                           ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:35:27,602 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106216
+INFO 2024-12-03 14:35:41,648 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:35:42,467 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:35:55,595 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1549, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate_id=uuid(candidate["candidate_id"]), election_position=position).count()
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+ERROR 2024-12-03 14:35:55,602 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106517
+INFO 2024-12-03 14:36:11,733 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:36:12,626 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:36:23,722 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1549, in get
+    candidate_votes = Votes.objects.filter(election=election, candidate_id=(candidate["candidate_id"]).uuid, election_position=position).count()
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'uuid'
+ERROR 2024-12-03 14:36:23,744 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106651
+INFO 2024-12-03 14:38:01,195 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:38:02,217 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:38:12,473 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1573, in get
+    top_candidate = max(candidates_data, key=lambda candidate_votes: candidate_votes, default=None)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'dict' and 'dict'
+ERROR 2024-12-03 14:38:12,481 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106481
+INFO 2024-12-03 14:39:01,643 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:39:02,592 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:39:08,290 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1185
+INFO 2024-12-03 14:39:36,617 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:39:37,501 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:39:40,189 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:39:41,034 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:39:51,052 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1555, in get
+    temp_candidate.append({
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+ERROR 2024-12-03 14:39:51,059 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106932
+INFO 2024-12-03 14:40:24,325 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:40:25,278 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:40:36,670 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1555, in get
+    candidate.append({
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'append'
+ERROR 2024-12-03 14:40:36,678 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 106912
+INFO 2024-12-03 14:41:00,626 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:41:01,642 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:41:12,551 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1564, in get
+    top_candidates = [{"candidate_id": candidate["candidate_id"],  # Access candidate_id as a string, not an object
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:41:12,558 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107603
+INFO 2024-12-03 14:42:39,685 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:42:40,521 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:42:51,078 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1564, in get
+    top_candidates = [{"candidate_id": candidate["candidate_id"],  # Access candidate_id as a string, not an object
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:42:51,085 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107603
+INFO 2024-12-03 14:43:22,333 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:43:23,109 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:43:29,085 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1565, in get
+    top_candidates = [{"candidate_id": candidate["candidate_id"],  # Access candidate_id as a string, not an object
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:43:29,094 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107636
+ERROR 2024-12-03 14:43:30,656 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1565, in get
+    top_candidates = [{"candidate_id": candidate["candidate_id"],  # Access candidate_id as a string, not an object
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:43:30,664 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107636
+INFO 2024-12-03 14:44:48,923 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:44:50,063 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:45:03,094 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:45:03,956 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:45:33,689 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:45:34,529 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:45:40,132 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1568, in get
+    top_candidates = [{"candidate_id": candidate["candidate_id"],  # Access candidate_id as a string, not an object
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:45:40,138 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107669
+INFO 2024-12-03 14:46:07,808 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:46:08,756 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:46:19,980 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1567, in get
+    print(candidate['candidate_id'])
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:46:19,986 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107552
+INFO 2024-12-03 14:46:38,761 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:46:39,711 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:46:49,882 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1567, in get
+    print(candidate.candidate_id)
+          ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'candidate_id'
+ERROR 2024-12-03 14:46:49,891 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107982
+INFO 2024-12-03 14:47:53,418 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:47:54,305 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:48:04,433 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1568, in get
+    top_candidates = [{"candidate_id": candidate["candidate_id"],  # Access candidate_id as a string, not an object
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'candidate_id'
+ERROR 2024-12-03 14:48:04,439 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 107669
+INFO 2024-12-03 14:49:04,971 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:49:05,974 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:49:16,445 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1530, in get
+    candidates_data[
+TypeError: list indices must be integers or slices, not str
+ERROR 2024-12-03 14:49:16,450 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 104061
+INFO 2024-12-03 14:52:02,184 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:52:02,989 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:52:20,278 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:52:21,035 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-03 14:52:34,366 log Internal Server Error: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1578, in get
+    top_candidate = max(candidates_data, key=lambda candidate_votes: candidate_votes, default=None)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'dict' and 'dict'
+ERROR 2024-12-03 14:52:34,374 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 500 108790
+INFO 2024-12-03 14:54:44,586 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:54:45,617 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:57:36,481 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:57:37,321 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-03 14:57:45,067 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-03 14:57:45,068 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-03 14:57:45,106 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-03 14:57:45,216 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 14:58:42,394 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 14:58:43,442 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 14:58:54,016 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:02:39,607 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:03:19,483 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:04:23,611 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:04:24,463 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:04:40,170 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:05:36,288 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:05:37,223 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:05:43,068 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:06:11,898 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:06:13,095 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:06:24,148 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:07:13,660 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:07:14,646 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:07:21,098 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:09:17,380 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:10:56,965 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:11:41,316 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:11:42,170 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:11:48,618 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1340
+INFO 2024-12-03 15:14:38,374 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:14:39,342 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:14:47,601 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1336
+INFO 2024-12-03 15:15:03,759 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:15:04,547 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:15:07,752 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:15:08,628 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:15:15,818 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1336
+INFO 2024-12-03 15:17:03,318 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:17:04,771 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:17:07,606 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:17:08,354 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:17:18,817 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1336
+INFO 2024-12-03 15:20:22,534 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:20:23,470 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:22:43,921 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:22:44,987 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:22:57,689 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1336
+INFO 2024-12-03 15:25:39,619 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:25:40,504 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:25:50,635 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 15:34:20,142 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:34:20,929 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:34:27,570 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:34:28,425 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-03 15:34:38,847 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-03 15:34:38,861 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-03 15:34:38,911 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-03 15:34:39,035 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 961
+INFO 2024-12-03 15:35:40,479 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 961
+INFO 2024-12-03 15:35:53,316 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:35:54,048 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:36:04,640 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 961
+INFO 2024-12-03 15:41:37,389 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:41:38,242 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:41:44,061 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 965
+INFO 2024-12-03 15:43:06,679 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:43:07,617 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:43:18,189 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1544
+INFO 2024-12-03 15:43:45,359 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 15:43:46,278 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 15:43:56,706 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1484
+INFO 2024-12-03 23:32:55,782 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 23:33:00,903 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 23:33:05,194 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 23:33:06,589 autoreload Watching for file changes with StatReloader
+INFO 2024-12-03 23:33:16,204 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-03 23:33:17,400 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-03 23:36:55,030 log Unauthorized: /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/
+WARNING 2024-12-03 23:36:55,031 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 401 183
+INFO 2024-12-03 23:36:55,229 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-03 23:36:55,909 basehttp "GET /api/auth/user-election-results/0a5273cf-dc9f-4c92-b9b9-5f84a43654f9/ HTTP/1.1" 200 1484

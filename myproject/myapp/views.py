@@ -1313,7 +1313,7 @@ class InactiveElectionsView(APIView):
     def get(self, request):
         # Retrieve all inactive elections
         elections = Elections.objects.filter(is_active=False)
-
+        
         # Prepare the response data
         elections_data = []
         for election in elections:
@@ -1342,16 +1342,19 @@ class InactiveElectionsView(APIView):
                         "profile_photo": winner.profile_photo.url if winner.profile_photo else None,
                         "votes": winner_votes,
                     }
-
-            # Prepare election details to return
-            elections_data.append({
-                "election_id": str(election.election_id),
-                "election_name": election.election_name,
-                "description": election.description,
-                "start_time": election.start_time.isoformat(),
-                "end_time": election.end_time.isoformat(),  # Ensure the time is in ISO format
-                "winner": winner_data
-            })
+            try:
+                approved_election = ElectionApproval.objects.get(election=election)
+                # Prepare election details to return
+                elections_data.append({
+                    "election_id": str(election.election_id),
+                    "election_name": election.election_name,
+                    "description": election.description,
+                    "start_time": election.start_time.isoformat(),
+                    "end_time": election.end_time.isoformat(),  # Ensure the time is in ISO format
+                    "winner": winner_data
+                })
+            except:
+                continue
 
         return Response({"elections": elections_data}, status=status.HTTP_200_OK)
 
@@ -1469,8 +1472,8 @@ class ApproveElectionResultsView(APIView):
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found or still active."}, status=status.HTTP_404_NOT_FOUND)
 
-class ElectionResultView(APIView):
-    permission_classes = [IsAuthenticated]  # Add any additional permission checks as required
+class UserElectionResultView(APIView):
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, election_id):
         try:
@@ -1479,50 +1482,137 @@ class ElectionResultView(APIView):
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found or active."}, status=status.HTTP_404_NOT_FOUND)
 
-        # Fetch candidates for the election
-        candidates = Candidates.objects.filter(election=election)
+        # Fetch admin-approved options
+        try:
+            approval = ElectionApproval.objects.get(election=election)
+            approved_options = approval.approved_options
+        except ElectionApproval.DoesNotExist:
+            return Response({"detail": "Results not yet approved by admin."}, status=status.HTTP_403_FORBIDDEN)
 
-        # Initialize winner data
-        winner_data = None
-        winner_votes = 0
-
-        # Prepare a list to store candidate details
-        candidates_data = []
-
-        for candidate in candidates:
-            # Get the total votes for each candidate
-            total_votes = Votes.objects.filter(election=election, candidate=candidate.candidate).count()
-
-            # Determine the winner by checking the highest vote count
-            if total_votes > winner_votes:
-                winner_votes = total_votes
-                winner_data = {
-                    "name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",
-                    "profile_photo": candidate.candidate.profile_photo.url if candidate.candidate.profile_photo else None,
-                    "votes": winner_votes
-                }
-
-            # Add candidate details
-            candidates_data.append({
-                "candidate_id": str(candidate.candidate.user_id),
-                "candidate_name": f"{candidate.candidate.firstname} {candidate.candidate.lastname}",
-                "candidate_email": candidate.candidate.email,
-                "profile_photo": candidate.candidate.profile_photo.url if candidate.candidate.profile_photo else None,
-                "votes": total_votes
-            })
-
-        # Prepare the election data to return
-        election_data = {
-            "election_id": str(election.election_id),
+        # Initialize response data
+        response_data = {
             "election_name": election.election_name,
             "description": election.description,
-            "start_time": election.start_time.isoformat(),
-            "end_time": election.end_time.isoformat(),
-            "candidates": candidates_data,
-            "winner": winner_data
+            "start_time": election.start_time,
+            "end_time": election.end_time,
+            "is_approved": True
         }
 
-        return Response({"election": election_data}, status=status.HTTP_200_OK)
+        # Process approved options for positions and candidates
+        if "All Candidates" in approved_options or "Top 3 Candidates" in approved_options or "Voting Percentage" in approved_options or "Winner Candidate" in approved_options:
+            positions_data = []
+            positions = ElectionPosition.objects.filter(election=election)
+
+            for position in positions:
+                candidates_data = []
+                candidates = CandidatePosition.objects.filter(election_position=position)
+
+                total_position_votes = Votes.objects.filter(election=election, election_position=position).count()
+
+                for candidate_position in candidates:
+                    candidate_dict = {}
+                    candidate = candidate_position.candidate
+                    candidate_votes = Votes.objects.filter(election=election, candidate=candidate, election_position=position).count()
+                    voting_percentage = (candidate_votes / total_position_votes) * 100 if total_position_votes > 0 else 0
+
+                    candidate_dict = {
+                        "candidate_id": str(candidate.user_id),
+                        "candidate_name": f"{candidate.firstname} {candidate.lastname}",
+                        "profile_photo": request.build_absolute_uri(candidate.profile_photo.url)
+                                    if candidate.profile_photo
+                                    else None,
+                    }
+                    
+                    
+                    if "Number of Voters" in approved_options:
+                        candidate_dict["votes"] =  candidate_votes
+                    
+                    if "Voting Percentage" in approved_options:
+                        candidate_dict["voting_percentage"] =  round(voting_percentage, 2)
+                    
+                    candidates_data.append(candidate_dict)
+
+                position_data = {
+                    "position_name": position.position_name,
+                    "description": position.description,
+                    "candidates": candidates_data
+                }
+
+                # Include only top 3 candidates if option is approved
+                winnerCandidate = ''
+                if "Top 3 Candidates" in approved_options:
+                    candidates_data_with_votes = []
+    
+                    for candidate in candidates_data:
+                        # Recalculate the votes for each candidate if "Number of Voters" is not approved
+                        # print(candidate)
+                        candidate_votes = candidate.get('votes', None)
+                        candidate_id = candidate.get("candidate_id")
+                        if candidate_votes is None:  # Recalculate votes if not available
+                            candidate_votes = Votes.objects.filter(election=election, candidate_id=candidate_id, election_position=position).count()
+                        
+                        # Add the votes temporarily for sorting purposes, but not in the final response
+                        # candidate['votes'] = candidate_votes
+                        temp_candidate = candidate.copy()
+                        temp_candidate[
+                        "votes"] =  candidate_votes
+                    
+                        candidates_data_with_votes.append(temp_candidate)
+
+                    # Now sort by votes and take top 3 (excluding vote count from the response)
+                    candidates_data_with_votes.sort(key=lambda temp_candidate: temp_candidate.get('votes', 0), reverse=True)
+                    
+                    top_candidates = []
+                    for temp_candidate1 in candidates_data_with_votes[:3]:
+                        candidate_id = temp_candidate1["candidate_id"]
+                        
+                        # Find the candidate in the original data (without votes)
+                        original_candidate_data = next(candidate for candidate in candidates_data if candidate["candidate_id"] == candidate_id)
+                        top_candidates.append(original_candidate_data)
+                    winnerCandidate = candidates_data_with_votes[0]
+
+
+                    position_data["candidates"] = top_candidates  # Limit to top 3 candidates
+
+                # Include winner candidate if option is approved
+                if "Winner Candidate" in approved_options:
+                    top_candidate =  winnerCandidate
+                    position_data["winner"] = top_candidate
+
+                positions_data.append(position_data)
+
+            response_data["positions"] = positions_data
+
+        # Add number of voters if approved
+        if "Number of Voters" in approved_options:
+            voter_count = Votes.objects.filter(election=election).count()
+            response_data["voter_count"] = voter_count
+
+        # Add anonymous referendum results if approved
+        if "Anonymous Referendum Results" in approved_options:
+            referendum_results = []
+            referenda_questions = ReferendumQuestion.objects.filter(election=election)
+
+            for question in referenda_questions:
+                options = ReferendumOption.objects.filter(question=question)
+                option_results = []
+
+                for option in options:
+                    vote_count = ReferendumVote.objects.filter(question_id=question, selected_option=option.option_text).count()
+                    option_results.append({
+                        "option": option.option_text,
+                        "votes": vote_count
+                    })
+
+                referendum_results.append({
+                    "question_id": question.id,
+                    "question_text": question.question_text,
+                    "results": option_results
+                })
+
+            response_data["referendum_results"] = referendum_results
+        print(response_data)
+        return Response(response_data, status=status.HTTP_200_OK)
 
 class ForgotPasswordWithOTPView(APIView):
     permission_classes = []

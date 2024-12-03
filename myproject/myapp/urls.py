@@ -3,7 +3,7 @@ from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, 
       UnverifiedPageView, ResendVerificationEmailView, Verify2FACodeView, CreateElectionView, EditElectionView, CreateGroupView, AllowGroupToVoteView, SearchUsersByName,\
       UpdateProfilePictureView, ListGroupsView, ListUsersInGroupView, EditPhoneNumberView, ChangePasswordView, UpdateAboutView, ProfileView, ElectionDetailView, CheckEligibilityView,\
       CastVoteView, AddCandidatesToElectionView, ElectionWinnerView, ActiveElectionsView, GetNonAdminUsersView, ElectionEditView, DeleteElectionView, CheckVotingStatusView,\
-      InactiveElectionsView, ElectionResultView, Toggle2FAView, ToggleBiometricAuthView, ForgotPasswordWithOTPView, VerifyOTPView, ResetPasswordView, RequestAdminAccessView,\
+      InactiveElectionsView, UserElectionResultView, Toggle2FAView, ToggleBiometricAuthView, ForgotPasswordWithOTPView, VerifyOTPView, ResetPasswordView, RequestAdminAccessView,\
       ApproveAdminAccessView, approve_success, SubmitReferendumView, EditPersonalInformationView, AdminElectionResultView, ApproveElectionResultsView, AdminInactiveElectionsView
 
 urlpatterns = [
@@ -56,7 +56,7 @@ urlpatterns = [
     path('election-winner/<election_id>/', ElectionWinnerView.as_view(), name='election_winner'),
     path('admin-voting-history/',AdminInactiveElectionsView.as_view(), name='admin-voting_history'),
     path('voting-history/',InactiveElectionsView.as_view(), name='voting_history'),
-    path('election-results/<election_id>/',ElectionResultView.as_view(), name='election_results'),
+    path('user-election-results/<election_id>/',UserElectionResultView.as_view(), name='user_election_results'),
     path('admin-election-result/<election_id>/', AdminElectionResultView.as_view(), name='admin_election_result'),
     path('approve-election-results/<election_id>/', ApproveElectionResultsView.as_view(), name='approve_election_results'),
     # User search endpoint
