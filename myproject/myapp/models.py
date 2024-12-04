@@ -28,6 +28,12 @@ class Candidates(models.Model):
         db_table = 'candidates'
         unique_together = (('candidate', 'election'),)
 
+class WithdrawalToken(models.Model):
+    candidate = models.ForeignKey('Users', on_delete=models.CASCADE)
+    election = models.ForeignKey('Elections', on_delete=models.CASCADE)
+    token = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    requested_at = models.DateTimeField(auto_now_add=True)
+
 
 class Departments(models.Model):
     department_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

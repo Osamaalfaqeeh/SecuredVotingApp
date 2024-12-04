@@ -14372,3 +14372,692 @@ INFO 2024-12-04 00:38:02,971 basehttp "GET /api/auth/active-elections/ HTTP/1.1"
 INFO 2024-12-04 00:38:04,751 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
 INFO 2024-12-04 00:38:06,359 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
 INFO 2024-12-04 00:38:07,447 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 00:39:45,622 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:40:31,823 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:46:22,949 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:46:50,228 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:47:26,126 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:49:22,145 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 794
+INFO 2024-12-04 00:53:39,765 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 00:53:41,691 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 00:53:57,585 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 00:54:26,782 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 00:54:58,652 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 01:51:27,829 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-04 01:51:29,919 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:52:05,775 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 01:52:06,889 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 01:54:46,499 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 01:54:47,761 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:07:14,747 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:07:15,829 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:09:42,319 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:09:43,380 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:10:07,137 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:10:08,140 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:10:41,680 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:10:42,746 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:10:56,769 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:10:57,633 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:11:16,867 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:11:17,971 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:18:21,516 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:18:22,379 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:22:09,731 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:22:11,462 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:22:25,682 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:22:26,451 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:26:50,089 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:26:51,024 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:27:13,023 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:27:13,933 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:33:17,637 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:33:18,635 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:34:32,756 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:34:33,617 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:37:02,995 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-04 02:37:04,075 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:37:39,972 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-04 02:37:41,050 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:39:16,476 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-04 02:39:17,832 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 02:39:58,227 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-04 02:39:58,228 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-04 02:39:58,390 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-04 02:39:58,585 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 02:40:02,342 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+WARNING 2024-12-04 02:46:08,868 log Not Found: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+WARNING 2024-12-04 02:46:08,868 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 404 17284
+INFO 2024-12-04 02:46:52,545 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:46:56,752 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-04 02:46:57,559 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:47:08,214 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1821, in post
+    is_candidate = CandidatePosition.objects.filter(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 70, in get_prep_lookup
+    self.rhs = [get_normalized_value(val, self.lhs)[0] for val in self.rhs]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'ElectionPosition' object is not iterable
+ERROR 2024-12-04 02:47:08,268 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 158304
+INFO 2024-12-04 02:47:44,825 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:47:45,739 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:47:57,306 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1834, in post
+    election=candidate.election,
+             ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'election'
+ERROR 2024-12-04 02:47:57,313 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 101305
+INFO 2024-12-04 02:48:24,754 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:48:25,598 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:48:32,875 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1832, in post
+    token = WithdrawalToken.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 287, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'1acacd16-9d54-4126-92ff-21bb09de4332'": "WithdrawalToken.election" must be a "Elections" instance.
+ERROR 2024-12-04 02:48:32,884 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 120947
+INFO 2024-12-04 02:49:30,635 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:49:31,410 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:49:42,650 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1832, in post
+    token = WithdrawalToken.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 287, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'1acacd16-9d54-4126-92ff-21bb09de4332'": "WithdrawalToken.election" must be a "Elections" instance.
+ERROR 2024-12-04 02:49:42,659 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 121177
+INFO 2024-12-04 02:50:33,548 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:50:34,370 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:50:40,545 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1838, in post
+    approval_url = reverse('handle-withdrawal', kwargs={'token': token.token})
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'handle-withdrawal' not found. 'handle-withdrawal' is not a valid view function or pattern name.
+ERROR 2024-12-04 02:50:40,591 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 112798
+INFO 2024-12-04 02:51:55,285 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-04 02:51:56,200 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:52:07,461 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1839, in post
+    full_approval_url = f"{settings.BASE_URL}{approval_url}"
+                           ^^^^^^^^^^^^^^^^^
+AttributeError: module 'myproject.settings' has no attribute 'BASE_URL'. Did you mean: 'BASE_DIR'?
+ERROR 2024-12-04 02:52:07,471 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 102244
+INFO 2024-12-04 02:54:43,933 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:54:44,738 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:54:56,616 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1842, in post
+    admin_email = candidate.election.created_by.email
+                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'election'
+ERROR 2024-12-04 02:54:56,643 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 102569
+INFO 2024-12-04 02:55:19,696 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:55:21,395 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:55:33,065 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1846, in post
+    {'user': request.user, 'election_name': candidate.election.election_name, 'approval_link': full_approval_url}
+                                            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'election'
+ERROR 2024-12-04 02:55:33,074 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 102946
+INFO 2024-12-04 02:55:51,457 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:55:52,288 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:56:04,420 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1844, in post
+    email_message= render_to_string(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: withdrawal_request_template.html
+ERROR 2024-12-04 02:56:04,427 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 114109
+INFO 2024-12-04 02:56:28,861 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:56:29,760 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 02:57:04,271 log Internal Server Error: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1850, in post
+    subject=f"Withdrawal Request for {candidate.election.election_name}",
+                                      ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'election'
+ERROR 2024-12-04 02:57:04,286 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 500 104487
+INFO 2024-12-04 02:58:40,021 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 02:58:41,347 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 02:59:08,101 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 69
+INFO 2024-12-04 02:59:09,657 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 69
+INFO 2024-12-04 02:59:42,703 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 03:01:08,602 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 03:01:09,452 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 03:01:33,418 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 69
+INFO 2024-12-04 03:02:28,182 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 03:02:29,433 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 03:02:52,715 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 69
+ERROR 2024-12-04 03:03:10,300 log Internal Server Error: /api/auth/handle-withdrawal/b77f9106-5411-4498-a32b-b4e40a992981/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1881, in HandleWithdrawalRequest
+    return render(request, "invalid_action.html")  # Invalid action page
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: invalid_action.html
+ERROR 2024-12-04 03:03:10,340 basehttp "GET /api/auth/handle-withdrawal/b77f9106-5411-4498-a32b-b4e40a992981/ HTTP/1.1" 500 89973
+WARNING 2024-12-04 03:03:10,465 log Not Found: /favicon.ico
+WARNING 2024-12-04 03:03:10,466 basehttp "GET /favicon.ico HTTP/1.1" 404 2535
+INFO 2024-12-04 03:03:33,043 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:03:33,739 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 03:05:06,326 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 03:05:07,465 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 03:05:20,101 log Internal Server Error: /api/auth/handle-withdrawal/b77f9106-5411-4498-a32b-b4e40a992981/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1894, in HandleWithdrawalRequest
+    return render(request, "withdrawal_processed.html", {"action": action})
+                                                                   ^^^^^^
+NameError: name 'action' is not defined
+ERROR 2024-12-04 03:05:20,106 basehttp "GET /api/auth/handle-withdrawal/b77f9106-5411-4498-a32b-b4e40a992981/ HTTP/1.1" 500 73065
+INFO 2024-12-04 03:07:45,732 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 03:07:46,825 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 03:07:59,797 log Internal Server Error: /api/auth/handle-withdrawal/b77f9106-5411-4498-a32b-b4e40a992981/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1864, in HandleWithdrawalRequest
+    withdrawal_token = WithdrawalToken.objects.get(token=token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp.models.WithdrawalToken.DoesNotExist: WithdrawalToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1873, in HandleWithdrawalRequest
+    return render(request, "withdrawal_not_found.html")  # Token not found page
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: withdrawal_not_found.html
+ERROR 2024-12-04 03:07:59,807 basehttp "GET /api/auth/handle-withdrawal/b77f9106-5411-4498-a32b-b4e40a992981/ HTTP/1.1" 500 103307
+WARNING 2024-12-04 03:11:57,049 log Unauthorized: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+WARNING 2024-12-04 03:11:57,069 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 401 183
+INFO 2024-12-04 03:11:57,152 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-04 03:11:57,246 log Not Found: /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/
+WARNING 2024-12-04 03:11:57,251 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 404 55
+INFO 2024-12-04 03:12:03,746 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:12:04,672 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 616
+INFO 2024-12-04 03:12:43,842 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:12:43,929 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-04 03:12:46,114 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-04 03:12:59,638 views Login attempt from IP: 192.168.1.21 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-04 03:13:00,356 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 03:13:00,376 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-04 03:13:00,628 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:13:00,941 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:13:01,925 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 616
+INFO 2024-12-04 03:13:04,198 basehttp "GET /api/auth/election-edit/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 1284
+INFO 2024-12-04 03:13:06,242 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-04 03:13:10,395 basehttp "PUT /api/auth/edit-election/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 43
+INFO 2024-12-04 03:13:10,435 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:13:11,633 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:13:11,698 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-04 03:13:12,592 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-04 03:13:34,490 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-04 03:13:35,374 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 03:13:35,422 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-04 03:13:35,618 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:13:36,943 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 03:13:52,256 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 69
+ERROR 2024-12-04 03:14:12,266 log Internal Server Error: /api/auth/handle-withdrawal/0f2fac1f-1b89-4931-a7f1-522aa64ff139/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1894, in HandleWithdrawalRequest
+    return render(request, "withdrawal_processed.html", {"action": 'approve'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: withdrawal_processed.html
+ERROR 2024-12-04 03:14:12,289 basehttp "GET /api/auth/handle-withdrawal/0f2fac1f-1b89-4931-a7f1-522aa64ff139/ HTTP/1.1" 500 89176
+WARNING 2024-12-04 03:14:12,427 log Not Found: /favicon.ico
+INFO 2024-12-04 03:14:12,428 basehttp - Broken pipe from ('192.168.1.21', 53287)
+INFO 2024-12-04 03:14:36,501 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 03:14:37,826 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 03:14:51,144 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-04 03:14:51,692 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:14:52,544 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 616
+INFO 2024-12-04 03:14:54,841 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:14:54,967 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+WARNING 2024-12-04 03:14:55,647 log Unauthorized: /api/auth/logout/
+WARNING 2024-12-04 03:14:55,648 basehttp "POST /api/auth/logout/ HTTP/1.1" 401 39
+INFO 2024-12-04 03:14:55,649 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-04 03:15:14,873 views Login attempt from IP: 192.168.1.21 for user: Testnumber1@std.psut.edu.jo
+INFO 2024-12-04 03:15:15,661 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 03:15:15,678 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-04 03:15:15,948 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:15:16,050 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:15:19,200 basehttp "GET /api/auth/election-edit/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 1284
+INFO 2024-12-04 03:15:20,264 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-04 03:15:23,433 basehttp "PUT /api/auth/edit-election/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 43
+INFO 2024-12-04 03:15:23,475 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:15:25,213 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:15:25,271 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-04 03:15:25,846 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-04 03:15:37,609 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-04 03:15:38,307 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 03:15:38,341 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-04 03:15:38,548 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:15:40,338 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 03:15:49,474 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 69
+ERROR 2024-12-04 03:16:03,942 log Internal Server Error: /api/auth/handle-withdrawal/0fe33a35-d739-472c-a734-0468a508b8d3/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1894, in HandleWithdrawalRequest
+    return render(request, "candidate_withdraw/withdrawal_processed.html", {"action": 'approve'})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 49: 'if'. Looking for one of: endif.
+ERROR 2024-12-04 03:16:03,966 basehttp "GET /api/auth/handle-withdrawal/0fe33a35-d739-472c-a734-0468a508b8d3/ HTTP/1.1" 500 157616
+INFO 2024-12-04 03:16:28,076 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 03:16:29,310 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 03:16:40,551 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 240
+INFO 2024-12-04 03:16:41,024 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:16:41,075 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-04 03:16:41,776 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-04 03:16:56,190 views Login attempt from IP: 192.168.1.21 for user: testnumber1@dts.psut.edu.jo
+ERROR 2024-12-04 03:16:56,221 views Invalid login attempt for testnumber1@dts.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-04 03:16:56,222 log Bad Request: /api/auth/login/
+WARNING 2024-12-04 03:16:56,222 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-04 03:17:10,205 views Login attempt from IP: 192.168.1.21 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-04 03:17:10,943 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 03:17:10,972 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-04 03:17:11,133 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:17:11,338 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:17:12,910 basehttp "GET /api/auth/election-edit/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 1284
+INFO 2024-12-04 03:17:13,898 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-04 03:17:18,572 basehttp "PUT /api/auth/edit-election/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 43
+INFO 2024-12-04 03:17:18,625 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:17:23,106 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:17:23,161 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-04 03:17:27,740 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:17:28,193 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:17:28,269 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-04 03:17:28,739 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-04 03:17:42,098 views Login attempt from IP: 192.168.1.21 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-04 03:17:42,830 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.21
+INFO 2024-12-04 03:17:42,835 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-04 03:17:43,009 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:17:45,676 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 843
+INFO 2024-12-04 03:17:55,723 basehttp "POST /api/auth/request-withdraw/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 69
+INFO 2024-12-04 03:18:04,431 basehttp "GET /api/auth/handle-withdrawal/44776d25-54b6-40c0-a6c2-afc012531ee7/ HTTP/1.1" 200 1355
+INFO 2024-12-04 03:18:12,536 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:18:13,259 basehttp "GET /api/auth/election-detail/1acacd16-9d54-4126-92ff-21bb09de4332/ HTTP/1.1" 200 616
+INFO 2024-12-04 03:18:18,157 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:18:18,210 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-04 03:18:21,770 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:18:22,799 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-04 03:18:22,854 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-04 03:18:23,402 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 318
+INFO 2024-12-04 03:18:41,213 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-04 03:18:42,228 autoreload Watching for file changes with StatReloader

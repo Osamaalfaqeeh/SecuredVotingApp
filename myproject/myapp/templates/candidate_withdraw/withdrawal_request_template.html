@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style="background-color: #c2c2c2; padding: 15px;">
+        <h2 style="margin: 0; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px; background-color: #5865F2; color: #ffffff;">Withdrawal Request</h2>
+        <div style="margin: 0; padding: 15px; background-color: #ffffff;">
+            <p>Hi admin,</p>
+            <p>User with name {{ user.firstname }} {{ user.lastname }} and email: {{ user.email }} has requested to withdraw from the election <strong>{{ election_name }}</strong>.</p>
+            <p>To approve or reject the withdrawal, click the button below:</p>
+            <p style="margin-top: 20px;">
+            <a href="{{ approval_link }}" style="border: 0; color: #ffffff; background-color: #5865F2; padding: 15px; font-weight: bold; text-decoration: none; border-radius: 5px;">
+                Approve Withdrawal Request
+            </a>
+            </p>
+            <p>The UniVote Team</p>
+        </div>
+    </div>
+</body>
+</html>

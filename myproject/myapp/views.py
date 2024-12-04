@@ -7,7 +7,7 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote, ElectionApproval
+VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote, ElectionApproval, WithdrawalToken
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -804,6 +804,7 @@ class ElectionDetailView(APIView):
                 "start_time": election.start_time,
                 "end_time": election.end_time,
                 "is_open": is_open,  # Whether voting is still open
+                "user_id": request.user.user_id,
                 "positions": [
                     {
                         "id": position.id,
@@ -1805,3 +1806,78 @@ def ApproveAdminAccessView(request, token):
 
 def approve_success(request):
     return render(request, 'admin/success.html') 
+
+
+class RequestWithdrawalView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, election_id):
+        try:
+            # Ensure the candidate exists in the election
+            # candidate = Candidates.objects.get(candidate=request.user, election_id=election_id)
+            candidate = request.user
+            election_positions = ElectionPosition.objects.get(election = election_id)
+            
+            is_candidate = CandidatePosition.objects.filter(
+            candidate=request.user,
+            election_position=election_positions).exists()
+            election = Elections.objects.get(election_id = election_id)
+            if not is_candidate:
+                return Response({"detail": "You are not a candidate for this election."}, status=404)
+
+        except Candidates.DoesNotExist:
+            return Response({"detail": "You are not a candidate for this election."}, status=404)
+
+        # Create a token for withdrawal request
+        token = WithdrawalToken.objects.create(
+            candidate=request.user,
+            election=election,
+        )
+
+        # Generate the URL for admin approval
+        approval_url = reverse('handle-withdrawal', kwargs={'token': token.token})
+        domain = get_current_site(request).domain
+        full_approval_url = f"{f'http://{domain}'}{approval_url}"
+        # Send an email to the admin about the withdrawal request
+        admin_email = election.created_by.email
+
+        email_message= render_to_string(
+                'candidate_withdraw/withdrawal_request_template.html',  # Path to your HTML template
+                {'user': request.user, 'election_name': election.election_name, 'approval_link': full_approval_url}
+            )
+        
+        send_mail(
+            subject=f"Withdrawal Request for {candidate.firstname}",
+            message= email_message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[admin_email],
+            html_message=email_message,
+            fail_silently=False,
+        )
+        
+        return Response({"detail": "Withdrawal request submitted. Admin approval is pending."}, status=200)
+    
+
+def HandleWithdrawalRequest(request, token):
+    try:
+        # Find the withdrawal token
+        withdrawal_token = WithdrawalToken.objects.get(token=token)
+        
+        # Check if the token is expired
+        if withdrawal_token.requested_at < timezone.now() - timedelta(hours=24):
+            withdrawal_token.delete()
+            return render(request, "withdrawal_expired.html")  # Render an expired page
+        
+        election = withdrawal_token.election
+    except WithdrawalToken.DoesNotExist:
+        return render(request, "withdrawal_not_found.html")  # Token not found page
+
+    Candidates.objects.filter(candidate=withdrawal_token.candidate, election=withdrawal_token.election).delete()
+    election_pos = ElectionPosition.objects.filter(election=election)
+    CandidatePosition.objects.filter(candidate=withdrawal_token.candidate, election_position__in=election_pos).delete()
+
+    # Mark the token as used (approved/rejected)
+    withdrawal_token.delete()
+
+    # Redirect to a confirmation page
+    return render(request, "candidate_withdraw/withdrawal_processed.html", {"action": 'approve'})

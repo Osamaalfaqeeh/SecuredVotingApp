@@ -4,7 +4,8 @@ from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, 
       UpdateProfilePictureView, ListGroupsView, ListUsersInGroupView, EditPhoneNumberView, ChangePasswordView, UpdateAboutView, ProfileView, ElectionDetailView, CheckEligibilityView,\
       CastVoteView, AddCandidatesToElectionView, ElectionWinnerView, ActiveElectionsView, GetNonAdminUsersView, ElectionEditView, DeleteElectionView, CheckVotingStatusView,\
       InactiveElectionsView, UserElectionResultView, Toggle2FAView, ToggleBiometricAuthView, ForgotPasswordWithOTPView, VerifyOTPView, ResetPasswordView, RequestAdminAccessView,\
-      ApproveAdminAccessView, approve_success, SubmitReferendumView, EditPersonalInformationView, AdminElectionResultView, ApproveElectionResultsView, AdminInactiveElectionsView
+      ApproveAdminAccessView, approve_success, SubmitReferendumView, EditPersonalInformationView, AdminElectionResultView, ApproveElectionResultsView, AdminInactiveElectionsView,\
+      RequestWithdrawalView, HandleWithdrawalRequest
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
@@ -40,7 +41,6 @@ urlpatterns = [
     path('allow-group-to-vote/<election_id>/', AllowGroupToVoteView.as_view(), name='allow_group_to_vote'),
     path('add-candidate-to-election',AddCandidatesToElectionView.as_view(), name='add_candidate_to_election'),
 
-
     path('profile/phone-number/', EditPhoneNumberView.as_view(), name='edit_phone_number'),
     path('profile/change-password/', ChangePasswordView.as_view(), name='change_password'),
     path('profile/about/', UpdateAboutView.as_view(), name='update_about'),
@@ -59,6 +59,9 @@ urlpatterns = [
     path('user-election-results/<election_id>/',UserElectionResultView.as_view(), name='user_election_results'),
     path('admin-election-result/<election_id>/', AdminElectionResultView.as_view(), name='admin_election_result'),
     path('approve-election-results/<election_id>/', ApproveElectionResultsView.as_view(), name='approve_election_results'),
+    path('request-withdraw/<election_id>/', RequestWithdrawalView.as_view(), name='request_withdraw'),
+    path('handle-withdrawal/<token>/', HandleWithdrawalRequest, name='handle-withdrawal'),
+    
     # User search endpoint
     path('search-users/', SearchUsersByName.as_view(), name='search_users'),
 
