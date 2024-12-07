@@ -151,6 +151,7 @@ class Users(models.Model):
     is_verified = models.BooleanField(default=False)
     last_login = models.DateTimeField(null=True, blank=True)
     is_2fa_enabled = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
 
     @staticmethod
     def get_email_field_name():

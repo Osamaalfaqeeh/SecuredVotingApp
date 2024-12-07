@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework_api_key',
     # 'rest_framework_simplejwt.token_blacklist',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +124,11 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
 }
+
+# Celery settings
+CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Use Redis as the broker
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
 
 # Email Settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

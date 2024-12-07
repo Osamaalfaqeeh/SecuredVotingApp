@@ -72,6 +72,12 @@ class LoginView(APIView):
                     "resend_verification": True  # Flag for allowing resend of verification email
                 }, status=status.HTTP_200_OK)
             
+            if not user.is_active:
+                return Response({
+                    "error": "Your account is inactive. Please reset your password to continue.",
+                    "reset_password_required": True  # Indicates that the user needs to reset their password
+                }, status=status.HTTP_400_BAD_REQUEST)
+            
             if user.is_2fa_enabled:
                 send_2fa_code(user)
                 return Response({
@@ -92,7 +98,8 @@ class LoginView(APIView):
 
             refresh_token = validated_data['refresh']
             access_token = validated_data['access']
-
+            user.last_login = timezone.now()
+            user.save()
             # Set token expiration (e.g., 7 days for refresh token)
             expires_at = timezone.now() + timedelta(days=7)
             biometric_authenticated = request.data.get('biometric_authenticated', False)
@@ -335,7 +342,8 @@ class Verify2FACodeView(APIView):
 
             cache.delete(f"2fa_code_{user_id}")  # Remove the code after successful verification
             # Generate and return tokens or other authentication data as needed
-
+            user.last_login = timezone.now()
+            user.save()
             Authentication.objects.create(
                 user=user,
                 auth_type='2FA',

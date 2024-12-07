@@ -16151,3 +16151,150 @@ INFO 2024-12-07 18:58:39,323 basehttp "GET /api/auth/active-elections/ HTTP/1.1"
 INFO 2024-12-07 18:58:40,820 basehttp "GET /api/auth/election-detail/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1719
 INFO 2024-12-07 18:58:43,877 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
 INFO 2024-12-07 18:59:01,715 basehttp "POST /api/auth/cast-vote/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 201 36
+INFO 2024-12-07 19:00:44,927 autoreload Watching for file changes with StatReloader
+INFO 2024-12-07 19:03:22,085 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:03:24,557 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-07 19:03:24,617 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-07 19:03:24,969 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-07 19:03:28,197 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-07 19:03:28,709 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:04:43,644 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-07 19:04:44,172 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:04:45,069 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-07 19:04:45,914 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:04:48,985 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-07 19:04:49,367 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:04:50,787 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-07 19:04:52,487 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:05:13,802 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:07:51,679 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-07 19:07:52,399 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+WARNING 2024-12-07 19:17:17,117 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-07 19:17:17,118 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-07 19:17:17,182 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-07 19:17:17,303 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:17:20,873 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-07 19:17:20,952 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-07 19:17:21,301 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-07 19:17:22,676 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:17:26,539 basehttp "GET /api/auth/election-detail/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1719
+INFO 2024-12-07 19:17:29,058 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-07 19:17:29,107 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-07 19:17:30,156 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-07 19:17:48,147 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-07 19:17:48,881 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-07 19:17:48,897 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-07 19:17:49,186 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:17:49,208 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 19:17:51,959 basehttp "GET /api/auth/election-detail/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1719
+INFO 2024-12-07 19:17:55,798 basehttp "GET /api/auth/election-edit/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 2305
+INFO 2024-12-07 19:17:58,979 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 19:21:22,115 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 19:42:43,297 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 19:42:47,080 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+WARNING 2024-12-07 19:55:21,600 log Unauthorized: /api/auth/get-users/
+WARNING 2024-12-07 19:55:21,601 basehttp "GET /api/auth/get-users/ HTTP/1.1" 401 183
+INFO 2024-12-07 19:55:21,665 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-07 19:55:21,731 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 19:58:36,599 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:02:30,205 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:02:37,282 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:04:28,816 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:15:19,502 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:18:13,512 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:18:59,363 basehttp "GET /api/auth/election-detail/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1719
+INFO 2024-12-07 20:19:03,592 basehttp "GET /api/auth/election-edit/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 2305
+INFO 2024-12-07 20:19:07,697 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:19:18,684 basehttp "PUT /api/auth/edit-election/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 43
+INFO 2024-12-07 20:19:18,784 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 20:19:20,165 basehttp "GET /api/auth/election-detail/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1130
+INFO 2024-12-07 20:19:59,136 basehttp "GET /api/auth/election-edit/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1717
+WARNING 2024-12-07 20:29:40,312 log Unauthorized: /api/auth/get-users/
+WARNING 2024-12-07 20:29:40,313 basehttp "GET /api/auth/get-users/ HTTP/1.1" 401 183
+INFO 2024-12-07 20:29:40,367 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-07 20:29:40,427 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-07 20:29:40,794 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-07 20:29:53,030 basehttp "GET /api/auth/election-edit/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1717
+INFO 2024-12-07 20:31:29,511 basehttp "GET /api/auth/election-edit/e78f3ba0-1a8a-402e-bd1e-8ceb394f1e7f/ HTTP/1.1" 200 1717
+WARNING 2024-12-07 23:32:17,362 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-07 23:32:17,364 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+WARNING 2024-12-07 23:32:17,617 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-07 23:32:17,617 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-07 23:32:17,733 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-07 23:32:17,736 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-07 23:32:17,855 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 23:32:17,874 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 23:32:25,636 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 23:32:25,858 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 23:42:27,274 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-07 23:42:30,660 autoreload Watching for file changes with StatReloader
+INFO 2024-12-07 23:46:48,384 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-07 23:46:49,364 autoreload Watching for file changes with StatReloader
+INFO 2024-12-07 23:52:10,805 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-07 23:52:11,138 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+WARNING 2024-12-08 00:31:03,288 log Unauthorized: /api/auth/admin-voting-history/
+WARNING 2024-12-08 00:31:03,300 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 401 183
+INFO 2024-12-08 00:31:03,433 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-08 00:31:03,719 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5218
+INFO 2024-12-08 00:31:04,657 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-08 00:36:10,036 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5218
+INFO 2024-12-08 00:36:10,885 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-08 00:45:38,176 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-08 00:45:39,739 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 01:45:08,504 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 01:49:54,665 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-08 01:49:56,039 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 01:50:48,129 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 01:55:25,156 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 01:57:42,452 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-08 01:57:43,951 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 02:01:08,777 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+WARNING 2024-12-08 02:01:08,841 log Unauthorized: /api/auth/profile/
+WARNING 2024-12-08 02:01:08,842 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 183
+INFO 2024-12-08 02:01:08,906 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-08 02:01:08,940 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-08 02:01:08,979 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-08 02:01:10,398 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-08 02:01:29,885 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-08 02:01:30,638 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-08 02:01:30,661 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-08 02:01:31,133 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-08 02:01:31,251 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 275
+INFO 2024-12-08 02:18:31,434 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\celery.py changed, reloading.
+INFO 2024-12-08 02:18:32,873 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 02:19:04,968 tasks Task started
+INFO 2024-12-08 02:19:05,023 tasks Task completed
+INFO 2024-12-08 02:23:57,097 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\celery.py changed, reloading.
+INFO 2024-12-08 02:23:58,424 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 02:25:29,725 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 02:36:33,686 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-08 02:36:35,252 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 02:40:09,425 tasks Task started
+INFO 2024-12-08 02:40:09,454 tasks Task completed
+INFO 2024-12-08 02:40:38,112 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+WARNING 2024-12-08 02:40:38,159 log Unauthorized: /api/auth/profile/
+WARNING 2024-12-08 02:40:38,160 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 183
+INFO 2024-12-08 02:40:38,253 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-08 02:40:38,280 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-08 02:40:38,338 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-08 02:40:39,010 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-08 02:40:53,549 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-08 02:40:54,182 log Bad Request: /api/auth/login/
+WARNING 2024-12-08 02:40:54,182 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-08 02:42:38,973 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-08 02:42:39,686 log Bad Request: /api/auth/login/
+WARNING 2024-12-08 02:42:39,687 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-08 02:44:04,005 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-08 02:44:04,673 log Bad Request: /api/auth/login/
+WARNING 2024-12-08 02:44:04,674 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-08 02:45:55,611 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-08 02:45:56,240 log Bad Request: /api/auth/login/
+WARNING 2024-12-08 02:45:56,240 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-08 02:46:30,486 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-08 02:46:31,124 log Bad Request: /api/auth/login/
+WARNING 2024-12-08 02:46:31,125 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-08 02:46:51,165 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-08 02:46:51,805 log Bad Request: /api/auth/login/
+WARNING 2024-12-08 02:46:51,806 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-08 02:57:57,899 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-08 02:58:00,025 autoreload Watching for file changes with StatReloader
