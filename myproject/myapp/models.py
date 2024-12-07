@@ -31,6 +31,7 @@ class Candidates(models.Model):
 class WithdrawalToken(models.Model):
     candidate = models.ForeignKey('Users', on_delete=models.CASCADE)
     election = models.ForeignKey('Elections', on_delete=models.CASCADE)
+    position_name = models.ForeignKey('ElectionPosition', on_delete=models.CASCADE, default=None)
     token = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     requested_at = models.DateTimeField(auto_now_add=True)
 

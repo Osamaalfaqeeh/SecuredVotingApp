@@ -1816,7 +1816,8 @@ class RequestWithdrawalView(APIView):
             # Ensure the candidate exists in the election
             # candidate = Candidates.objects.get(candidate=request.user, election_id=election_id)
             candidate = request.user
-            election_positions = ElectionPosition.objects.get(election = election_id)
+            position_name = request.data.get('position_name')
+            election_positions = ElectionPosition.objects.get(election = election_id, position_name = position_name)
             
             is_candidate = CandidatePosition.objects.filter(
             candidate=request.user,
@@ -1832,6 +1833,7 @@ class RequestWithdrawalView(APIView):
         token = WithdrawalToken.objects.create(
             candidate=request.user,
             election=election,
+            position_name = election_positions,
         )
 
         # Generate the URL for admin approval
@@ -1871,9 +1873,9 @@ def HandleWithdrawalRequest(request, token):
         election = withdrawal_token.election
     except WithdrawalToken.DoesNotExist:
         return render(request, "withdrawal_not_found.html")  # Token not found page
-
+    
     Candidates.objects.filter(candidate=withdrawal_token.candidate, election=withdrawal_token.election).delete()
-    election_pos = ElectionPosition.objects.filter(election=election)
+    election_pos = ElectionPosition.objects.filter(election=election, position_name = withdrawal_token.position_name.position_name)
     CandidatePosition.objects.filter(candidate=withdrawal_token.candidate, election_position__in=election_pos).delete()
 
     # Mark the token as used (approved/rejected)
