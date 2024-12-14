@@ -152,6 +152,7 @@ class Users(models.Model):
     last_login = models.DateTimeField(null=True, blank=True)
     is_2fa_enabled = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
+    deleted = models.BooleanField(default=False)
 
     @staticmethod
     def get_email_field_name():

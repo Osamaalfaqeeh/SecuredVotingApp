@@ -21,8 +21,12 @@ class RegisterSerializer(serializers.Serializer):
         except serializers.ValidationError:
             raise serializers.ValidationError("Invalid email format.")
         
-        if Users.objects.filter(email=value).exists():
-            raise serializers.ValidationError("A user with this email already exists.")
+        existing_user = Users.objects.filter(email=value).first()
+        if existing_user:
+            if existing_user.deleted:
+                self.context['existing_user'] = existing_user  # Pass the user to the create method
+            else:
+                raise serializers.ValidationError("A user with this email already exists.")
 
         # Extract the domain and check if it belongs to any known institution
         domain = value.split('@')[-1]
@@ -43,6 +47,20 @@ class RegisterSerializer(serializers.Serializer):
         email = validated_data['email']
         # role = 'student' if email.startswith("std.") else 'instructor'
         role = Roles.objects.get(role_name = 'user')
+
+        existing_user = self.context.get('existing_user')
+        if existing_user:
+            # Update the existing user's data
+            existing_user.password_hash = make_password(validated_data['password'])
+            existing_user.firstname = validated_data['firstname']
+            existing_user.lastname = validated_data['lastname']
+            existing_user.phone_number = validated_data.get('phone_number')
+            existing_user.institution = self.institution
+            existing_user.deleted = False  # Reactivate the user
+            existing_user.is_active = True
+            existing_user.save()
+            return existing_user
+
         # Create user with the specified data and institution
         user = Users.objects.create(
             email=email,
@@ -76,7 +94,7 @@ class LoginSerializer(serializers.Serializer):
         password = data.get("password")
 
         try:
-            user = Users.objects.get(email=email)
+            user = Users.objects.get(email=email, deleted = False)
         except Users.DoesNotExist:
             raise serializers.ValidationError("Invalid email or password.")
 

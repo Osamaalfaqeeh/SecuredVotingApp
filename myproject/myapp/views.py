@@ -743,6 +743,23 @@ class EditPersonalInformationView(APIView):
         })
 
 
+class DeleteAccountView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        confirmation = request.data.get('confirmation')
+        if confirmation.lower() == 'delete':
+            user = request.user
+            user.deleted = True
+            user.is_active = False
+            user.is_verified = False
+            user.is_2fa_enabled = False
+            user.biometric_enabled = False
+            user.save()
+            return Response({'success': True, 'message': 'Account deleted successfully.'})
+        return Response({'success': False, 'message': 'Invalid confirmation.'})
+
+
 class UpdateProfilePictureView(APIView):
     permission_classes = [IsAuthenticated]  # Ensure only authenticated users can update their profile picture
 

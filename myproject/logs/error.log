@@ -16298,3 +16298,608 @@ WARNING 2024-12-08 02:46:51,805 log Bad Request: /api/auth/login/
 WARNING 2024-12-08 02:46:51,806 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
 INFO 2024-12-08 02:57:57,899 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
 INFO 2024-12-08 02:58:00,025 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 03:00:00,056 tasks Task started
+INFO 2024-12-08 03:00:00,084 tasks Task completed
+INFO 2024-12-08 03:00:01,801 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 03:00:00,123 tasks Task started
+INFO 2024-12-09 03:00:00,280 tasks Task completed
+INFO 2024-12-10 03:00:00,415 tasks Task started
+INFO 2024-12-10 03:00:00,632 tasks Task completed
+INFO 2024-12-11 03:00:00,302 tasks Task started
+INFO 2024-12-11 03:00:00,868 tasks Task completed
+INFO 2024-12-12 03:00:02,069 tasks Task started
+INFO 2024-12-12 03:00:03,509 tasks Task completed
+INFO 2024-12-13 03:00:00,896 tasks Task started
+INFO 2024-12-13 03:00:01,736 tasks Task completed
+INFO 2024-12-14 03:00:00,660 tasks Task started
+INFO 2024-12-14 03:00:01,046 tasks Task completed
+INFO 2024-12-14 15:02:15,858 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 16:27:00,712 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-14 16:27:02,621 log Bad Request: /api/auth/login/
+WARNING 2024-12-14 16:27:02,622 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-14 16:27:33,262 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:27:34,005 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:27:34,220 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:27:35,216 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:27:35,216 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:27:36,536 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:27:36,670 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-14 16:27:37,888 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 16:27:39,118 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:27:39,255 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-14 16:27:39,903 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 16:27:41,210 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:27:41,272 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-14 16:27:45,771 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 59
+INFO 2024-12-14 16:28:14,624 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 60
+INFO 2024-12-14 16:28:25,929 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 59
+INFO 2024-12-14 16:28:29,887 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:30:50,436 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:30:51,181 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:30:51,200 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:30:51,647 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:30:51,672 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:33:00,365 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:33:00,450 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:33:01,381 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:33:14,901 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:33:15,591 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:33:15,669 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:33:16,021 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:33:16,052 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:33:17,511 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:33:17,588 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:33:21,899 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:35:08,207 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:35:09,000 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:35:09,015 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:35:09,857 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:35:10,001 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:35:11,441 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:35:11,527 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:35:12,600 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:37:43,768 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:37:44,481 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:37:44,496 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:37:44,843 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:37:44,873 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:37:46,245 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 16:37:47,054 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:37:47,115 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:37:50,271 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 60
+INFO 2024-12-14 16:37:52,870 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:49:32,447 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+ERROR 2024-12-14 16:49:33,363 views Invalid login attempt for testnumber1@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-14 16:49:33,371 log Bad Request: /api/auth/login/
+WARNING 2024-12-14 16:49:33,372 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-14 16:49:43,230 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:49:43,928 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:49:43,968 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:49:44,416 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:49:44,422 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:49:45,596 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:49:45,654 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-14 16:49:53,273 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 59
+INFO 2024-12-14 16:49:55,352 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:50:01,221 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:50:01,941 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:50:01,964 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:50:02,210 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:50:02,227 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:50:03,256 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:50:03,302 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:50:05,999 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:50:12,589 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:50:13,293 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:50:13,303 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:50:13,608 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:50:13,640 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:50:14,702 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:50:14,748 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:50:44,665 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:50:44,901 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:50:45,867 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:50:45,925 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:50:47,941 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:55:43,600 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:55:44,295 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:55:44,349 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:55:44,972 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:55:45,161 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:55:45,943 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:55:46,025 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 16:55:46,761 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 16:55:57,590 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 16:55:58,263 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 16:55:58,272 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 16:55:58,969 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:55:59,139 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 16:56:00,107 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 16:56:00,179 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 17:00:10,135 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 17:00:11,160 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 17:00:11,221 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 17:00:15,739 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 17:00:16,994 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 17:00:17,035 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+WARNING 2024-12-14 20:11:55,020 log Unauthorized: /api/auth/admin-voting-history/
+WARNING 2024-12-14 20:11:55,053 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 401 183
+INFO 2024-12-14 20:11:55,662 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-14 20:11:55,912 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 20:11:56,931 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:11:56,981 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:11:58,989 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:12:02,218 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:12:02,919 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:12:02,957 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:12:03,225 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:12:03,239 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:12:04,300 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:12:04,334 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:12:05,090 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:14:10,897 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+WARNING 2024-12-14 20:14:11,622 log Bad Request: /api/auth/login/
+WARNING 2024-12-14 20:14:11,622 basehttp "POST /api/auth/login/ HTTP/1.1" 400 108
+INFO 2024-12-14 20:14:32,770 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:14:33,502 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:14:33,521 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:14:33,723 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:14:34,952 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:14:35,100 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:14:35,401 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-14 20:14:36,221 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:14:39,351 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:14:40,069 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:14:40,077 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:14:40,244 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:14:41,548 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:14:41,589 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:14:51,202 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:14:52,243 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-14 20:14:52,859 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:14:52,926 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:14:59,084 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:15:01,716 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:15:02,430 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:15:02,439 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:15:02,649 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:15:03,577 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:15:03,618 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:15:04,336 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-14 20:15:05,126 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:15:05,211 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:37:48,387 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:38:46,742 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:38:47,749 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:38:47,846 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:38:48,569 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:38:50,361 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:38:50,462 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:38:50,714 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-14 20:38:51,880 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:38:55,959 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:38:56,675 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:38:56,685 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:38:57,048 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:38:57,884 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:38:57,976 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:38:58,867 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:39:33,845 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:39:34,762 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:39:34,809 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:39:35,121 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:39:35,263 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:39:36,154 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:39:36,210 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:39:45,141 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 60
+INFO 2024-12-14 20:39:45,934 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 59
+INFO 2024-12-14 20:39:46,797 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 60
+INFO 2024-12-14 20:39:47,909 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:40:21,307 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+ERROR 2024-12-14 20:40:22,071 views Invalid login attempt for testnumber1@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-14 20:40:22,078 log Bad Request: /api/auth/login/
+WARNING 2024-12-14 20:40:22,078 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-14 20:40:37,415 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:40:38,143 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:40:38,175 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:40:38,529 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:40:38,555 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:40:39,824 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:40:39,903 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-14 20:40:41,082 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 59
+INFO 2024-12-14 20:40:45,470 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:40:49,953 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:40:50,713 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:40:50,727 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:40:51,136 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:40:51,145 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:40:51,987 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:40:52,034 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:40:52,897 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:41:07,637 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:41:08,641 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:41:08,798 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:41:09,161 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:41:10,275 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-14 20:41:11,731 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:41:11,777 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:41:11,878 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-14 20:41:13,651 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:41:19,909 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:41:20,625 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:41:20,675 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:41:20,942 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:41:23,228 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:41:23,275 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:41:55,902 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:46:32,176 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:46:32,877 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:46:32,915 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:46:33,438 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:46:33,488 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:46:34,414 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:46:34,494 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:46:35,645 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 60
+INFO 2024-12-14 20:46:36,487 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:47:00,137 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:47:00,837 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:47:00,856 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:47:01,233 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:47:01,238 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:47:02,082 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:47:02,134 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-14 20:47:03,161 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 59
+INFO 2024-12-14 20:47:05,092 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:47:09,208 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:47:09,906 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:47:09,928 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:47:10,172 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:47:10,177 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:47:11,543 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 20:47:12,038 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:47:12,151 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:47:13,008 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:47:27,221 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 20:47:27,922 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:47:27,937 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 20:47:28,215 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:47:29,397 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-14 20:47:30,314 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:47:30,357 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 20:47:35,516 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:47:59,355 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:48:00,079 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:48:00,101 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:48:00,433 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:48:00,455 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:48:01,404 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:48:01,454 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:48:03,324 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 20:48:09,424 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-14 20:48:10,147 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 20:48:10,155 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-14 20:48:10,457 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:48:10,474 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:48:12,305 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 20:48:12,387 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 20:50:14,466 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 20:50:14,715 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:07:10,721 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:07:10,757 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:08:06,835 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:08:06,973 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:08:10,702 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:15:02,062 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 21:18:12,308 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+WARNING 2024-12-14 21:18:12,605 log Unauthorized: /api/auth/profile/
+WARNING 2024-12-14 21:18:12,607 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 183
+INFO 2024-12-14 21:18:12,755 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-14 21:18:12,827 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:18:12,899 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:21:35,078 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:21:35,097 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:21:35,717 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:21:35,754 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:22:29,182 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:22:29,186 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:22:29,937 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:22:30,022 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:22:36,203 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:26:15,138 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:26:15,146 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:26:15,776 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:26:15,860 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:31:09,614 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:31:09,620 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:31:11,738 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:31:11,780 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:31:39,170 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:31:39,170 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:31:39,941 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:31:40,004 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:32:07,639 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:32:07,651 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:32:08,533 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:32:08,607 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:35:01,831 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:35:01,854 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:35:02,424 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:35:02,492 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:39:30,238 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:39:30,238 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:39:30,653 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:39:30,724 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:40:12,278 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:40:12,278 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:40:12,667 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:40:12,719 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:40:32,927 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:40:32,963 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:40:33,418 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:40:33,482 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:40:50,160 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:40:50,161 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:40:50,663 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:40:50,705 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:41:47,593 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:41:47,615 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:41:48,214 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:41:48,300 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:42:47,242 basehttp "GET /api/auth/profile/phone-number/ HTTP/1.1" 200 32
+WARNING 2024-12-14 21:48:29,628 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-14 21:48:29,629 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+WARNING 2024-12-14 21:48:29,632 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-14 21:48:29,640 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-14 21:48:29,695 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-14 21:48:29,777 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-14 21:48:29,800 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:48:29,850 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:48:30,495 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:48:30,549 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:48:33,924 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 21:48:34,794 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:48:34,856 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:48:59,078 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:48:59,082 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:48:59,594 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:48:59,655 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:49:34,829 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:49:34,847 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:49:36,382 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:49:36,438 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:49:51,630 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:49:51,676 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:49:52,259 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:49:52,316 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:57:01,218 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 21:57:02,370 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:57:02,431 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:59:25,248 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:59:25,440 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:59:39,651 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:59:39,706 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 21:59:53,111 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:59:53,153 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 21:59:54,423 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 21:59:54,488 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 22:05:05,088 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:05:05,097 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:05:13,991 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:05:14,105 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 22:09:13,443 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:09:13,684 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:09:16,168 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:09:16,235 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 22:10:15,675 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-14 22:10:23,483 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:11:12,515 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:13:07,803 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-14 22:13:09,341 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:13:20,404 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-14 22:13:21,948 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:16:02,900 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-14 22:16:04,366 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:17:02,686 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-14 22:17:04,206 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-14 22:21:55,429 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-14 22:21:55,430 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-14 22:21:55,430 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+WARNING 2024-12-14 22:21:55,434 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-14 22:21:55,521 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-14 22:21:55,535 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-14 22:21:55,841 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:21:55,841 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:21:56,102 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:21:56,152 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 22:22:45,193 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:22:45,198 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:22:45,848 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:22:45,936 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 22:26:31,940 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-14 22:26:33,547 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:28:20,602 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-14 22:28:22,172 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:29:12,753 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5443
+INFO 2024-12-14 22:29:13,927 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:29:13,967 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-14 22:29:17,431 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-14 22:29:33,381 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-14 22:29:34,195 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-14 22:29:34,271 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-14 22:29:34,644 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:29:35,694 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:29:35,802 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:29:36,112 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-14 22:37:54,451 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-14 22:37:56,679 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:37:58,904 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-14 22:38:00,310 autoreload Watching for file changes with StatReloader
+INFO 2024-12-14 22:40:57,896 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-14 22:40:58,758 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:40:58,832 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:41:28,027 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:41:29,016 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:41:29,100 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:43:02,661 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:43:03,755 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:43:03,826 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:45:19,708 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:45:20,791 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:45:20,873 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:45:21,307 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-14 22:46:34,998 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:46:35,571 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:46:35,622 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:46:52,647 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:46:53,329 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:46:53,398 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:47:07,818 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:47:08,748 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:47:08,825 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:47:24,707 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:47:25,224 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:47:25,353 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:48:41,990 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-14 22:48:42,655 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-14 22:48:42,724 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-14 22:49:43,286 basehttp "POST /api/auth/delete-account/ HTTP/1.1" 200 58
+WARNING 2024-12-14 22:49:43,716 log Unauthorized: /api/auth/logout/
+WARNING 2024-12-14 22:49:43,716 basehttp "POST /api/auth/logout/ HTTP/1.1" 401 58
+INFO 2024-12-14 22:59:56,644 autoreload Watching for file changes with StatReloader
+INFO 2024-12-15 00:59:14,367 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+ERROR 2024-12-15 00:59:14,554 views Invalid login attempt for testnumber2@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-15 00:59:14,555 log Bad Request: /api/auth/login/
+WARNING 2024-12-15 00:59:14,579 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-15 01:00:18,569 basehttp "POST /api/auth/register/ HTTP/1.1" 201 60
+INFO 2024-12-15 01:01:33,610 basehttp "GET /api/auth/activate/ZDA2ZjQ3N2QtZWRiNS00OTE0LWExMTctNTI4N2FiMDkwNTdh/eyJ1c2VyX2lkIjoiZDA2ZjQ3N2QtZWRiNS00OTE0LWExMTctNTI4N2FiMDkwNTdhIiwidGltZXN0YW1wIjoxNzM0MjEzNjEwfQ:1tMaBG:_nnl_2lxxtz7uLpRfspenmm-kG1MXFIEGRX6R5TtpRo/ HTTP/1.1" 302 0
+INFO 2024-12-15 01:01:33,650 basehttp "GET /api/auth/activation-success/ HTTP/1.1" 200 245
+WARNING 2024-12-15 01:01:33,829 log Not Found: /favicon.ico
+WARNING 2024-12-15 01:01:33,830 basehttp "GET /favicon.ico HTTP/1.1" 404 2535
+INFO 2024-12-15 01:01:40,480 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-15 01:01:41,553 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-15 01:01:41,662 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-15 01:01:42,760 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:01:44,827 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-15 01:01:45,643 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:01:45,711 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 132
+INFO 2024-12-15 01:01:46,186 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-15 01:01:49,545 basehttp "PATCH /api/auth/profile/biometric/ HTTP/1.1" 200 59
+INFO 2024-12-15 01:09:20,682 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:11:15,341 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:11:15,473 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:11:15,804 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-15 01:16:13,239 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:16:13,800 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:16:13,937 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:17:38,468 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:17:39,156 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:17:39,275 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:18:27,790 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:18:28,582 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:18:28,639 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:20:45,692 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:20:46,157 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:20:46,229 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:23:10,114 basehttp "POST /api/auth/delete-account/ HTTP/1.1" 200 58
+WARNING 2024-12-15 01:23:10,407 log Unauthorized: /api/auth/logout/
+WARNING 2024-12-15 01:23:10,408 basehttp "POST /api/auth/logout/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:32:14,233 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-15 01:32:15,125 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-15 01:32:15,232 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-15 01:32:16,563 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:32:17,645 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:32:17,827 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:32:18,146 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-15 01:32:24,358 basehttp "POST /api/auth/delete-account/ HTTP/1.1" 200 58
+WARNING 2024-12-15 01:33:16,202 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:33:16,203 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:33:16,403 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:33:16,517 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:33:16,518 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:33:16,597 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:33:16,654 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:33:16,655 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:33:16,701 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:33:16,763 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:33:16,764 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:33:16,791 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:33:16,832 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:33:16,833 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:33:16,879 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:33:16,923 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:33:16,924 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+WARNING 2024-12-15 01:33:16,983 log Too Many Requests: /api/auth/refresh/
+WARNING 2024-12-15 01:33:16,984 basehttp "POST /api/auth/refresh/ HTTP/1.1" 429 69
+INFO 2024-12-15 01:33:17,795 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+WARNING 2024-12-15 01:33:17,851 log Unauthorized: /api/auth/profile/
+WARNING 2024-12-15 01:33:17,852 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 58
+WARNING 2024-12-15 01:33:17,866 log Too Many Requests: /api/auth/refresh/
+WARNING 2024-12-15 01:33:17,867 basehttp "POST /api/auth/refresh/ HTTP/1.1" 429 69
+INFO 2024-12-15 01:37:19,520 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-15 01:37:20,381 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-15 01:37:21,449 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-15 01:37:24,054 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:37:30,945 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:37:31,023 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:37:31,295 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-15 01:37:37,913 basehttp "POST /api/auth/delete-account/ HTTP/1.1" 200 58
+WARNING 2024-12-15 01:39:55,249 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:39:55,250 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:39:55,310 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:39:55,382 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:39:55,382 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:39:55,432 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:39:55,480 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:39:55,481 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:39:55,541 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:39:55,585 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:39:55,585 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:39:55,619 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:39:55,670 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:39:55,670 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+INFO 2024-12-15 01:39:55,708 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+WARNING 2024-12-15 01:39:55,804 log Unauthorized: /api/auth/voting-history/
+WARNING 2024-12-15 01:39:55,805 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 58
+WARNING 2024-12-15 01:39:55,864 log Too Many Requests: /api/auth/refresh/
+WARNING 2024-12-15 01:39:55,865 basehttp "POST /api/auth/refresh/ HTTP/1.1" 429 69
+INFO 2024-12-15 01:39:56,483 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+WARNING 2024-12-15 01:39:56,581 log Unauthorized: /api/auth/profile/
+WARNING 2024-12-15 01:39:56,582 basehttp "GET /api/auth/profile/ HTTP/1.1" 401 58
+WARNING 2024-12-15 01:39:56,600 log Too Many Requests: /api/auth/refresh/
+WARNING 2024-12-15 01:39:56,606 basehttp "POST /api/auth/refresh/ HTTP/1.1" 429 69
+INFO 2024-12-15 01:42:39,845 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-15 01:42:40,624 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-15 01:42:40,706 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-15 01:42:43,365 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:42:44,461 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:42:44,552 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:42:44,816 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-15 01:42:51,297 basehttp "POST /api/auth/delete-account/ HTTP/1.1" 200 58
+INFO 2024-12-15 01:44:16,541 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-15 01:44:17,245 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-15 01:44:17,338 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-15 01:44:17,734 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:44:18,624 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:44:18,674 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:44:22,979 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-15 01:44:27,696 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-15 01:44:28,379 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-15 01:44:28,422 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-15 01:44:28,666 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-15 01:44:30,880 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-15 01:44:30,917 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-15 01:44:35,588 basehttp "POST /api/auth/delete-account/ HTTP/1.1" 200 58
+INFO 2024-12-15 01:45:04,523 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+ERROR 2024-12-15 01:45:04,576 views Invalid login attempt for testnumber2@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-15 01:45:04,577 log Bad Request: /api/auth/login/
+WARNING 2024-12-15 01:45:04,578 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-15 01:45:09,848 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+ERROR 2024-12-15 01:45:09,920 views Invalid login attempt for testnumber2@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-15 01:45:09,921 log Bad Request: /api/auth/login/
+WARNING 2024-12-15 01:45:09,921 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-15 01:45:26,852 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+ERROR 2024-12-15 01:45:26,884 views Invalid login attempt for testnumber2@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-15 01:45:26,884 log Bad Request: /api/auth/login/
+WARNING 2024-12-15 01:45:26,885 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-15 01:50:05,637 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-15 01:50:09,354 autoreload Watching for file changes with StatReloader
