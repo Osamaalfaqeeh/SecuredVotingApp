@@ -86,6 +86,7 @@ class Elections(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
     allow_self_vote = models.BooleanField(default=False)
+    is_launched = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'elections'

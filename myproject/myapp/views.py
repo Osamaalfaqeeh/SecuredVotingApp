@@ -828,6 +828,7 @@ class ElectionDetailView(APIView):
                 "description": election.description,
                 "start_time": election.start_time,
                 "end_time": election.end_time,
+                "is_launched": election.is_launched,
                 "is_open": is_open,  # Whether voting is still open
                 "user_id": request.user.user_id,
                 "positions": [
@@ -865,7 +866,22 @@ class ElectionDetailView(APIView):
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=404)
 
+class LaunchElectionView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]
 
+    def post(self, request, election_id):
+        try:
+            election = Elections.objects.get(election_id=election_id)
+
+            if election.is_launched:
+                return Response({'success': False, 'detail':'Election has already been launched.'}, status=400)
+
+            election.is_launched = True
+            election.save()
+
+            return Response({'success': True, 'detail': 'Election launched successfully.'}, status=200)
+        except Elections.DoesNotExist:
+            return Response({"detail": "Election not found."}, status=404)
 
 class ElectionEditView(APIView):
     permission_classes = [IsAuthenticated, IsAdmin]  # Ensure only admins can access this view

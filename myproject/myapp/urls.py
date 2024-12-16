@@ -5,7 +5,7 @@ from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, 
       CastVoteView, AddCandidatesToElectionView, ElectionWinnerView, ActiveElectionsView, GetNonAdminUsersView, ElectionEditView, DeleteElectionView, CheckVotingStatusView,\
       InactiveElectionsView, UserElectionResultView, Toggle2FAView, ToggleBiometricAuthView, ForgotPasswordWithOTPView, VerifyOTPView, ResetPasswordView, RequestAdminAccessView,\
       ApproveAdminAccessView, approve_success, SubmitReferendumView, EditPersonalInformationView, AdminElectionResultView, ApproveElectionResultsView, AdminInactiveElectionsView,\
-      RequestWithdrawalView, HandleWithdrawalRequest, DeleteAccountView
+      RequestWithdrawalView, HandleWithdrawalRequest, DeleteAccountView, LaunchElectionView
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
@@ -49,6 +49,7 @@ urlpatterns = [
     path('profile/edit-personal-info/', EditPersonalInformationView.as_view(), name='edit_personal_info'),
     path('election-detail/<election_id>/', ElectionDetailView.as_view(), name='election_detail'),
     path('active-elections/', ActiveElectionsView.as_view(), name='active_elections'),
+    path('launch-election/<election_id>/', LaunchElectionView.as_view(), name='launch_election'),
 
     path('check-eligibility/', CheckEligibilityView.as_view(), name='check_eligibility'),
     path('cast-vote/<election_id>/', CastVoteView.as_view(), name='cast_vote'),
