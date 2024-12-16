@@ -51,7 +51,7 @@ urlpatterns = [
     path('active-elections/', ActiveElectionsView.as_view(), name='active_elections'),
     path('launch-election/<election_id>/', LaunchElectionView.as_view(), name='launch_election'),
 
-    path('check-eligibility/', CheckEligibilityView.as_view(), name='check_eligibility'),
+    path('check-eligibility/<election_id>/', CheckEligibilityView.as_view(), name='check_eligibility'),
     path('cast-vote/<election_id>/', CastVoteView.as_view(), name='cast_vote'),
     path('submit-referendum/<election_id>/',SubmitReferendumView.as_view() ,name="submit_referendum"),
     path('check-voting-status/<election_id>/', CheckVotingStatusView.as_view(),name='check_voting_status'),

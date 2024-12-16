@@ -1237,15 +1237,28 @@ class CheckEligibilityView(APIView):
 
         # Retrieve the election
         try:
-            election = Elections.objects.get(id=election_id)
+            election = Elections.objects.get(election_id=election_id)
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=404)
-
-        # Check if the user is eligible to vote (e.g., is part of an eligible group or election)
-        if not VotingGroups.objects.filter(election=election, users=user).exists():
+        
+        if not self.is_user_eligible(user, election):
             raise PermissionDenied("You are not eligible to vote in this election.")
 
         return Response({"detail": "You are eligible to vote in this election."}, status=200)
+    
+    def is_user_eligible(self, user, election):
+        
+        eligible_groups = ElectionVotingGroups.objects.filter(election=election)
+        
+        # Check if the user is in any of the eligible voting groups
+        for group in eligible_groups:
+            if VotingGroupMembers.objects.filter(group_id=group.group, user=user).exists():
+                return True
+            
+        if ElectionGroups.objects.filter(election=election, user=user).exists():
+            return True
+        # If no eligible group found for the user
+        return False
     
 class ElectionWinnerView(APIView):
     def get(self, request, election_id):
