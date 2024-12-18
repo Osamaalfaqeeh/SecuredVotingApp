@@ -36,6 +36,33 @@ class WithdrawalToken(models.Model):
     requested_at = models.DateTimeField(auto_now_add=True)
 
 
+class Request(models.Model):
+    REQUEST_TYPES = [
+        ('VOTE_ELIGIBILITY', 'Vote Eligibility'),
+        ('CANDIDATE_REQUEST', 'Candidate Request'),
+        ('WITHDRAW_REQUEST', 'Withdraw Request'),
+        ('OTHER_TYPE', 'Other Request'),
+    ]
+
+    STATUS_CHOICES = [
+        ('PENDING', 'Pending'),
+        ('APPROVED', 'Approved'),
+        ('REJECTED', 'Rejected'),
+    ]
+
+    user = models.ForeignKey('Users', on_delete=models.CASCADE)
+    election = models.ForeignKey('Elections', on_delete=models.CASCADE)
+    position = models.ForeignKey('ElectionPosition', on_delete=models.CASCADE, null=True, blank=True)
+    request_type = models.CharField(max_length=50, choices=REQUEST_TYPES)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='PENDING')
+    description = models.TextField(blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.get_request_type_display()} - {self.get_status_display()}"
+    
+
 class Departments(models.Model):
     department_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     department_name = models.CharField(unique=True, max_length=100)

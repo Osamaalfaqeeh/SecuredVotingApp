@@ -1,6 +1,6 @@
 # serializers.py
 from rest_framework import serializers
-from .models import Users, Authentication, Institutions, Elections, ReferendumOption, ReferendumQuestion, Roles
+from .models import Users, Authentication, Institutions, Elections, ReferendumOption, ReferendumQuestion, Roles, Request
 from django.contrib.auth.hashers import make_password, check_password
 from rest_framework_simplejwt.tokens import RefreshToken
 from datetime import datetime, timedelta
@@ -145,6 +145,25 @@ class ProfilePictureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Users
         fields = ['profile_photo']
+
+class RequestSerializer(serializers.ModelSerializer):
+    user_name = serializers.SerializerMethodField()
+    election_name = serializers.SerializerMethodField()
+    position_name = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Request
+        fields = ['id', 'user', 'user_name', 'request_type', 'status', 'created_at', 'updated_at', 'election', 'election_name', 'position', 'position_name']
+    
+    def get_user_name(self, obj):
+        return obj.user.firstname + " " + obj.user.lastname  # Adjust based on your Users model
+
+    def get_election_name(self, obj):
+        return obj.election.election_name if obj.election else None
+    
+    def get_position_name(self, obj):
+        return obj.position.position_name if obj.position else None
+
 # class GroupSerializer(serializers.ModelSerializer):
 #     # class Meta:
 #     #     model = Group

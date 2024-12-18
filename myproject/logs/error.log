@@ -17318,3 +17318,1215 @@ INFO 2024-12-17 00:07:29,402 basehttp "GET /api/auth/check-eligibility/85fdf0a4-
 INFO 2024-12-17 00:07:29,485 basehttp "GET /api/auth/election-detail/85fdf0a4-52db-47ec-a9cb-4e624abf2ee6/ HTTP/1.1" 200 1135
 INFO 2024-12-17 00:10:01,560 basehttp "GET /api/auth/election-detail/85fdf0a4-52db-47ec-a9cb-4e624abf2ee6/ HTTP/1.1" 200 1135
 INFO 2024-12-17 00:10:01,716 basehttp "GET /api/auth/check-eligibility/85fdf0a4-52db-47ec-a9cb-4e624abf2ee6/ HTTP/1.1" 200 55
+INFO 2024-12-17 00:11:16,652 autoreload Watching for file changes with StatReloader
+INFO 2024-12-17 00:13:39,613 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-17 00:13:39,730 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-17 00:13:42,722 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-17 00:13:57,334 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-17 00:13:58,079 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-17 00:13:58,233 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-17 00:13:58,621 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 287
+INFO 2024-12-17 00:13:58,691 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 287
+INFO 2024-12-17 03:00:01,353 tasks Task started
+INFO 2024-12-17 03:00:02,020 tasks Task completed
+WARNING 2024-12-17 21:08:57,490 log Unauthorized: /api/auth/admin-voting-history/
+WARNING 2024-12-17 21:08:57,524 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 401 183
+INFO 2024-12-17 21:08:58,060 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-17 21:08:58,441 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-17 21:08:59,624 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 21:09:01,561 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-17 21:09:04,457 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 21:09:06,683 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-17 21:09:06,753 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-17 21:09:12,389 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 21:11:58,653 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 21:11:58,727 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+WARNING 2024-12-17 21:53:50,690 log Unauthorized: /api/auth/admin-voting-history/
+WARNING 2024-12-17 21:53:50,691 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 401 183
+INFO 2024-12-17 21:53:51,067 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-17 21:53:51,630 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-17 21:53:54,559 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+WARNING 2024-12-17 22:45:59,706 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-17 22:45:59,880 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+WARNING 2024-12-17 22:45:59,931 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-17 22:45:59,942 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-17 22:46:00,772 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-17 22:46:00,772 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-17 22:46:01,230 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 22:46:01,240 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 22:46:08,818 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:46:15,579 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-17 22:46:22,346 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:46:25,545 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:46:44,419 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:46:52,933 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:47:36,737 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:47:42,665 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:48:27,345 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:48:31,044 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:48:41,920 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:48:51,388 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:48:58,935 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:49:03,681 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:49:09,668 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:50:21,748 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 22:50:21,844 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 22:50:23,557 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 22:50:28,322 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+WARNING 2024-12-17 23:28:59,803 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-17 23:28:59,804 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+WARNING 2024-12-17 23:28:59,954 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-17 23:28:59,955 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-17 23:29:00,256 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-17 23:29:00,416 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-17 23:29:00,651 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:29:00,658 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:29:20,543 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-17 23:29:22,140 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-17 23:29:22,379 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-17 23:29:22,915 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:29:22,999 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:29:26,533 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:29:37,925 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:29:47,111 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:29:59,135 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:30:08,942 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:30:28,782 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:30:42,642 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:32:39,026 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:34:01,940 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:34:01,949 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:34:04,707 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:34:16,847 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:34:24,559 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:34:29,469 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:34:53,730 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:34:53,738 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:34:53,982 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:34:58,599 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:35:01,956 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:35:11,830 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:35:21,654 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:35:28,906 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:35:34,615 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:35:50,892 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:36:04,421 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:36:12,540 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:36:25,598 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:36:42,426 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:36:46,485 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:37:28,977 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:37:34,609 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:40:28,274 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:40:28,450 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:40:32,657 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:40:50,755 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:40:56,235 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:41:07,113 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:42:55,931 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:42:55,958 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:42:57,371 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:43:02,487 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:43:07,698 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:43:14,062 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:43:17,490 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:45:33,118 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:45:33,176 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:45:34,901 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:47:49,526 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:47:50,428 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:47:50,551 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:47:58,923 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:48:37,291 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:48:37,308 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:48:37,848 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:48:54,276 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:48:54,368 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:48:56,046 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:49:16,656 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:49:16,666 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:49:17,053 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:50:47,224 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:50:47,316 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:50:48,246 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:52:02,219 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:52:02,338 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:52:02,362 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:52:12,584 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:55:34,116 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:55:34,220 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:57:07,634 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:57:07,879 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:57:08,218 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:57:28,510 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:57:42,349 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:57:59,205 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:58:36,938 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:58:37,068 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:58:43,353 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:59:14,937 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:59:15,006 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2024-12-17 23:59:16,913 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+WARNING 2024-12-17 23:59:24,505 log Unauthorized: /api/auth/get-users/
+WARNING 2024-12-17 23:59:24,505 basehttp "GET /api/auth/get-users/ HTTP/1.1" 401 183
+INFO 2024-12-17 23:59:24,549 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-17 23:59:24,637 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:59:38,436 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-17 23:59:49,066 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:00:21,827 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:00:27,767 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:00:50,438 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:01:20,614 views Admin testnumber1@std.psut.edu.jo is creating an election
+INFO 2024-12-18 00:01:21,099 views Election test for allow candidate to vote created successfully by admin testnumber1@std.psut.edu.jo
+INFO 2024-12-18 00:01:21,100 basehttp "POST /api/auth/create-election/ HTTP/1.1" 201 139
+INFO 2024-12-18 00:01:21,281 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:01:25,111 basehttp "GET /api/auth/election-edit/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1376
+INFO 2024-12-18 00:01:28,717 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:01:34,281 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:01:37,747 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:02:41,301 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:02:41,325 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:02:42,288 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:02:49,231 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:02:55,276 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:03:00,797 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:03:05,002 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:03:36,617 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:03:40,321 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:03:44,499 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:03:47,731 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:03:54,621 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:06:25,692 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:06:25,769 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:06:28,104 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:06:32,406 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:06:39,342 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:06:49,983 basehttp "PUT /api/auth/edit-election/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 43
+INFO 2024-12-18 00:06:50,135 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:06:51,210 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:06:51,273 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 00:06:53,151 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 00:07:10,458 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 00:07:11,232 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 00:07:11,276 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 00:07:11,645 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+WARNING 2024-12-18 00:07:13,109 log Forbidden: /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/
+INFO 2024-12-18 00:07:13,127 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1418
+WARNING 2024-12-18 00:07:13,127 basehttp "GET /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 403 59
+INFO 2024-12-18 00:07:32,661 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:07:32,711 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:07:34,713 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 00:07:49,109 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 00:07:49,812 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 00:07:49,912 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 00:07:50,201 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:07:50,271 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:07:51,898 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1418
+INFO 2024-12-18 00:07:53,934 basehttp "POST /api/auth/launch-election/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 59
+INFO 2024-12-18 00:07:56,466 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:07:56,509 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 00:07:58,116 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 00:08:13,506 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 00:08:14,215 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 00:08:14,270 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 00:08:14,499 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+WARNING 2024-12-18 00:08:16,651 log Forbidden: /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/
+WARNING 2024-12-18 00:08:16,652 basehttp "GET /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 403 59
+INFO 2024-12-18 00:08:16,700 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1417
+INFO 2024-12-18 00:08:45,699 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:08:45,734 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:09:23,470 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:09:38,663 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:09:38,711 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:09:42,207 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 00:10:15,902 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 00:10:16,608 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 00:10:16,653 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 00:10:16,947 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:10:17,026 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:10:19,385 basehttp "GET /api/auth/election-edit/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1503
+INFO 2024-12-18 00:10:25,835 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:10:29,938 basehttp "PUT /api/auth/edit-election/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 43
+INFO 2024-12-18 00:10:30,057 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:10:31,273 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:10:31,306 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 00:10:32,813 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 00:10:49,498 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 00:10:50,161 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 00:10:50,169 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 00:10:50,504 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:10:53,414 basehttp "GET /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 55
+INFO 2024-12-18 00:10:53,430 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1417
+INFO 2024-12-18 00:11:10,152 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 201 36
+INFO 2024-12-18 00:11:19,645 basehttp "GET /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 55
+INFO 2024-12-18 00:11:19,650 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1417
+WARNING 2024-12-18 00:15:42,294 log Bad Request: /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/
+WARNING 2024-12-18 00:15:42,295 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 400 54
+INFO 2024-12-18 00:24:37,030 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 201 36
+INFO 2024-12-18 00:30:52,502 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:30:57,016 basehttp "GET /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 55
+INFO 2024-12-18 00:30:57,027 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1417
+WARNING 2024-12-18 00:31:00,900 log Bad Request: /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/
+WARNING 2024-12-18 00:31:00,901 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 400 54
+INFO 2024-12-18 00:31:06,018 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:31:06,073 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:31:07,716 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 00:31:23,305 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 00:31:24,021 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 00:31:24,094 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 00:31:24,410 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:31:24,497 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:31:26,368 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1417
+INFO 2024-12-18 00:31:28,694 basehttp "GET /api/auth/election-edit/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 2204
+INFO 2024-12-18 00:31:38,057 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 00:31:56,992 basehttp "PUT /api/auth/edit-election/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 43
+INFO 2024-12-18 00:31:57,092 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:31:57,968 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:31:58,019 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 00:31:59,684 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 00:32:19,075 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 00:32:19,770 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 00:32:19,789 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 00:32:20,115 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:32:21,402 basehttp "GET /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 55
+INFO 2024-12-18 00:32:21,430 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1831
+INFO 2024-12-18 00:32:27,466 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 201 36
+INFO 2024-12-18 00:32:45,583 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 201 36
+INFO 2024-12-18 00:32:57,145 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 201 36
+WARNING 2024-12-18 00:32:59,790 log Bad Request: /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/
+WARNING 2024-12-18 00:32:59,790 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 400 54
+WARNING 2024-12-18 00:33:07,439 log Bad Request: /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/
+WARNING 2024-12-18 00:33:07,440 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 400 54
+INFO 2024-12-18 00:33:31,684 basehttp "GET /api/auth/check-eligibility/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 55
+INFO 2024-12-18 00:33:31,736 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1831
+WARNING 2024-12-18 00:33:35,762 log Bad Request: /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/
+WARNING 2024-12-18 00:33:35,763 basehttp "POST /api/auth/cast-vote/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 400 54
+INFO 2024-12-18 00:54:39,811 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:54:40,722 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:54:40,802 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:54:41,065 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 00:54:42,385 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:54:43,353 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:54:44,236 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:54:44,303 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:54:48,996 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:54:49,054 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:54:59,974 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:01,193 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:55:01,254 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:55:02,244 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:02,953 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:55:04,156 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:05,042 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:55:06,135 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:07,051 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:55:07,805 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:08,486 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:55:09,633 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:10,573 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:55:10,668 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:55:11,570 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:34,570 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+WARNING 2024-12-18 00:55:36,102 log Too Many Requests: /api/auth/voting-history/
+WARNING 2024-12-18 00:55:36,103 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 429 68
+WARNING 2024-12-18 00:55:37,653 log Too Many Requests: /api/auth/active-elections/
+WARNING 2024-12-18 00:55:37,654 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 429 68
+INFO 2024-12-18 00:55:54,098 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:55:55,438 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:55:59,200 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:55:59,276 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:58:09,206 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 00:58:10,321 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 00:58:11,506 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 00:58:11,567 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 00:58:11,934 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 01:00:44,932 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:00:46,004 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 01:00:46,694 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:00:46,800 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 01:00:47,163 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 01:01:04,897 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:01:06,018 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 01:01:06,798 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:01:06,868 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 01:01:07,093 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 01:01:12,094 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 01:01:12,992 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:01:13,048 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 01:01:14,075 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 01:02:04,775 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:02:05,576 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 01:02:06,464 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:02:06,521 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 01:02:07,561 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 01:02:08,138 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:02:08,181 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 01:02:09,024 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:02:09,706 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:02:09,761 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 01:02:12,085 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 01:02:30,695 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 01:02:31,471 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 01:02:31,534 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 01:02:31,839 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:02:31,963 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:02:39,292 basehttp "GET /api/auth/election-detail/c68bfa61-8a4f-45e5-ae2e-f0e23620df95/ HTTP/1.1" 200 1831
+INFO 2024-12-18 01:02:41,355 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:02:41,408 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:02:42,760 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:02:43,761 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:02:43,803 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:03:32,937 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:03:34,016 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:03:34,074 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:03:35,441 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:03:36,251 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:03:36,308 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:03:38,449 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:03:39,593 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:03:40,466 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:03:41,961 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:03:42,017 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:05:17,344 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:05:18,481 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:05:22,273 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:05:22,322 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:06:00,456 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:06:01,366 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:06:01,502 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:06:05,093 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:06:05,960 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:06:06,005 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:06:06,987 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:06:07,952 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:06:07,981 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:06:11,427 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:06:12,177 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:06:12,213 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:07:23,669 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:07:23,965 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:07:27,889 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:07:27,956 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:07:30,300 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:07:30,927 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:07:30,999 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:08:11,434 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:08:12,483 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:08:12,530 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:08:14,607 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:08:15,109 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:08:15,165 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:10:07,252 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:10:07,352 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:10:13,044 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:10:13,108 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:10:28,666 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:10:28,750 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:10:29,615 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:10:29,662 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:10:30,888 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:10:32,087 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:10:33,361 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:10:35,197 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:10:36,218 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:10:36,939 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:10:36,993 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:10:39,333 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:10:40,230 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:10:40,273 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:10:42,898 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:11:09,973 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:11:10,061 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 01:11:10,820 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:11:11,743 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:11:11,811 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:11:14,854 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 01:11:17,108 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 01:11:17,175 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 01:50:34,440 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 01:50:39,200 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 01:51:06,349 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 01:51:08,193 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 01:51:21,523 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 01:51:23,153 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 01:51:27,188 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 01:51:28,577 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 01:52:24,345 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 01:52:25,982 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:02:12,318 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:02:13,755 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:11:49,849 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 02:11:51,679 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:12:04,216 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:12:05,771 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:16:20,250 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-18 02:16:22,327 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:16:24,894 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:16:26,460 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:16:40,292 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:16:41,926 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:20:18,682 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-18 02:20:20,425 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:21:14,276 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 02:21:57,944 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-18 02:21:57,945 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-18 02:21:58,027 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-18 02:21:58,181 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 02:21:59,483 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 02:21:59,538 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 02:22:02,232 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 02:22:23,523 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 02:22:24,216 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 02:22:24,250 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 02:22:24,594 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 02:22:24,699 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 289
+INFO 2024-12-18 02:23:01,105 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 02:23:06,285 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 02:23:15,111 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 02:23:41,417 views Admin testnumber1@std.psut.edu.jo is creating an election
+INFO 2024-12-18 02:23:41,502 views Election test election for register election created successfully by admin testnumber1@std.psut.edu.jo
+INFO 2024-12-18 02:23:41,503 basehttp "POST /api/auth/create-election/ HTTP/1.1" 201 142
+INFO 2024-12-18 02:23:41,582 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 593
+INFO 2024-12-18 02:23:43,794 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 02:23:43,841 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 02:23:46,655 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 02:24:02,478 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 02:24:03,161 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 02:24:03,189 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 02:24:03,493 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 02:24:28,451 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 02:24:28,457 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 02:24:39,287 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 02:24:39,327 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 02:24:41,919 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 02:24:54,659 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 02:24:55,326 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 02:24:55,334 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 02:24:55,590 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 02:24:55,684 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 02:24:57,402 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 02:25:02,807 basehttp "GET /api/auth/election-edit/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 812
+INFO 2024-12-18 02:25:04,362 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1383
+INFO 2024-12-18 02:25:11,168 basehttp "PUT /api/auth/edit-election/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 43
+INFO 2024-12-18 02:25:11,236 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 02:25:13,571 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 02:25:13,616 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 02:25:15,376 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 02:25:28,873 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 02:25:29,533 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 02:25:29,567 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 02:25:29,938 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+WARNING 2024-12-18 02:25:33,888 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+INFO 2024-12-18 02:25:33,907 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+WARNING 2024-12-18 02:25:33,907 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+WARNING 2024-12-18 02:37:01,662 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:37:01,662 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:37:01,687 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 02:41:21,453 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:41:23,333 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 02:42:19,522 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:42:19,523 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:42:19,559 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+ERROR 2024-12-18 02:43:21,428 log Internal Server Error: /api/auth/vote-eligibility-request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\request.py", line 421, in __getattr__
+    return getattr(_request, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'election'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1947, in post
+    election = request.election
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\request.py", line 423, in __getattr__
+    return self.__getattribute__(attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Request' object has no attribute 'election'
+ERROR 2024-12-18 02:43:21,453 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 500 109593
+INFO 2024-12-18 02:43:50,242 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 02:44:22,766 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:44:22,767 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:44:22,774 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+ERROR 2024-12-18 02:44:25,553 log Internal Server Error: /api/auth/vote-eligibility-request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\request.py", line 421, in __getattr__
+    return getattr(_request, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'election'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1947, in post
+    election = request.election
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\request.py", line 423, in __getattr__
+    return self.__getattribute__(attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Request' object has no attribute 'election'
+ERROR 2024-12-18 02:44:25,561 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 500 109593
+INFO 2024-12-18 02:47:36,174 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:47:38,221 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:48:01,633 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 02:48:02,758 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+WARNING 2024-12-18 02:48:02,764 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:48:02,767 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+WARNING 2024-12-18 02:48:15,604 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:48:15,605 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:48:15,613 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+ERROR 2024-12-18 02:48:34,594 log Internal Server Error: /api/auth/vote-eligibility-request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1949, in post
+    if election.is_launched:
+       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'is_launched'
+ERROR 2024-12-18 02:48:34,601 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 500 101046
+INFO 2024-12-18 02:49:10,901 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:49:12,803 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 02:49:23,568 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:49:23,570 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:49:23,583 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+WARNING 2024-12-18 02:49:24,914 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:49:24,915 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:49:24,925 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+ERROR 2024-12-18 02:49:27,551 log Internal Server Error: /api/auth/vote-eligibility-request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1948, in post
+    election = Elections.objects.get(election = election)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'election' into field. Choices are: allow_self_vote, approval, candidates, created_at, created_by, created_by_id, description, election_id, election_name, electiondepartments, electiongroups, electionvotinggroups, end_time, icon, is_active, is_launched, positions, referendum_questions, request, start_time, updated_at, votes, withdrawaltoken
+ERROR 2024-12-18 02:49:27,572 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 500 160439
+INFO 2024-12-18 02:50:37,362 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 02:50:39,622 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 02:50:50,516 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+WARNING 2024-12-18 02:50:51,289 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:50:51,290 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:50:51,299 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 02:50:53,402 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 201 45
+WARNING 2024-12-18 02:50:57,776 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:50:57,777 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:51:02,475 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:51:02,476 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:51:02,485 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+WARNING 2024-12-18 02:52:14,629 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:52:14,630 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:52:17,265 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:52:17,265 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:52:19,280 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:52:19,281 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:52:21,717 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:52:21,718 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:52:36,086 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:52:36,087 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:52:47,620 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 02:52:47,621 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 02:52:47,623 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+WARNING 2024-12-18 02:52:49,530 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:52:49,530 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:53:23,667 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:53:23,668 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:54:00,357 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:54:00,357 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+WARNING 2024-12-18 02:55:09,622 log Bad Request: /api/auth/vote-eligibility-request/
+WARNING 2024-12-18 02:55:09,623 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 400 47
+INFO 2024-12-18 03:00:01,861 tasks Task started
+INFO 2024-12-18 03:00:02,715 tasks Task completed
+WARNING 2024-12-18 03:10:26,712 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-18 03:10:26,713 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-18 03:10:26,922 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-18 03:10:26,982 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 03:11:06,119 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 03:11:08,674 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-18 03:11:09,616 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 03:11:09,678 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 03:11:10,339 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 03:11:12,483 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 03:11:26,237 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 03:11:26,946 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 03:11:26,965 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 03:11:27,308 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 03:11:27,472 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 03:11:28,910 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 245
+INFO 2024-12-18 03:16:16,854 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-18 03:16:18,336 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:17:39,864 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 03:17:40,830 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 326
+WARNING 2024-12-18 03:21:34,846 log Bad Request: /api/auth/admin/requests/action/
+WARNING 2024-12-18 03:21:34,847 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 400 48
+WARNING 2024-12-18 03:21:48,208 log Bad Request: /api/auth/admin/requests/action/
+WARNING 2024-12-18 03:21:48,209 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 400 48
+WARNING 2024-12-18 03:23:43,633 log Bad Request: /api/auth/admin/requests/action/
+WARNING 2024-12-18 03:23:43,634 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 400 48
+WARNING 2024-12-18 03:24:57,537 log Bad Request: /api/auth/admin/requests/action/
+WARNING 2024-12-18 03:24:57,537 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 400 28
+INFO 2024-12-18 03:26:22,353 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 200 49
+INFO 2024-12-18 03:26:22,440 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2024-12-18 03:26:28,106 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 03:26:28,163 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 03:26:30,079 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 03:26:47,688 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 03:26:48,379 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 03:26:48,398 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 03:26:48,761 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 03:26:49,941 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 03:26:49,951 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 03:26:55,411 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 03:26:55,459 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 03:34:24,203 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 03:34:25,041 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 03:34:25,063 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 03:36:46,025 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 03:36:46,049 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 03:42:51,554 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 03:42:53,209 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:42:59,222 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 03:43:00,760 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:44:20,507 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-18 03:44:22,673 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:45:20,887 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 03:45:22,426 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:46:16,126 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-18 03:46:17,739 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:47:28,459 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 03:47:30,239 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:50:05,579 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 03:50:07,143 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:50:10,248 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 03:50:11,596 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 03:51:57,110 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 03:51:58,442 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 04:00:31,662 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 04:00:33,108 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 04:04:13,522 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 04:04:14,822 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 04:13:30,840 log Unauthorized: /api/auth/requests/candidate/
+WARNING 2024-12-18 04:13:30,841 basehttp "POST /api/auth/requests/candidate/ HTTP/1.1" 401 183
+INFO 2024-12-18 04:13:30,897 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+ERROR 2024-12-18 04:13:31,037 log Internal Server Error: /api/auth/requests/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'myapp_request.position_id' in 'where clause'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1976, in post
+    if Request.objects.filter(user=user, election=election, position=position).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'myapp_request.position_id' in 'where clause'")
+ERROR 2024-12-18 04:13:31,061 basehttp "POST /api/auth/requests/candidate/ HTTP/1.1" 500 189568
+INFO 2024-12-18 04:18:05,811 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 04:18:07,666 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 04:18:29,476 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 04:18:40,154 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 04:18:40,455 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 04:18:40,561 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 04:18:40,588 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 04:18:42,196 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 04:18:42,198 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+ERROR 2024-12-18 04:18:46,629 log Internal Server Error: /api/auth/requests/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1987, in post
+    return Response(RequestSerializer(candidate_request).data, status=status.HTTP_201_CREATED)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py", line 165, in get_position_name
+    return obj.position.name if obj.position else None
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'ElectionPosition' object has no attribute 'name'
+ERROR 2024-12-18 04:18:46,637 basehttp "POST /api/auth/requests/candidate/ HTTP/1.1" 500 123625
+INFO 2024-12-18 04:19:01,850 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\serializers.py changed, reloading.
+INFO 2024-12-18 04:19:03,892 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 04:19:14,886 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 04:19:14,895 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 04:19:15,104 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 04:19:15,129 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+WARNING 2024-12-18 04:19:22,561 log Bad Request: /api/auth/requests/candidate/
+WARNING 2024-12-18 04:19:22,561 basehttp "POST /api/auth/requests/candidate/ HTTP/1.1" 400 75
+WARNING 2024-12-18 04:19:35,297 log Bad Request: /api/auth/requests/candidate/
+WARNING 2024-12-18 04:19:35,298 basehttp "POST /api/auth/requests/candidate/ HTTP/1.1" 400 75
+INFO 2024-12-18 04:20:49,658 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 04:20:49,664 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 04:20:51,997 basehttp "POST /api/auth/requests/candidate/ HTTP/1.1" 201 362
+INFO 2024-12-18 04:21:07,748 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 04:21:07,797 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 04:21:10,225 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 04:21:22,321 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+ERROR 2024-12-18 04:21:23,112 views Invalid login attempt for testnumber1@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-18 04:21:23,113 log Bad Request: /api/auth/login/
+WARNING 2024-12-18 04:21:23,113 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-18 04:21:33,001 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 04:21:33,697 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 04:21:33,747 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 04:21:34,049 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:21:34,132 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:21:35,407 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 04:21:39,751 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 04:21:40,858 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:24:52,111 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:24:52,399 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:24:54,871 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:25:55,125 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:25:55,228 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:25:56,021 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:27:23,488 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:27:23,600 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:27:24,717 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:28:47,262 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:28:47,351 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:28:48,000 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:30:12,734 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:30:12,815 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:30:13,355 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:30:14,553 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 04:30:15,201 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:30:16,140 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 04:30:17,174 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 04:37:19,254 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:37:19,260 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:37:20,195 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+WARNING 2024-12-18 04:37:41,090 log Bad Request: /api/auth/admin/requests/action/
+WARNING 2024-12-18 04:37:41,092 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 400 34
+INFO 2024-12-18 04:39:28,324 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 04:39:29,893 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 04:40:21,703 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 04:40:23,844 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 04:40:40,192 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 04:40:41,048 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2024-12-18 04:40:41,920 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 04:40:41,982 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 04:40:44,500 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 04:41:02,736 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 04:41:03,416 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 04:41:03,449 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 04:41:03,732 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:41:04,968 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 55
+INFO 2024-12-18 04:41:04,974 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 04:41:07,407 basehttp "POST /api/auth/requests/candidate/ HTTP/1.1" 201 363
+INFO 2024-12-18 04:41:11,627 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 04:41:11,675 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 04:41:12,016 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 04:41:15,008 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 04:41:39,073 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 04:41:39,724 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 04:41:39,745 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 04:41:40,155 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:41:40,230 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:41:42,752 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 365
+INFO 2024-12-18 04:41:54,552 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 200 49
+INFO 2024-12-18 04:41:54,610 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2024-12-18 04:41:59,008 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 04:42:00,073 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:42:00,533 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 04:42:00,615 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 04:42:02,725 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 04:42:04,026 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 853
+INFO 2024-12-18 04:42:09,790 basehttp "GET /api/auth/election-edit/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 938
+INFO 2024-12-18 04:42:18,532 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 04:42:18,591 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 04:42:21,320 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 04:42:34,982 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 04:42:35,680 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 04:42:35,705 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 04:42:36,015 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+WARNING 2024-12-18 04:42:37,337 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 04:42:37,337 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 04:42:37,364 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 853
+INFO 2024-12-18 05:13:24,232 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:13:25,867 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:13:47,217 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:13:48,628 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:16:37,934 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 05:16:39,366 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:16:55,004 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:16:56,515 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:22:42,542 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:22:44,030 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:22:46,510 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:22:47,694 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:23:33,231 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-18 05:23:34,649 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 05:27:18,759 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-18 05:27:18,759 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-18 05:27:18,808 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-18 05:27:18,858 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 05:27:19,671 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 853
+WARNING 2024-12-18 05:27:19,730 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 05:27:19,731 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+WARNING 2024-12-18 05:27:22,024 log Not Found: /api/auth/request-withdraw/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 05:27:22,025 basehttp "POST /api/auth/request-withdraw/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 404 19031
+INFO 2024-12-18 05:28:00,642 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+WARNING 2024-12-18 05:28:02,434 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 05:28:02,436 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 05:28:02,442 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 853
+INFO 2024-12-18 05:28:02,977 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+ERROR 2024-12-18 05:28:04,341 log Internal Server Error: /api/auth/request-withdraw/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1875, in post
+    position = ElectionPosition.objects.get(id=position_id, election = election)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp.models.ElectionPosition.DoesNotExist: ElectionPosition matching query does not exist.
+ERROR 2024-12-18 05:28:04,359 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 500 111535
+INFO 2024-12-18 05:28:54,770 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 05:29:01,321 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 05:29:03,798 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 853
+WARNING 2024-12-18 05:29:03,830 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 05:29:03,830 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 05:29:04,214 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 05:29:06,161 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 200 69
+INFO 2024-12-18 05:29:12,297 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 200 69
+INFO 2024-12-18 05:29:52,285 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:29:53,938 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:30:16,716 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 200 69
+WARNING 2024-12-18 05:30:22,758 log Bad Request: /api/auth/request-withdraw/
+WARNING 2024-12-18 05:30:22,766 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 400 47
+INFO 2024-12-18 05:31:27,761 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+WARNING 2024-12-18 05:31:28,162 log Bad Request: /api/auth/request-withdraw/
+WARNING 2024-12-18 05:31:28,163 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 400 47
+INFO 2024-12-18 05:31:53,291 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 05:32:01,331 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+WARNING 2024-12-18 05:32:01,998 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 05:32:01,998 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 05:32:02,008 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 853
+WARNING 2024-12-18 05:32:04,106 log Bad Request: /api/auth/request-withdraw/
+WARNING 2024-12-18 05:32:04,106 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 400 47
+INFO 2024-12-18 05:32:08,752 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 05:32:08,804 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 05:32:13,358 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 05:32:27,842 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2024-12-18 05:32:28,531 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 05:32:28,552 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-18 05:32:28,872 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 05:32:29,013 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 05:32:31,248 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+ERROR 2024-12-18 05:32:44,642 log Internal Server Error: /api/auth/admin/requests/action/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 2008, in post
+    self.remove_from_candidates(user_request)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 2043, in remove_from_candidates
+    CandidatePosition.objects.filter(candidate=candidate, election_position__in=position).delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\fields\related_lookups.py", line 70, in get_prep_lookup
+    self.rhs = [get_normalized_value(val, self.lhs)[0] for val in self.rhs]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'ElectionPosition' object is not iterable
+ERROR 2024-12-18 05:32:44,669 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 500 162826
+INFO 2024-12-18 05:33:27,480 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:33:29,461 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:33:40,049 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 364
+INFO 2024-12-18 05:33:46,461 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 05:33:47,770 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 200 49
+INFO 2024-12-18 05:33:47,823 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2024-12-18 05:33:51,919 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 5680
+INFO 2024-12-18 05:33:52,366 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 05:33:52,778 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 05:33:52,822 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2024-12-18 05:33:54,592 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 05:34:10,068 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 05:34:10,735 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 05:34:10,758 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 05:34:11,018 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+WARNING 2024-12-18 05:34:13,352 log Forbidden: /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/
+WARNING 2024-12-18 05:34:13,353 basehttp "GET /api/auth/check-eligibility/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 403 59
+INFO 2024-12-18 05:34:13,362 basehttp "GET /api/auth/election-detail/5a83067e-7e32-4130-a893-e5c689f00aed/ HTTP/1.1" 200 626
+INFO 2024-12-18 05:36:00,671 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-18 05:36:02,358 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:36:15,413 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-18 05:36:16,769 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:36:21,112 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
+INFO 2024-12-18 05:36:22,255 autoreload Watching for file changes with StatReloader

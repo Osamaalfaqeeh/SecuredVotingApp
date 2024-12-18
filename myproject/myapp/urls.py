@@ -5,7 +5,7 @@ from .views import LoginView, RegisterView, LogoutView, CustomTokenRefreshView, 
       CastVoteView, AddCandidatesToElectionView, ElectionWinnerView, ActiveElectionsView, GetNonAdminUsersView, ElectionEditView, DeleteElectionView, CheckVotingStatusView,\
       InactiveElectionsView, UserElectionResultView, Toggle2FAView, ToggleBiometricAuthView, ForgotPasswordWithOTPView, VerifyOTPView, ResetPasswordView, RequestAdminAccessView,\
       ApproveAdminAccessView, approve_success, SubmitReferendumView, EditPersonalInformationView, AdminElectionResultView, ApproveElectionResultsView, AdminInactiveElectionsView,\
-      RequestWithdrawalView, HandleWithdrawalRequest, DeleteAccountView, LaunchElectionView
+      RequestWithdrawalView, DeleteAccountView, LaunchElectionView, PendingRequestsView, CreateVoteEligibilityRequest, RequestActionView, CandidateRequestView
 
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
@@ -61,8 +61,11 @@ urlpatterns = [
     path('user-election-results/<election_id>/',UserElectionResultView.as_view(), name='user_election_results'),
     path('admin-election-result/<election_id>/', AdminElectionResultView.as_view(), name='admin_election_result'),
     path('approve-election-results/<election_id>/', ApproveElectionResultsView.as_view(), name='approve_election_results'),
-    path('request-withdraw/<election_id>/', RequestWithdrawalView.as_view(), name='request_withdraw'),
-    path('handle-withdrawal/<token>/', HandleWithdrawalRequest, name='handle-withdrawal'),
+    path('request-withdraw/', RequestWithdrawalView.as_view(), name='request_withdraw'),
+    path('admin/requests/pending/', PendingRequestsView.as_view(), name='pending-requests'),
+    path('admin/requests/action/', RequestActionView.as_view(), name='request-action'),
+    path('vote-eligibility-request/', CreateVoteEligibilityRequest.as_view(), name='vote_eligibility_request'),
+    path('requests/candidate/', CandidateRequestView.as_view(), name='candidate-request'),
     
     # User search endpoint
     path('search-users/', SearchUsersByName.as_view(), name='search_users'),

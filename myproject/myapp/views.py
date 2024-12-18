@@ -7,8 +7,8 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote, ElectionApproval, WithdrawalToken
-from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer
+VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote, ElectionApproval, WithdrawalToken, Request
+from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer, RequestSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
 from rest_framework.permissions import IsAuthenticated
@@ -1865,75 +1865,166 @@ def approve_success(request):
 class RequestWithdrawalView(APIView):
     permission_classes = [IsAuthenticated]
 
-    def post(self, request, election_id):
+    def post(self, request):
         try:
-            # Ensure the candidate exists in the election
-            # candidate = Candidates.objects.get(candidate=request.user, election_id=election_id)
-            candidate = request.user
-            position_name = request.data.get('position_name')
-            election_positions = ElectionPosition.objects.get(election = election_id, position_name = position_name)
+            user = request.user
+            election_id = request.data.get('election_id')
+            position_id = request.data.get('position_id')
+
+            election = Elections.objects.get(election_id=election_id)
+            position = ElectionPosition.objects.get(id=position_id, election = election)
+
+            if election.is_launched:
+                return Response({"error": "Election is Launched!"}, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Check if a request already exists
+            existing_request = Request.objects.filter(user=user, election=election, position=position, request_type='WITHDRAW_REQUEST', status='PENDING').first()
+            if existing_request:
+                return Response({"error": "You already have a pending request."}, status=status.HTTP_400_BAD_REQUEST)
             
             is_candidate = CandidatePosition.objects.filter(
-            candidate=request.user,
-            election_position=election_positions).exists()
-            election = Elections.objects.get(election_id = election_id)
+            candidate = user,
+            election_position=position).exists()
+
             if not is_candidate:
                 return Response({"detail": "You are not a candidate for this election."}, status=404)
+            
+            # Create the request
+            Request.objects.create(
+                user=user,
+                election = election,
+                position = position,
+                request_type='WITHDRAW_REQUEST'
+            )
 
         except Candidates.DoesNotExist:
             return Response({"detail": "You are not a candidate for this election."}, status=404)
 
-        # Create a token for withdrawal request
-        token = WithdrawalToken.objects.create(
-            candidate=request.user,
-            election=election,
-            position_name = election_positions,
-        )
-
-        # Generate the URL for admin approval
-        approval_url = reverse('handle-withdrawal', kwargs={'token': token.token})
-        domain = get_current_site(request).domain
-        full_approval_url = f"{f'http://{domain}'}{approval_url}"
-        # Send an email to the admin about the withdrawal request
-        admin_email = election.created_by.email
-
-        email_message= render_to_string(
-                'candidate_withdraw/withdrawal_request_template.html',  # Path to your HTML template
-                {'user': request.user, 'election_name': election.election_name, 'approval_link': full_approval_url}
-            )
-        
-        send_mail(
-            subject=f"Withdrawal Request for {candidate.firstname}",
-            message= email_message,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[admin_email],
-            html_message=email_message,
-            fail_silently=False,
-        )
-        
         return Response({"detail": "Withdrawal request submitted. Admin approval is pending."}, status=200)
-    
 
-def HandleWithdrawalRequest(request, token):
-    try:
-        # Find the withdrawal token
-        withdrawal_token = WithdrawalToken.objects.get(token=token)
+
+class CreateVoteEligibilityRequest(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        user = request.user
+        election_id = request.data.get('election')
+        election = Elections.objects.get(election_id = election_id)
+
+        if election.is_launched:
+            return Response({"error": "Election is Launched!"}, status=status.HTTP_400_BAD_REQUEST)
+        # Check if a request already exists
+        existing_request = Request.objects.filter(user=user, request_type='VOTE_ELIGIBILITY', status='PENDING').first()
+        if existing_request:
+            return Response({"error": "You already have a pending request."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Create the request
+        new_request = Request.objects.create(user=user, election = election ,request_type='VOTE_ELIGIBILITY')
+        return Response({"message": "Request submitted successfully."}, status=status.HTTP_201_CREATED)
+
+
+class CandidateRequestView(APIView):
+    def post(self, request):
+        user = request.user  # Ensure user is authenticated
+        election_id = request.data.get('election_id')
+        position_id = request.data.get('position_id')
+
+        try:
+            election = Elections.objects.get(election_id=election_id)
+            position = ElectionPosition.objects.get(id=position_id, election = election)
+
+            if election.is_launched:
+                return Response({"error": "Election is Launched!"}, status=status.HTTP_400_BAD_REQUEST)
         
-        # Check if the token is expired
-        if withdrawal_token.requested_at < timezone.now() - timedelta(hours=24):
-            withdrawal_token.delete()
-            return render(request, "withdrawal_expired.html")  # Render an expired page
+            # Check if the user already requested for the same position in the election
+            if Request.objects.filter(user=user, election=election, position=position).exists():
+                return Response({'error': 'You have already requested to be a candidate for this position.'}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Create the request
+            candidate_request = Request.objects.create(
+                user=user,
+                election=election,
+                position=position,
+                request_type="CANDIDATE_REQUEST"
+            )
+
+            return Response(RequestSerializer(candidate_request).data, status=status.HTTP_201_CREATED)
+
+        except Elections.DoesNotExist:
+            return Response({'error': 'Election not found.'}, status=status.HTTP_404_NOT_FOUND)
+        except ElectionPosition.DoesNotExist:
+            return Response({'error': 'Position not found.'}, status=status.HTTP_404_NOT_FOUND)
         
-        election = withdrawal_token.election
-    except WithdrawalToken.DoesNotExist:
-        return render(request, "withdrawal_not_found.html")  # Token not found page
+
+class RequestActionView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]
+
+    def post(self, request):
+        request_id = request.data.get('request_id')
+        action = request.data.get('action')
+
+        if not request_id or not action:
+            return Response({"detail": "Request ID and action are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            user_request = Request.objects.get(id=request_id)
+        except Request.DoesNotExist:
+            return Response({"detail": "Request not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        if action == 'approve':
+            # Approve the request based on request type
+            if user_request.request_type == 'VOTE_ELIGIBILITY':
+                self.add_to_voting_group(user_request)
+                user_request.status = 'APPROVED'
+            elif user_request.request_type == 'CANDIDATE_REQUEST':
+                self.add_to_cadidates(user_request)
+                user_request.status = 'APPROVED'
+            elif user_request.request_type == 'WITHDRAW_REQUEST':
+                self.remove_from_candidates(user_request)
+                user_request.status = 'APPROVED'
+            else:
+                return Response({"detail": "Unknown request type."}, status=status.HTTP_400_BAD_REQUEST)
+
+        elif action == 'reject':
+            user_request.status = 'REJECTED'
+        else:
+            return Response({"detail": "Invalid action."}, status=status.HTTP_400_BAD_REQUEST)
+
+        user_request.save()
+        return Response({"detail": "Request status updated successfully."}, status=status.HTTP_200_OK)
+
+    def add_to_voting_group(self, user_request):
+        # Logic to add the user to the appropriate voting group
+        user = user_request.user
+        election = user_request.election
+        
+        ElectionGroups.objects.create(election=election, user=user)
     
-    Candidates.objects.filter(candidate=withdrawal_token.candidate, election=withdrawal_token.election).delete()
-    election_pos = ElectionPosition.objects.filter(election=election, position_name = withdrawal_token.position_name.position_name)
-    CandidatePosition.objects.filter(candidate=withdrawal_token.candidate, election_position__in=election_pos).delete()
+    def add_to_cadidates(self, user_request):
+        user = user_request.user
+        election = user_request.election
+        position = user_request.position
 
-    # Mark the token as used (approved/rejected)
-    withdrawal_token.delete()
+        CandidatePosition.objects.create(election_position=position, candidate=user)
+        if election.allow_self_vote:
+            ElectionGroups.objects.get_or_create(election=election, user=user)
+        else:
+            ElectionGroups.objects.filter(election=election, user=user).delete()
+    
+    def remove_from_candidates(self, user_request):
+        candidate = user_request.user
+        position = user_request.position
 
-    # Redirect to a confirmation page
-    return render(request, "candidate_withdraw/withdrawal_processed.html", {"action": 'approve'})
+        CandidatePosition.objects.filter(candidate=candidate, election_position=position).delete()
+
+
+class PendingRequestsView(APIView):
+    permission_classes = [IsAuthenticated, IsAdmin]
+
+    def get(self, request):
+        # Fetch all requests with a 'PENDING' status
+        pending_requests = Request.objects.filter(status='PENDING')
+    
+        serializer = RequestSerializer(pending_requests, many=True)
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
