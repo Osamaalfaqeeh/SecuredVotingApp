@@ -7,7 +7,7 @@ from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 # from .serializers import CustomAuthTokenSerializer
 from django.contrib.auth.hashers import make_password, check_password
 from .models import Users, Institutions, Authentication, BlacklistedToken, Elections, ElectionVotingGroups, VotingGroups, Candidates, VotingGroupMembers, ElectionGroups, Votes, \
-VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote, ElectionApproval, WithdrawalToken, Request
+VotingSession, Logs, Roles, ElectionPosition, CandidatePosition, ReferendumQuestion, ReferendumOption, ReferendumVote, ElectionApproval, WithdrawalToken, Request, AdminAccessRequest
 from .serializers import RegisterSerializer, LoginSerializer, ElectionSerializer, ProfilePictureSerializer, RequestSerializer
 from datetime import datetime, timedelta
 from django.utils import timezone
@@ -1776,40 +1776,22 @@ class ResetPasswordView(APIView):
 
 class RequestAdminAccessView(APIView):
     permission_classes = [IsAuthenticated]
+
     def post(self, request):
-        user = request.user  # Get the currently authenticated user
+        user = request.user
 
         # Check if the user is already an admin
         if user.role.role_name == 'admin':
             return Response({"message": "You are already an admin."}, status=400)
 
-        # Generate a unique token for the admin request
-        token = str(uuid.uuid4())  # Generate a unique token
+        # Check if a request already exists
+        if AdminAccessRequest.objects.filter(user=user, approved=False).exists():
+            return Response({"message": "You already have a pending request."}, status=400)
 
-        # Store the token in the cache with an expiration time (e.g., 24 hours)
-        expires_at = timezone.now() + timedelta(hours=24)
-        cache.set(f'admin_request_token_{token}', user.user_id, timeout=86400)  # 86400 seconds = 24 hours
+        # Create a new admin access request
+        AdminAccessRequest.objects.create(user=user)
 
-        # Send the email to the admin
-        admin_email = settings.ADMIN_EMAIL  # Use your admin email from settings
-        domain = get_current_site(request).domain
-        # Generate the approval link
-        approval_link = f"{f'http://{domain}/api/auth'}/approve-admin-access/{token}/"
-        email_message = render_to_string(
-                'admin/admin_approval_email.html',  # Email template
-                {'user': user, 'approval_link': approval_link}
-            )
-        # Send the email
-        send_mail(
-            'Admin Access Request',
-            email_message,
-            'no-reply@yourdomain.com',
-            [admin_email],
-            html_message=email_message,
-            fail_silently=False,
-        )
-
-        return Response({"Admin access request sent for approval."}, status=201)
+        return Response({"message": "Admin access request submitted for review."}, status=201)
 
 
 def ApproveAdminAccessView(request, token):

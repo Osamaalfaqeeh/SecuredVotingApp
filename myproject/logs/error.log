@@ -18530,3 +18530,1959 @@ INFO 2024-12-18 05:36:15,413 autoreload C:\Users\Osama\MyProjects\Senior Project
 INFO 2024-12-18 05:36:16,769 autoreload Watching for file changes with StatReloader
 INFO 2024-12-18 05:36:21,112 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\urls.py changed, reloading.
 INFO 2024-12-18 05:36:22,255 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 05:37:31,305 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-18 12:20:31,508 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-18 12:20:31,510 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-18 12:20:31,635 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-18 12:20:31,740 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 12:20:32,882 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 12:20:32,952 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-18 12:20:33,375 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-18 12:20:36,548 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 12:21:41,915 basehttp "POST /api/auth/register/ HTTP/1.1" 201 60
+INFO 2024-12-18 12:22:11,121 basehttp "GET /api/auth/activate/ZDJkZjViNGYtYTNmNi00ZGEwLTkyYWEtZDI4M2QxMzFjMmEx/eyJ1c2VyX2lkIjoiZDJkZjViNGYtYTNmNi00ZGEwLTkyYWEtZDI4M2QxMzFjMmExIiwidGltZXN0YW1wIjoxNzM0NTEzNjkwfQ:1tNqFG:Wk3-PLTjSU6fSPNnKMRGFFAw477ly8613TRSoBeaZJE/ HTTP/1.1" 302 0
+INFO 2024-12-18 12:22:11,165 basehttp "GET /api/auth/activation-success/ HTTP/1.1" 200 245
+WARNING 2024-12-18 12:22:11,334 log Not Found: /favicon.ico
+INFO 2024-12-18 12:22:11,335 basehttp - Broken pipe from ('192.168.1.21', 64290)
+INFO 2024-12-18 12:22:48,870 views Login attempt from IP: 192.168.1.74 for user: testnumber3@std.psut.edu.jo
+INFO 2024-12-18 12:22:49,549 views User testnumber3@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 12:22:49,557 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 12:22:49,889 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 12:22:51,593 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 12:22:51,636 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-18 12:22:52,401 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 12:22:55,835 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-18 12:22:55,879 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2024-12-18 12:22:58,374 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-18 12:23:17,643 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+ERROR 2024-12-18 12:23:18,509 views Invalid login attempt for testnumber2@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2024-12-18 12:23:18,509 log Bad Request: /api/auth/login/
+WARNING 2024-12-18 12:23:18,510 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2024-12-18 12:23:28,225 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-18 12:23:28,879 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-18 12:23:28,952 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-18 12:23:29,280 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 12:24:57,207 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 587
+INFO 2024-12-18 18:56:45,519 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-18 18:56:49,367 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 18:56:55,413 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-18 18:56:56,869 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 18:57:00,736 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-18 18:57:02,047 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 19:00:08,300 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-18 19:00:09,839 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 19:13:05,100 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 19:13:28,718 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-18 19:13:28,778 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-18 19:13:29,917 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-12-18 19:13:29,923 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2024-12-18 19:13:30,009 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2024-12-18 19:13:30,027 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2024-12-18 19:13:30,035 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2024-12-18 19:13:30,039 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-12-18 19:13:30,041 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2024-12-18 19:13:45,844 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+ERROR 2024-12-18 19:13:45,953 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 19:13:45,959 basehttp "GET /admin/ HTTP/1.1" 500 73034
+ERROR 2024-12-18 19:13:46,285 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 19:13:46,290 basehttp "GET /favicon.ico HTTP/1.1" 500 72812
+INFO 2024-12-18 19:53:29,118 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 19:53:31,868 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 19:53:43,026 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 19:53:44,787 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 19:58:03,743 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-18 19:58:06,335 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 19:58:59,430 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-18 19:59:01,497 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-18 19:59:33,006 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 19:59:33,013 basehttp "GET /admin/ HTTP/1.1" 500 73034
+ERROR 2024-12-18 19:59:33,156 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 19:59:33,164 basehttp - Broken pipe from ('192.168.1.21', 49630)
+ERROR 2024-12-18 19:59:34,163 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 19:59:34,169 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 500 73296
+ERROR 2024-12-18 19:59:37,469 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 19:59:37,485 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:00:05,135 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:00:05,140 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:00:05,285 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 20:00:05,293 basehttp - Broken pipe from ('192.168.1.21', 49633)
+INFO 2024-12-18 20:00:15,870 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-18 20:00:23,273 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:00:23,281 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:00:23,405 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 20:00:23,414 basehttp - Broken pipe from ('192.168.1.21', 49705)
+INFO 2024-12-18 20:00:50,562 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-18 20:01:04,172 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:04,180 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:04,296 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 20:01:04,307 basehttp - Broken pipe from ('192.168.1.21', 49772)
+ERROR 2024-12-18 20:01:04,817 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:04,823 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:05,497 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:05,502 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:05,600 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 20:01:05,607 basehttp - Broken pipe from ('192.168.1.21', 49775)
+ERROR 2024-12-18 20:01:06,156 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:06,163 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:06,713 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:06,719 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:07,282 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:07,287 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:07,772 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:07,777 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:15,521 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:15,527 basehttp "GET / HTTP/1.1" 500 72698
+ERROR 2024-12-18 20:01:22,556 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:01:22,561 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:01:22,679 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 20:01:22,686 basehttp - Broken pipe from ('192.168.1.21', 49785)
+INFO 2024-12-18 20:05:43,011 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-18 20:05:44,745 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 20:06:24,688 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-18 20:06:37,265 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:06:37,271 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:06:37,391 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 20:06:37,401 basehttp - Broken pipe from ('192.168.1.21', 50066)
+ERROR 2024-12-18 20:07:46,912 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-18 20:07:46,917 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-18 20:07:47,096 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-18 20:07:47,106 basehttp - Broken pipe from ('192.168.1.21', 50716)
+INFO 2024-12-19 00:29:24,328 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:29:27,451 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:30:12,266 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:30:13,688 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:30:23,137 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:30:24,680 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:30:49,649 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:30:51,928 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:37:04,854 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\authentication.py changed, reloading.
+INFO 2024-12-19 00:37:06,419 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-19 00:37:19,201 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-19 00:37:19,209 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-19 00:37:19,377 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:37:19,398 basehttp - Broken pipe from ('192.168.1.21', 61236)
+ERROR 2024-12-19 00:37:21,897 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-19 00:37:21,903 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-19 00:37:22,071 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:37:22,078 basehttp - Broken pipe from ('192.168.1.21', 61239)
+INFO 2024-12-19 00:37:40,243 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\authentication.py changed, reloading.
+INFO 2024-12-19 00:37:41,898 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:38:22,159 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\authentication.py changed, reloading.
+INFO 2024-12-19 00:38:23,890 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-19 00:38:37,157 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+ERROR 2024-12-19 00:38:37,166 basehttp "GET /admin/ HTTP/1.1" 500 72862
+ERROR 2024-12-19 00:38:37,325 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 14, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:38:37,333 basehttp - Broken pipe from ('192.168.1.21', 61295)
+INFO 2024-12-19 00:39:31,108 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py changed, reloading.
+INFO 2024-12-19 00:39:33,512 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:39:44,326 basehttp "GET /admin/ HTTP/1.1" 200 12130
+INFO 2024-12-19 00:39:44,533 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-12-19 00:39:44,545 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-12-19 00:39:44,556 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-12-19 00:39:57,512 basehttp "GET /admin/rest_framework_api_key/apikey/ HTTP/1.1" 200 16213
+INFO 2024-12-19 00:39:57,570 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2024-12-19 00:39:57,580 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-12-19 00:39:57,585 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-12-19 00:39:57,589 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-12-19 00:39:57,596 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-12-19 00:39:57,601 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-12-19 00:39:57,614 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-12-19 00:39:57,617 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2024-12-19 00:39:57,624 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 00:39:57,628 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2024-12-19 00:39:57,631 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-12-19 00:39:57,635 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-12-19 00:39:57,646 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2024-12-19 00:39:57,827 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-12-19 00:39:57,828 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-12-19 00:39:57,828 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-12-19 00:40:02,487 basehttp "GET /admin/ HTTP/1.1" 200 12130
+INFO 2024-12-19 00:40:04,291 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 00:40:04,380 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 00:40:04,382 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+ERROR 2024-12-19 00:40:04,487 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:40:04,494 basehttp - Broken pipe from ('192.168.1.21', 61348)
+INFO 2024-12-19 00:40:11,478 basehttp "GET /admin/ HTTP/1.1" 200 12130
+INFO 2024-12-19 00:40:12,790 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12156
+INFO 2024-12-19 00:40:12,882 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 00:40:13,988 basehttp "GET /admin/ HTTP/1.1" 200 12130
+INFO 2024-12-19 00:40:29,994 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\authentication.py changed, reloading.
+INFO 2024-12-19 00:40:31,967 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:40:43,864 basehttp "GET /admin/ HTTP/1.1" 200 12130
+INFO 2024-12-19 00:40:57,052 basehttp "GET /admin/django_celery_beat/periodictask/ HTTP/1.1" 200 15288
+INFO 2024-12-19 00:40:57,136 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:40:57,305 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:40:57,319 basehttp - Broken pipe from ('192.168.1.21', 61412)
+INFO 2024-12-19 00:40:59,789 basehttp "GET /admin/django_celery_beat/intervalschedule/ HTTP/1.1" 200 11892
+INFO 2024-12-19 00:40:59,857 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:40:59,944 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:40:59,951 basehttp - Broken pipe from ('192.168.1.21', 61428)
+INFO 2024-12-19 00:41:00,980 basehttp "GET /admin/django_celery_beat/crontabschedule/ HTTP/1.1" 200 11885
+INFO 2024-12-19 00:41:01,051 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 00:41:02,955 basehttp "GET /admin/django_celery_beat/clockedschedule/ HTTP/1.1" 200 11883
+INFO 2024-12-19 00:41:03,027 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 00:41:04,582 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 12172
+INFO 2024-12-19 00:41:04,674 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:41:22,257 log Internal Server Error: /admin/myapp/request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Request has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py", line 88, in __str__
+    return f"{self.user.username} - {self.get_request_type_display()} - {self.get_status_display()}"
+              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'username'
+ERROR 2024-12-19 00:41:22,349 basehttp "GET /admin/myapp/request/ HTTP/1.1" 500 400671
+INFO 2024-12-19 00:41:29,476 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 12172
+ERROR 2024-12-19 00:41:31,173 log Internal Server Error: /admin/myapp/request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Request has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py", line 88, in __str__
+    return f"{self.user.username} - {self.get_request_type_display()} - {self.get_status_display()}"
+              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'username'
+ERROR 2024-12-19 00:41:31,193 basehttp "GET /admin/myapp/request/ HTTP/1.1" 500 400671
+INFO 2024-12-19 00:42:19,136 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 12172
+INFO 2024-12-19 00:42:54,613 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:42:56,357 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:43:51,669 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\authentication.py changed, reloading.
+INFO 2024-12-19 00:43:53,867 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:43:59,636 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 12172
+INFO 2024-12-19 00:43:59,701 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:43:59,790 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:43:59,797 basehttp - Broken pipe from ('192.168.1.21', 61566)
+INFO 2024-12-19 00:44:03,313 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 00:44:03,402 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 00:44:04,917 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12156
+INFO 2024-12-19 00:44:04,989 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:44:05,097 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:44:05,104 basehttp - Broken pipe from ('192.168.1.21', 61572)
+INFO 2024-12-19 00:44:05,704 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 00:44:05,773 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:44:14,429 log Internal Server Error: /admin/myapp/request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Request has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py", line 88, in __str__
+    return f"{self.user.username} - {self.get_request_type_display()} - {self.get_status_display()}"
+              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'username'
+ERROR 2024-12-19 00:44:14,485 basehttp "GET /admin/myapp/request/ HTTP/1.1" 500 400664
+ERROR 2024-12-19 00:44:14,702 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:44:14,708 basehttp - Broken pipe from ('192.168.1.21', 61580)
+INFO 2024-12-19 00:44:25,260 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 00:45:01,546 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 00:45:01,615 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:45:01,710 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:45:01,717 basehttp - Broken pipe from ('192.168.1.21', 61602)
+INFO 2024-12-19 00:47:18,104 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:47:20,221 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:47:30,642 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12156
+INFO 2024-12-19 00:47:30,713 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:47:30,963 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:47:30,969 basehttp - Broken pipe from ('192.168.1.21', 61723)
+ERROR 2024-12-19 00:47:33,090 log Internal Server Error: /admin/myapp/request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Request has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py", line 88, in __str__
+    return f"{self.user.username} - {self.get_request_type_display()} - {self.get_status_display()}"
+              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'username'
+ERROR 2024-12-19 00:47:33,126 basehttp "GET /admin/myapp/request/ HTTP/1.1" 500 400649
+INFO 2024-12-19 00:47:41,645 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12156
+INFO 2024-12-19 00:48:08,589 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:48:10,096 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:48:13,243 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:48:14,573 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:54:38,860 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 00:54:40,389 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:54:55,079 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12156
+INFO 2024-12-19 00:54:55,165 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:54:55,363 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:54:55,370 basehttp - Broken pipe from ('192.168.1.21', 62023)
+ERROR 2024-12-19 00:54:59,384 log Internal Server Error: /admin/myapp/request/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Request has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py", line 88, in __str__
+    return f"{self.user.username} - {self.get_request_type_display()} - {self.get_status_display()}"
+              ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Users' object has no attribute 'username'
+ERROR 2024-12-19 00:54:59,409 basehttp "GET /admin/myapp/request/ HTTP/1.1" 500 400433
+ERROR 2024-12-19 00:54:59,581 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:54:59,588 basehttp - Broken pipe from ('192.168.1.21', 62030)
+INFO 2024-12-19 00:55:54,955 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-19 00:55:56,915 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:56:05,588 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12156
+INFO 2024-12-19 00:56:05,861 basehttp - Broken pipe from ('192.168.1.21', 62080)
+INFO 2024-12-19 00:56:07,313 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 15823
+INFO 2024-12-19 00:56:07,420 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:56:07,597 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 16, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:56:07,608 basehttp - Broken pipe from ('192.168.1.21', 62084)
+INFO 2024-12-19 00:58:20,156 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py changed, reloading.
+INFO 2024-12-19 00:58:21,997 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 00:58:33,199 basehttp "GET /admin/ HTTP/1.1" 200 12130
+INFO 2024-12-19 00:58:37,673 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 15823
+INFO 2024-12-19 00:58:37,757 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 00:58:53,879 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 00:58:53,948 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 00:58:54,046 log Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py", line 17, in __call__
+    if request.user.is_authenticated and not request.user.is_verified:
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'is_verified'
+INFO 2024-12-19 00:58:54,053 basehttp - Broken pipe from ('192.168.1.21', 62174)
+INFO 2024-12-19 00:58:55,920 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-19 00:58:56,040 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-19 00:58:56,939 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2024-12-19 00:58:56,956 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2024-12-19 00:58:57,038 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2024-12-19 00:58:57,084 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2024-12-19 00:58:57,198 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-12-19 00:58:57,200 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2024-12-19 00:58:57,202 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-12-19 01:01:37,125 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py changed, reloading.
+INFO 2024-12-19 01:01:39,051 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:01:47,076 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 01:01:47,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:01:47,421 log Not Found: /favicon.ico
+INFO 2024-12-19 01:01:47,422 basehttp - Broken pipe from ('192.168.1.21', 62313)
+INFO 2024-12-19 01:01:51,852 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 01:01:51,940 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:01:51,997 log Not Found: /favicon.ico
+INFO 2024-12-19 01:01:51,999 basehttp - Broken pipe from ('192.168.1.21', 62320)
+INFO 2024-12-19 01:01:55,239 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12156
+INFO 2024-12-19 01:01:55,454 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:01:56,829 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15744
+INFO 2024-12-19 01:01:56,947 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:02:10,929 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 15823
+INFO 2024-12-19 01:02:11,000 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:02:11,087 log Not Found: /favicon.ico
+INFO 2024-12-19 01:02:11,089 basehttp - Broken pipe from ('192.168.1.21', 62335)
+INFO 2024-12-19 01:02:31,503 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\middleware\check_verification_middleware.py changed, reloading.
+INFO 2024-12-19 01:02:33,205 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:02:45,420 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 15823
+INFO 2024-12-19 01:02:45,491 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:02:45,586 log Not Found: /favicon.ico
+INFO 2024-12-19 01:02:45,587 basehttp - Broken pipe from ('192.168.1.21', 62404)
+INFO 2024-12-19 01:02:51,256 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 12172
+INFO 2024-12-19 01:02:51,337 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:02:58,603 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 15823
+INFO 2024-12-19 01:02:58,672 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:02:58,766 log Not Found: /favicon.ico
+INFO 2024-12-19 01:02:58,768 basehttp - Broken pipe from ('192.168.1.21', 62413)
+INFO 2024-12-19 01:09:42,753 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-19 01:09:44,341 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:10:16,043 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-19 01:10:17,261 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:19:59,519 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:20:01,095 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:22:03,558 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-19 01:22:05,219 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:22:20,000 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2024-12-19 01:22:21,629 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:22:38,614 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 16311
+INFO 2024-12-19 01:22:38,713 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:22:38,886 log Not Found: /favicon.ico
+INFO 2024-12-19 01:22:38,890 basehttp - Broken pipe from ('192.168.1.21', 63236)
+ERROR 2024-12-19 01:22:40,365 log Internal Server Error: /admin/myapp/adminaccessrequest/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'voting_system.myapp_adminaccessrequest' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'voting_system.myapp_adminaccessrequest' doesn't exist")
+ERROR 2024-12-19 01:22:40,384 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 500 228179
+INFO 2024-12-19 01:22:44,902 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 16311
+INFO 2024-12-19 01:22:59,650 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:23:14,148 basehttp "GET /admin/myapp/request/ HTTP/1.1" 200 16311
+INFO 2024-12-19 01:23:14,214 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:23:14,292 log Not Found: /favicon.ico
+INFO 2024-12-19 01:23:14,294 basehttp - Broken pipe from ('192.168.1.21', 63275)
+INFO 2024-12-19 01:23:17,400 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 12396
+INFO 2024-12-19 01:23:17,476 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:23:17,561 log Not Found: /favicon.ico
+INFO 2024-12-19 01:23:17,564 basehttp - Broken pipe from ('192.168.1.21', 63282)
+INFO 2024-12-19 01:23:22,259 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16232
+INFO 2024-12-19 01:23:22,331 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:23:22,409 log Not Found: /favicon.ico
+INFO 2024-12-19 01:23:22,416 basehttp - Broken pipe from ('192.168.1.21', 63288)
+INFO 2024-12-19 01:25:44,099 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16232
+INFO 2024-12-19 01:25:44,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:25:44,279 log Not Found: /favicon.ico
+INFO 2024-12-19 01:25:44,280 basehttp - Broken pipe from ('192.168.1.21', 63382)
+INFO 2024-12-19 01:25:57,173 basehttp - Broken pipe from ('192.168.1.21', 63392)
+INFO 2024-12-19 01:25:57,212 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 12396
+INFO 2024-12-19 01:25:57,283 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:25:57,334 log Not Found: /favicon.ico
+INFO 2024-12-19 01:25:57,336 basehttp - Broken pipe from ('192.168.1.21', 63394)
+WARNING 2024-12-19 01:26:06,414 log Unauthorized: /api/auth/active-elections/
+WARNING 2024-12-19 01:26:06,416 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2024-12-19 01:26:06,518 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2024-12-19 01:26:06,647 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 312
+INFO 2024-12-19 01:26:07,916 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-19 01:26:08,007 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-19 01:26:08,536 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 200 73508
+INFO 2024-12-19 01:26:13,846 basehttp "POST /api/auth/request-admin-access/ HTTP/1.1" 201 56
+WARNING 2024-12-19 01:26:17,505 log Bad Request: /api/auth/request-admin-access/
+WARNING 2024-12-19 01:26:17,505 basehttp "POST /api/auth/request-admin-access/ HTTP/1.1" 400 49
+INFO 2024-12-19 01:26:22,384 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14488
+INFO 2024-12-19 01:26:22,470 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:26:22,570 log Not Found: /favicon.ico
+INFO 2024-12-19 01:26:22,572 basehttp - Broken pipe from ('192.168.1.21', 63424)
+INFO 2024-12-19 01:27:44,180 basehttp "GET /admin/myapp/adminaccessrequest/add/ HTTP/1.1" 200 15864
+INFO 2024-12-19 01:27:44,260 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2024-12-19 01:27:44,275 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-12-19 01:27:44,283 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-12-19 01:27:44,302 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2024-12-19 01:27:44,328 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:27:44,338 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-12-19 01:27:44,357 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-12-19 01:27:44,519 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-12-19 01:27:44,521 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+WARNING 2024-12-19 01:27:44,551 log Not Found: /favicon.ico
+INFO 2024-12-19 01:27:44,553 basehttp - Broken pipe from ('192.168.1.21', 63474)
+INFO 2024-12-19 01:27:57,039 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14488
+INFO 2024-12-19 01:28:21,523 basehttp "GET /admin/myapp/adminaccessrequest/add/ HTTP/1.1" 200 15864
+INFO 2024-12-19 01:28:21,604 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:28:21,693 log Not Found: /favicon.ico
+INFO 2024-12-19 01:28:21,707 basehttp - Broken pipe from ('192.168.1.21', 63471)
+INFO 2024-12-19 01:28:42,586 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14488
+INFO 2024-12-19 01:29:19,885 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:29:21,611 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:30:53,903 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:30:55,301 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:31:00,891 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14488
+INFO 2024-12-19 01:31:00,958 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:31:01,021 log Not Found: /favicon.ico
+INFO 2024-12-19 01:31:01,022 basehttp - Broken pipe from ('192.168.1.21', 63607)
+INFO 2024-12-19 01:31:02,523 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14488
+INFO 2024-12-19 01:31:02,599 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:31:20,931 basehttp "GET /admin/myapp/adminaccessrequest/1/change/ HTTP/1.1" 200 16179
+INFO 2024-12-19 01:31:21,009 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:31:21,075 log Not Found: /favicon.ico
+INFO 2024-12-19 01:31:21,094 basehttp - Broken pipe from ('192.168.1.21', 63613)
+INFO 2024-12-19 01:31:30,548 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14488
+INFO 2024-12-19 01:31:58,116 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:31:59,564 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:32:09,967 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14068
+INFO 2024-12-19 01:32:10,035 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:32:10,122 log Not Found: /favicon.ico
+INFO 2024-12-19 01:32:10,124 basehttp - Broken pipe from ('192.168.1.21', 63660)
+INFO 2024-12-19 01:32:13,646 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14068
+INFO 2024-12-19 01:32:13,707 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:32:13,764 log Not Found: /favicon.ico
+INFO 2024-12-19 01:32:13,765 basehttp - Broken pipe from ('192.168.1.21', 63666)
+INFO 2024-12-19 01:33:18,239 basehttp "POST /admin/myapp/adminaccessrequest/ HTTP/1.1" 302 0
+INFO 2024-12-19 01:33:18,292 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14261
+INFO 2024-12-19 01:33:18,365 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:33:18,734 basehttp "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+ERROR 2024-12-19 01:33:23,114 log Internal Server Error: /admin/myapp/adminaccessrequest/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 2034, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1666, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py", line 51, in approve_requests
+    access_request.processed_at = timezone.now()
+                                  ^^^^^^^^^^^^
+AttributeError: type object 'datetime.timezone' has no attribute 'now'
+ERROR 2024-12-19 01:33:23,131 basehttp "POST /admin/myapp/adminaccessrequest/ HTTP/1.1" 500 129282
+INFO 2024-12-19 01:33:55,067 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:33:57,010 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:34:07,511 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14068
+INFO 2024-12-19 01:34:08,980 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14068
+INFO 2024-12-19 01:34:09,043 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:34:19,101 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-19 01:34:20,634 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-19 01:34:20,688 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+ERROR 2024-12-19 01:34:35,028 log Internal Server Error: /admin/myapp/adminaccessrequest/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 2034, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1666, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py", line 58, in approve_requests
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 153, in _send
+    message = email_message.message()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 263, in message
+    msg = SafeMIMEText(self.body, self.content_subtype, encoding)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 162, in __init__
+    MIMEText.__init__(self, _text, _subtype=_subtype, _charset=_charset)
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\email\mime\text.py", line 40, in __init__
+    self.set_payload(_text, _charset)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 173, in set_payload
+    for line in payload.splitlines()
+                ^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'splitlines'
+ERROR 2024-12-19 01:34:35,062 basehttp "POST /admin/myapp/adminaccessrequest/ HTTP/1.1" 500 169712
+INFO 2024-12-19 01:39:38,134 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:39:40,118 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:39:52,881 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14092
+INFO 2024-12-19 01:39:52,950 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:39:58,351 basehttp "POST /admin/myapp/adminaccessrequest/ HTTP/1.1" 302 0
+INFO 2024-12-19 01:39:58,383 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14232
+INFO 2024-12-19 01:39:58,447 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:40:25,507 basehttp "GET /admin/myapp/adminaccessrequest/1/change/ HTTP/1.1" 200 15803
+INFO 2024-12-19 01:40:25,621 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:40:25,689 log Not Found: /favicon.ico
+INFO 2024-12-19 01:40:25,694 basehttp - Broken pipe from ('192.168.1.21', 64060)
+INFO 2024-12-19 01:40:31,296 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14092
+INFO 2024-12-19 01:41:18,501 basehttp "GET /admin/myapp/adminaccessrequest/1/change/ HTTP/1.1" 200 15803
+INFO 2024-12-19 01:41:18,576 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:41:18,701 log Not Found: /favicon.ico
+INFO 2024-12-19 01:41:18,703 basehttp - Broken pipe from ('192.168.1.21', 64131)
+INFO 2024-12-19 01:41:18,805 basehttp - Broken pipe from ('192.168.1.21', 64102)
+INFO 2024-12-19 01:41:28,230 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 456
+INFO 2024-12-19 01:41:29,048 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-19 01:41:29,157 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-19 01:41:30,761 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 312
+INFO 2024-12-19 01:41:31,885 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-19 01:41:31,930 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-19 01:41:35,332 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-19 01:41:48,939 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-19 01:41:49,678 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-19 01:41:49,760 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2024-12-19 01:41:50,064 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 312
+INFO 2024-12-19 01:41:50,205 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 312
+INFO 2024-12-19 01:41:51,617 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-19 01:41:51,679 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+WARNING 2024-12-19 01:41:56,836 log Bad Request: /api/auth/request-admin-access/
+WARNING 2024-12-19 01:41:56,836 basehttp "POST /api/auth/request-admin-access/ HTTP/1.1" 400 39
+INFO 2024-12-19 01:42:37,970 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14092
+INFO 2024-12-19 01:42:38,055 basehttp - Broken pipe from ('192.168.1.21', 64202)
+INFO 2024-12-19 01:42:38,057 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:42:38,137 log Not Found: /favicon.ico
+INFO 2024-12-19 01:42:38,138 basehttp - Broken pipe from ('192.168.1.21', 64198)
+INFO 2024-12-19 01:42:51,361 basehttp "POST /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 12068
+INFO 2024-12-19 01:42:51,425 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2024-12-19 01:43:05,276 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14092
+INFO 2024-12-19 01:43:52,357 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:43:54,033 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:44:05,606 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14161
+INFO 2024-12-19 01:44:05,671 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-12-19 01:44:10,392 log Internal Server Error: /admin/myapp/adminaccessrequest/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'status'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 2034, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\contrib\admin\options.py", line 1666, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py", line 70, in reject_requests
+    queryset.update(status='rejected')
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\query.py", line 1228, in update
+    query.add_update_values(kwargs)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\sql\subqueries.py", line 88, in add_update_values
+    field = self.get_meta().get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: AdminAccessRequest has no field named 'status'
+ERROR 2024-12-19 01:44:10,407 basehttp "POST /admin/myapp/adminaccessrequest/ HTTP/1.1" 500 145035
+INFO 2024-12-19 01:44:42,763 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 14161
+INFO 2024-12-19 01:44:47,558 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:44:49,219 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:46:09,800 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15812
+INFO 2024-12-19 01:46:09,887 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:46:10,105 log Not Found: /favicon.ico
+INFO 2024-12-19 01:46:10,107 basehttp - Broken pipe from ('192.168.1.21', 64362)
+INFO 2024-12-19 01:47:36,816 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:47:39,134 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:48:02,586 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:48:04,640 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:50:33,796 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:50:35,477 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:50:46,350 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:50:47,665 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:50:59,418 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16220
+INFO 2024-12-19 01:50:59,488 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:50:59,548 log Not Found: /favicon.ico
+INFO 2024-12-19 01:50:59,549 basehttp - Broken pipe from ('192.168.1.21', 64593)
+INFO 2024-12-19 01:51:01,222 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 24890
+INFO 2024-12-19 01:51:01,334 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:51:10,649 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 24890
+INFO 2024-12-19 01:51:10,721 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:51:10,795 log Not Found: /favicon.ico
+INFO 2024-12-19 01:51:10,811 basehttp - Broken pipe from ('192.168.1.21', 64597)
+INFO 2024-12-19 01:51:23,504 basehttp "GET /admin/myapp/users/529f0208-526b-4808-a50b-7172e2bf776a/change/ HTTP/1.1" 200 24829
+INFO 2024-12-19 01:51:23,570 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:51:23,642 log Not Found: /favicon.ico
+INFO 2024-12-19 01:51:23,649 basehttp - Broken pipe from ('192.168.1.21', 64618)
+INFO 2024-12-19 01:53:32,835 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-19 01:53:35,127 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:53:39,767 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2024-12-19 01:53:41,287 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:53:52,367 basehttp "GET /admin/myapp/users/529f0208-526b-4808-a50b-7172e2bf776a/change/ HTTP/1.1" 200 24736
+INFO 2024-12-19 01:53:52,437 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:54:58,612 basehttp - Broken pipe from ('192.168.1.21', 64725)
+INFO 2024-12-19 01:54:58,656 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16220
+INFO 2024-12-19 01:55:00,435 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 24423
+INFO 2024-12-19 01:55:00,507 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:55:14,205 basehttp "GET /admin/myapp/users/d06f477d-edb5-4914-a117-5287ab09057a/change/ HTTP/1.1" 200 25142
+INFO 2024-12-19 01:55:14,276 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:55:33,491 basehttp "POST /admin/myapp/users/d06f477d-edb5-4914-a117-5287ab09057a/change/ HTTP/1.1" 200 25305
+INFO 2024-12-19 01:55:33,568 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:57:38,990 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 01:57:40,803 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 01:57:56,763 basehttp "POST /admin/myapp/users/d06f477d-edb5-4914-a117-5287ab09057a/change/ HTTP/1.1" 302 0
+INFO 2024-12-19 01:57:56,901 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 24699
+INFO 2024-12-19 01:57:56,983 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:58:00,705 basehttp "GET /admin/myapp/users/d06f477d-edb5-4914-a117-5287ab09057a/change/ HTTP/1.1" 200 24562
+INFO 2024-12-19 01:58:00,782 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 01:58:29,717 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 24422
+INFO 2024-12-19 01:58:29,808 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 01:58:40,231 log Forbidden: /api/auth/admin/requests/pending/
+WARNING 2024-12-19 01:58:40,232 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 403 63
+WARNING 2024-12-19 01:58:41,946 log Forbidden: /api/auth/admin-voting-history/
+WARNING 2024-12-19 01:58:41,946 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 403 63
+WARNING 2024-12-19 01:58:43,435 log Forbidden: /api/auth/admin/requests/pending/
+WARNING 2024-12-19 01:58:43,436 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 403 63
+INFO 2024-12-19 01:58:44,042 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2024-12-19 01:58:44,105 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 131
+INFO 2024-12-19 01:58:46,889 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-19 01:59:02,183 views Login attempt from IP: 192.168.1.74 for user: testnumber2@std.psut.edu.jo
+INFO 2024-12-19 01:59:02,846 views User testnumber2@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2024-12-19 01:59:02,870 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2024-12-19 01:59:03,132 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 312
+WARNING 2024-12-19 01:59:44,795 log Not Found: /
+WARNING 2024-12-19 01:59:44,796 basehttp "GET / HTTP/1.1" 404 2484
+INFO 2024-12-19 02:00:00,913 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 24422
+INFO 2024-12-19 02:00:01,164 basehttp - Broken pipe from ('192.168.1.21', 64906)
+INFO 2024-12-19 02:00:04,365 basehttp "GET /admin/ HTTP/1.1" 200 13254
+INFO 2024-12-19 02:02:48,237 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 02:02:49,994 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:03:00,662 basehttp "GET /admin/ HTTP/1.1" 200 13254
+INFO 2024-12-19 02:03:01,869 basehttp "GET /admin/ HTTP/1.1" 200 13254
+INFO 2024-12-19 02:03:02,793 basehttp "GET /admin/ HTTP/1.1" 200 13254
+INFO 2024-12-19 02:03:04,432 basehttp "GET /admin/ HTTP/1.1" 200 13254
+INFO 2024-12-19 02:03:11,775 basehttp "GET /admin/ HTTP/1.1" 200 13254
+INFO 2024-12-19 02:04:51,670 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\urls.py changed, reloading.
+INFO 2024-12-19 02:04:53,885 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:05:27,516 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\urls.py changed, reloading.
+INFO 2024-12-19 02:05:29,203 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:07:47,452 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\urls.py changed, reloading.
+INFO 2024-12-19 02:07:48,844 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:08:52,457 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\urls.py changed, reloading.
+INFO 2024-12-19 02:08:54,217 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:09:05,830 basehttp "GET /admin/ HTTP/1.1" 200 4900
+INFO 2024-12-19 02:09:11,645 basehttp "GET /admin/ HTTP/1.1" 200 4900
+WARNING 2024-12-19 02:09:12,590 log Not Found: /admin/myapp/users/
+WARNING 2024-12-19 02:09:12,590 basehttp "GET /admin/myapp/users/ HTTP/1.1" 404 4653
+WARNING 2024-12-19 02:09:13,292 log Not Found: /admin/myapp/users/
+WARNING 2024-12-19 02:09:13,293 basehttp "GET /admin/myapp/users/ HTTP/1.1" 404 4653
+INFO 2024-12-19 02:09:14,024 basehttp "GET /admin/ HTTP/1.1" 200 4900
+INFO 2024-12-19 02:09:17,846 basehttp "GET /admin/ HTTP/1.1" 200 4900
+INFO 2024-12-19 02:09:40,467 basehttp "POST /admin/logout/ HTTP/1.1" 200 3554
+WARNING 2024-12-19 02:09:40,532 log Not Found: /favicon.ico
+WARNING 2024-12-19 02:09:40,533 basehttp "GET /favicon.ico HTTP/1.1" 404 2535
+INFO 2024-12-19 02:09:41,942 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-19 02:09:41,974 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4159
+INFO 2024-12-19 02:10:38,027 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 02:10:39,852 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:10:50,284 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4152
+INFO 2024-12-19 02:10:59,449 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-19 02:10:59,479 basehttp "GET /admin/ HTTP/1.1" 200 4893
+WARNING 2024-12-19 02:10:59,596 log Not Found: /favicon.ico
+WARNING 2024-12-19 02:10:59,597 basehttp "GET /favicon.ico HTTP/1.1" 404 2535
+INFO 2024-12-19 02:12:39,554 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 02:12:41,806 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:12:55,972 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 02:12:57,401 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:13:27,866 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 02:13:29,251 autoreload Watching for file changes with StatReloader
+INFO 2024-12-19 02:13:42,329 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2024-12-19 02:14:13,401 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2024-12-19 02:14:14,069 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2024-12-19 02:14:19,394 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 19749
+INFO 2024-12-19 02:14:19,497 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 02:14:19,691 log Not Found: /favicon.ico
+INFO 2024-12-19 02:14:19,692 basehttp - Broken pipe from ('192.168.1.21', 49195)
+INFO 2024-12-19 02:14:23,447 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2024-12-19 02:14:24,748 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7975
+INFO 2024-12-19 02:14:24,833 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 02:14:24,896 log Not Found: /favicon.ico
+INFO 2024-12-19 02:14:24,900 basehttp - Broken pipe from ('192.168.1.21', 49236)
+INFO 2024-12-19 02:14:26,206 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2024-12-19 02:14:27,186 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 9827
+INFO 2024-12-19 02:14:27,257 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 02:14:27,873 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2024-12-19 02:14:28,639 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7975
+INFO 2024-12-19 02:14:28,715 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 02:14:31,744 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 9827
+INFO 2024-12-19 02:14:31,803 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 02:14:31,856 log Not Found: /favicon.ico
+INFO 2024-12-19 02:14:31,867 basehttp - Broken pipe from ('192.168.1.21', 49241)
+INFO 2024-12-19 02:14:33,341 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 19749
+INFO 2024-12-19 02:14:33,419 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 02:14:34,007 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7975
+INFO 2024-12-19 02:14:34,073 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 02:14:34,513 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 9827
+INFO 2024-12-19 02:14:34,586 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 02:14:34,658 log Not Found: /favicon.ico
+INFO 2024-12-19 02:14:34,660 basehttp - Broken pipe from ('192.168.1.21', 49255)
+INFO 2024-12-19 02:14:35,409 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7975
+INFO 2024-12-19 02:14:39,341 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 19749
+INFO 2024-12-19 02:14:54,219 basehttp "GET /admin/myapp/superadmin/add/ HTTP/1.1" 200 26980
+INFO 2024-12-19 02:14:54,300 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 02:14:54,373 log Not Found: /favicon.ico
+INFO 2024-12-19 02:14:54,385 basehttp - Broken pipe from ('192.168.1.21', 49265)
+INFO 2024-12-19 02:15:27,872 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 19749
+INFO 2024-12-19 02:15:28,736 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 9827
+INFO 2024-12-19 02:15:32,625 basehttp "GET /admin/myapp/adminaccessrequest/1/change/ HTTP/1.1" 200 12431
+INFO 2024-12-19 02:15:32,704 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-19 02:15:43,562 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 9827
+INFO 2024-12-19 02:18:09,144 basehttp "GET /admin/myapp/adminaccessrequest/1/change/ HTTP/1.1" 200 12431
+INFO 2024-12-19 02:18:09,222 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-19 02:18:09,314 log Not Found: /favicon.ico
+INFO 2024-12-19 02:18:09,316 basehttp - Broken pipe from ('192.168.1.21', 49406)
+INFO 2024-12-19 02:18:26,663 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2024-12-19 02:18:28,385 autoreload Watching for file changes with StatReloader

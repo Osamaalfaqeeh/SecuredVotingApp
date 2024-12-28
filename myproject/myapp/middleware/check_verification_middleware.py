@@ -7,6 +7,8 @@ class EmailVerificationMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
+        if request.user.is_superuser:
+            return self.get_response(request)
         # Allow access to the unverified page and resend verification endpoints
         unverified_paths = [reverse('unverified_page'), reverse('resend_verification')]
 

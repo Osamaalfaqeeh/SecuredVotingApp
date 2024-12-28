@@ -1,6 +1,41 @@
 from django.db import models
 import uuid
 from datetime import datetime
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, Group, Permission
+
+class SuperAdmin(AbstractBaseUser, PermissionsMixin):
+    email = models.EmailField(unique=True)
+    name = models.CharField(max_length=255)
+    is_staff = models.BooleanField(default=True)
+    is_superuser = models.BooleanField(default=True)
+
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = []
+
+    # Custom related_name for reverse relations
+    groups = models.ManyToManyField(
+        Group,
+        related_name='superadmin_set',  # Custom related_name to avoid conflict with the User model
+        blank=True,
+    )
+    user_permissions = models.ManyToManyField(
+        Permission,
+        related_name='superadmin_set',  # Custom related_name to avoid conflict with the User model
+        blank=True,
+    )
+
+    def __str__(self):
+        return self.email
+
+
+class AdminAccessRequest(models.Model):
+    user = models.ForeignKey('Users', on_delete=models.CASCADE, related_name='admin_requests')
+    created_at = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+    processed_at = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Admin Request by {self.user.email}"
 
 class Authentication(models.Model):
     auth_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -60,7 +95,7 @@ class Request(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.user.username} - {self.get_request_type_display()} - {self.get_status_display()}"
+        return f"{self.user.firstname} - {self.get_request_type_display()} - {self.get_status_display()}"
     
 
 class Departments(models.Model):
@@ -155,6 +190,9 @@ class Roles(models.Model):
     role_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     role_name = models.CharField(unique=True, max_length=50)
     permissions = models.JSONField(blank=True, null=True)  # Optional field
+
+    def __str__(self):
+        return self.role_name
 
     class Meta:
         db_table = 'roles'
