@@ -968,6 +968,10 @@ class ActiveElectionsView(APIView):
         
         for election in elections:
             candidates = Candidates.objects.filter(election=election.election_id)
+            number_of_candidates = 0
+            positions = election.positions.all()
+            for position in positions:
+                number_of_candidates += position.candidates.all().count()
             election_data.append({
                 "election_id": str(election.election_id),
                 "election_name": election.election_name,
@@ -975,7 +979,7 @@ class ActiveElectionsView(APIView):
                 "start_time": election.start_time,
                 "end_time": election.end_time,
                 "icon": election.icon,  # You can also include a URL for the icon if it's uploaded
-                "participants": candidates.count(),  # For example, the number of candidates
+                "participants": number_of_candidates,  # For example, the number of candidates
                 "time_left": str(election.end_time - timezone.localtime()),  # Calculate time left
             })
 

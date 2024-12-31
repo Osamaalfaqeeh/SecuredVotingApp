@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u!glo4lbeix6-=s0qc5)w)hmd#$+xq*(94w)xq=-t0-+--j(x#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['192.168.1.21','86.108.11.153']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='')
 # AUTH_USER_MODEL = 'myapp.Users'
 
 
@@ -87,11 +88,11 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'voting_system',
-        'USER': 'root',
-        'PASSWORD': 'MyDatabase$1234',
-        'HOST': 'localhost',   # Or the IP address if it's hosted elsewhere
-        'PORT': '3306',        # Default MySQL port
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST', 'localhost'),
+        'PORT': config('DB_PORT', '3306'),
     }
 }
 
