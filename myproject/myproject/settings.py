@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 from decouple import config
+from celery.schedules import crontab
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +28,7 @@ SECRET_KEY = 'django-insecure-u!glo4lbeix6-=s0qc5)w)hmd#$+xq*(94w)xq=-t0-+--j(x#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='*').split(',')
 # AUTH_USER_MODEL = 'myapp.Users'
 
 
@@ -51,6 +53,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -91,7 +94,7 @@ DATABASES = {
         'NAME': config('DB_NAME'),
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST', 'localhost'),
+        'HOST': config('DB_HOST', 'db'),
         'PORT': config('DB_PORT', '3306'),
     }
 }
@@ -127,9 +130,17 @@ SIMPLE_JWT = {
 }
 
 # Celery settings
-CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Use Redis as the broker
+CELERY_BROKER_URL = config('CELERY_BROKER_URL')  # Use Redis as the broker
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
+
+# Celery Beat settings (for periodic tasks)
+CELERY_BEAT_SCHEDULE = {
+    'my_periodic_task': {
+        'task': 'myapp.tasks.my_periodic_task',  # Replace with your periodic task
+        'schedule': crontab(minute=0, hour=0),  # Example schedule: run daily at midnight
+    },
+}
 
 # Email Settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -137,8 +148,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 # EMAIL_USE_SSL = True
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'osamaalfaqeeh55@gmail.com'
-EMAIL_HOST_PASSWORD = 'indi iqsh skzn htbq'
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = "osamaalfaqeeh55@gmail.com"
 ADMIN_EMAIL = "osamaalfaqeeh55@gmail.com"
 
@@ -225,7 +236,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
