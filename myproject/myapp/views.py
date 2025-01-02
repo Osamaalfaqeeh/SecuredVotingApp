@@ -387,6 +387,8 @@ class CreateElectionView(APIView):
             # Set the creator of the election to the logged-in admin
             serializer.validated_data['created_by'] = request.user
             election = serializer.save()
+            election.institution = request.user.institution
+            election.save()
 
             # Handle election icon upload (if you have file handling)
             # if 'icon' in request.FILES:
@@ -494,7 +496,7 @@ class GetNonAdminUsersView(APIView):
         admin_user = request.user
         
         # Fetch all users except the admin
-        users = Users.objects.exclude(user_id=admin_user.user_id)  # Exclude the admin user
+        users = Users.objects.filter(institution=admin_user.institution).exclude(user_id=admin_user.user_id, role__role_name = 'admin')  # Exclude the admin user
         
         # Serialize the user data (this can be customized based on the fields you want)
         user_data = []
@@ -570,6 +572,17 @@ class EditElectionView(APIView):
         except Elections.DoesNotExist:
             return Response({"detail": "Election not found."}, status=status.HTTP_404_NOT_FOUND)
 
+         # Check if the election is launched
+        if election.is_launched:
+            # Allow updates only for specific fields
+            allowed_fields = {'election_name', 'description','start_time', 'end_time', 'icon'}
+            # invalid_fields = set(request.data.keys()) - allowed_fields
+            # if invalid_fields:
+            #     return Response(
+            #         {"detail": f"You cannot update these fields: {', '.join(invalid_fields)}"},
+            #         status=status.HTTP_400_BAD_REQUEST
+            #     )
+
         # Update election details
         serializer = ElectionSerializer(election, data=request.data, partial=True)
         if serializer.is_valid():
@@ -580,46 +593,46 @@ class EditElectionView(APIView):
             # Save basic election data
             serializer.save()
 
-
-            position_names = request.data.get('position_names', [])
-            ElectionPosition.objects.filter(election=election).delete()
-            for position_name in position_names:
-                
-                ElectionPosition.objects.create(election=election, position_name=position_name)
-        
-            # Create candidates for each position
-            candidate_ids = request.data.get('candidate_ids', {})
-            for position_name, candidates in candidate_ids.items():
-                position = ElectionPosition.objects.get(election=election, position_name=position_name)
-                CandidatePosition.objects.filter(election_position=position).delete()
-                position = ElectionPosition.objects.get(election=election, position_name=position_name)
-                candidates = Users.objects.filter(user_id__in=candidates)
-                for candidate in candidates:
-                    CandidatePosition.objects.create(election_position=position, candidate=candidate)
+            if not election.is_launched:
+                position_names = request.data.get('position_names', [])
+                ElectionPosition.objects.filter(election=election).delete()
+                for position_name in position_names:
+                    
+                    ElectionPosition.objects.create(election=election, position_name=position_name)
             
+                # Create candidates for each position
+                candidate_ids = request.data.get('candidate_ids', {})
+                for position_name, candidates in candidate_ids.items():
+                    position = ElectionPosition.objects.get(election=election, position_name=position_name)
+                    CandidatePosition.objects.filter(election_position=position).delete()
+                    position = ElectionPosition.objects.get(election=election, position_name=position_name)
+                    candidates = Users.objects.filter(user_id__in=candidates)
+                    for candidate in candidates:
+                        CandidatePosition.objects.create(election_position=position, candidate=candidate)
+                
 
-            # Handle referendum questions
-            if 'referendum_questions' in request.data:
-                ReferendumQuestion.objects.filter(election=election).delete()
-                for question_data in request.data['referendum_questions']:
-                    question = ReferendumQuestion.objects.create(
-                        election=election,
-                        question_text=question_data['question_text'],
-                        is_mandatory=question_data.get('is_mandatory', True)
-                    )
-                    if 'options' in question_data:
-                        for option_data in question_data['options']:
-                            ReferendumOption.objects.create(
-                                question=question,
-                                option_text=option_data['option_text']
-                            )
+                # Handle referendum questions
+                if 'referendum_questions' in request.data:
+                    ReferendumQuestion.objects.filter(election=election).delete()
+                    for question_data in request.data['referendum_questions']:
+                        question = ReferendumQuestion.objects.create(
+                            election=election,
+                            question_text=question_data['question_text'],
+                            is_mandatory=question_data.get('is_mandatory', True)
+                        )
+                        if 'options' in question_data:
+                            for option_data in question_data['options']:
+                                ReferendumOption.objects.create(
+                                    question=question,
+                                    option_text=option_data['option_text']
+                                )
 
-            # Handle eligible users
-            if 'user_ids' in request.data:
-                ElectionGroups.objects.filter(election=election).delete()
-                for user_id in request.data['user_ids']:
-                    user = Users.objects.get(user_id=user_id)
-                    ElectionGroups.objects.create(user=user, election=election)
+                # Handle eligible users
+                if 'user_ids' in request.data:
+                    ElectionGroups.objects.filter(election=election).delete()
+                    for user_id in request.data['user_ids']:
+                        user = Users.objects.get(user_id=user_id)
+                        ElectionGroups.objects.create(user=user, election=election)
 
             return Response({"detail": "Election updated successfully."}, status=status.HTTP_200_OK)
 
@@ -813,6 +826,8 @@ class ElectionDetailView(APIView):
     def get(self, request, election_id):
         try:
             election = Elections.objects.get(election_id=election_id)
+            if election.institution != request.user.institution:
+                return Response({"detail":"Forbidden"}, status=403)
             print(election_id)
             # Check if the election is still open based on the end time
             is_open = election.end_time > timezone.now()
@@ -875,7 +890,10 @@ class LaunchElectionView(APIView):
 
             if election.is_launched:
                 return Response({'success': False, 'detail':'Election has already been launched.'}, status=400)
-
+            
+            if election.start_time > timezone.now():
+                return Response({"detail":"election not started!"}, status=403)
+            
             election.is_launched = True
             election.save()
 
@@ -931,6 +949,7 @@ class ElectionEditView(APIView):
             "icon": election.icon,
             "allow_self_vote": election.allow_self_vote,
             "positions": positions_data,
+            "is_launched": election.is_launched,
             "users_who_can_vote": [
                 {
                     "user_id": str(user.user_id),
@@ -957,8 +976,9 @@ class ElectionEditView(APIView):
 class ActiveElectionsView(APIView):
     permission_classes = [IsAuthenticated]
     def get(self, request):
+        user = request.user
         # Fetch active elections (you can add your custom filters if needed)
-        elections = Elections.objects.filter(is_active=True,end_time__gt=timezone.now())  # Only active elections
+        elections = Elections.objects.filter(is_active=True,end_time__gt=timezone.now(),created_by__institution = user.institution)  # Only active elections
         
         if not elections:
             return Response({"message": "No active elections available."}, status=status.HTTP_200_OK)
@@ -1325,7 +1345,7 @@ class AdminInactiveElectionsView(APIView):
 
     def get(self, request):
         # Retrieve all inactive elections
-        elections = Elections.objects.filter(is_active=True,end_time__lt = timezone.now())
+        elections = Elections.objects.filter(is_active=True,end_time__lt = timezone.now(), institution=request.user.institution)
 
         # Prepare the response data
         elections_data = []
@@ -1372,7 +1392,7 @@ class InactiveElectionsView(APIView):
 
     def get(self, request):
         # Retrieve all inactive elections
-        elections = Elections.objects.filter(is_active=False)
+        elections = Elections.objects.filter(is_active=False, institution=request.user.institution)
         
         # Prepare the response data
         elections_data = []

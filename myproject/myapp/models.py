@@ -139,6 +139,7 @@ class ElectionVotingGroups(models.Model):
 class Elections(models.Model):
     election_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     election_name = models.CharField(max_length=255)
+    institution = models.ForeignKey('Institutions', on_delete=models.CASCADE, related_name='elections', null=True, blank=True)
     description = models.TextField(blank=True)  # Allow blank descriptions
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
