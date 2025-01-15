@@ -222,7 +222,7 @@ def send_verification_email(request, user):
     email = EmailMessage(
         subject,
         message,
-        'noreply@gmail.com',  # Sender's email
+        settings.DEFAULT_FROM_EMAIL,  # Sender's email
         [user.email],  # Recipient's email
     )
     email.content_subtype = "html"  # Main line that ensures HTML content

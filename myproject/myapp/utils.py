@@ -5,6 +5,7 @@ from django.template.loader import render_to_string
 from django.core.cache import cache
 import secrets
 import hashlib
+from myproject import settings
 # from django.core.mail import send_mail
 # from django.conf import settings
 
@@ -45,7 +46,7 @@ def send_2fa_code(user):
     email = EmailMessage(
         subject,
         message,
-        'noreply@example.com',  # From email address
+        settings.DEFAULT_FROM_EMAIL,  # From email address
         [user.email],           # To email address
     )
     email.content_subtype = "html"  # Ensures the email is sent as HTML

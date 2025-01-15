@@ -171,6 +171,8 @@ class Institutions(models.Model):
 
     class Meta:
         db_table = 'institutions'
+        verbose_name = "Institution"
+        verbose_name_plural = "Institutions"
 
 
 class Logs(models.Model):
@@ -232,6 +234,8 @@ class Users(models.Model):
 
     class Meta:
         db_table = 'users'
+        verbose_name = "User"
+        verbose_name_plural = "Users"
 
 
 class ElectionPosition(models.Model):

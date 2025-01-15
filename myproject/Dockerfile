@@ -48,10 +48,12 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     python -m pip install -r requirements.txt
 
 # Switch to the non-privileged user to run the application.
-USER appuser
+USER root
 
 # Copy the source code into the container.
 COPY . .
+
+RUN chown -R appuser:appuser /app
 
 # RUN python manage.py collectstatic --noinput
 

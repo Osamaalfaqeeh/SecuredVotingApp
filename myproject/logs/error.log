@@ -24734,3 +24734,1998 @@ INFO 2025-01-02 18:34:03,765 basehttp "GET /api/auth/election-edit/510b1cf0-c34b
 INFO 2025-01-02 18:37:42,108 basehttp "PUT /api/auth/edit-election/510b1cf0-c34b-4204-b97a-b1e7d057ccea/ HTTP/1.1" 200 43
 INFO 2025-01-02 18:37:42,211 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 545
 INFO 2025-01-02 18:37:44,626 basehttp "GET /api/auth/election-edit/510b1cf0-c34b-4204-b97a-b1e7d057ccea/ HTTP/1.1" 200 1234
+WARNING 2025-01-02 22:43:16,466 log Not Found: /
+WARNING 2025-01-02 22:43:17,141 log Not Found: /favicon.ico
+WARNING 2025-01-02 22:43:23,277 log Not Found: /favicon.ico
+INFO 2025-01-05 00:48:38,955 autoreload Watching for file changes with StatReloader
+INFO 2025-01-05 00:49:18,102 autoreload Watching for file changes with StatReloader
+INFO 2025-01-05 00:49:28,827 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4152
+INFO 2025-01-05 00:49:33,052 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4316
+INFO 2025-01-05 00:49:47,472 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-01-05 00:49:47,907 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-05 00:49:47,980 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-01-05 00:49:48,044 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-05 00:49:48,047 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+WARNING 2025-01-05 00:49:48,331 log Not Found: /favicon.ico
+WARNING 2025-01-05 00:49:48,332 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-05 00:49:54,357 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-05 01:05:59,167 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\urls.py changed, reloading.
+INFO 2025-01-05 01:06:02,291 autoreload Watching for file changes with StatReloader
+INFO 2025-01-05 01:06:40,657 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-05 01:06:40,706 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-01-05 01:06:40,709 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-01-05 01:06:40,745 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-01-05 01:06:40,761 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-01-05 01:06:40,765 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-01-05 01:06:40,782 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-05 01:06:40,940 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-01-05 01:06:40,962 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-05 01:06:40,983 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+WARNING 2025-01-05 01:06:41,223 log Not Found: /favicon.ico
+INFO 2025-01-05 01:06:41,226 basehttp - Broken pipe from ('127.0.0.1', 64232)
+INFO 2025-01-05 01:06:46,348 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-01-05 01:06:46,383 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4152
+INFO 2025-01-05 01:06:47,507 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-01-05 01:06:47,510 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-01-05 01:06:47,517 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-01-05 01:06:47,530 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-01-05 01:06:47,534 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-01-05 01:06:47,537 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-01-05 01:06:47,544 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+WARNING 2025-01-05 01:06:47,837 log Not Found: /favicon.ico
+WARNING 2025-01-05 01:06:47,838 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+ERROR 2025-01-05 01:08:03,816 exception Invalid HTTP_HOST header: '192.168.1.21:8000'. You may need to add '192.168.1.21' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.21:8000'. You may need to add '192.168.1.21' to ALLOWED_HOSTS.
+WARNING 2025-01-05 01:08:03,844 log Bad Request: /api/auth/login/
+WARNING 2025-01-05 01:08:03,845 basehttp "POST /api/auth/login/ HTTP/1.1" 400 143
+INFO 2025-01-05 01:08:15,888 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\urls.py changed, reloading.
+INFO 2025-01-05 01:08:18,681 autoreload Watching for file changes with StatReloader
+INFO 2025-01-05 01:08:26,004 views Login attempt from IP: 192.168.1.74 for user: gdsdgdgs@gmail.com
+ERROR 2025-01-05 01:08:26,505 views Invalid login attempt for gdsdgdgs@gmail.com: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2025-01-05 01:08:26,507 log Bad Request: /api/auth/login/
+WARNING 2025-01-05 01:08:26,508 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2025-01-06 22:22:47,420 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4152
+INFO 2025-01-06 22:22:48,607 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-01-06 22:22:48,613 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-01-06 22:22:48,617 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-01-06 22:22:49,088 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-01-06 22:22:49,427 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-01-06 22:22:49,762 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-01-06 22:22:50,329 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+WARNING 2025-01-06 22:22:51,213 log Not Found: /favicon.ico
+WARNING 2025-01-06 22:22:51,224 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-07 13:39:24,421 basehttp - Broken pipe from ('167.94.145.111', 40094)
+INFO 2025-01-07 13:39:24,454 basehttp code 400, message Bad request version ('А\x14А')
+ERROR 2025-01-07 13:39:24,481 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-01-07 13:39:27,729 exception Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+WARNING 2025-01-07 13:39:27,833 log Bad Request: /
+WARNING 2025-01-07 13:39:27,834 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-01-07 13:39:30,966 exception Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+WARNING 2025-01-07 13:39:30,968 log Bad Request: /
+WARNING 2025-01-07 13:39:30,969 basehttp "GET / HTTP/1.1" 400 143
+INFO 2025-01-07 13:39:31,096 basehttp code 505, message Invalid HTTP version (2.0)
+ERROR 2025-01-07 13:39:31,096 basehttp "PRI * HTTP/2.0" 505 -
+INFO 2025-01-08 09:47:20,023 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 09:47:43,665 autoreload Watching for file changes with StatReloader
+INFO 2025-01-08 09:48:57,397 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 09:48:59,888 autoreload Watching for file changes with StatReloader
+INFO 2025-01-08 09:49:56,376 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 09:49:58,058 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-08 09:50:50,690 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1729, in post
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11003] getaddrinfo failed
+ERROR 2025-01-08 09:50:50,744 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 145
+INFO 2025-01-08 09:51:59,950 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 09:52:03,226 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-08 09:52:34,926 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 398, in getreply
+    line = self.file.readline(_MAXLINE + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1729, in post
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 401, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed: "
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR 2025-01-08 09:52:34,938 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 145
+INFO 2025-01-08 09:53:58,233 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 09:54:00,975 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-08 09:54:31,920 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 398, in getreply
+    line = self.file.readline(_MAXLINE + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1729, in post
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 401, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed: "
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR 2025-01-08 09:54:31,937 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 145
+INFO 2025-01-08 09:55:29,956 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 09:55:33,157 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-08 09:55:58,018 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 398, in getreply
+    line = self.file.readline(_MAXLINE + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1729, in post
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 401, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed: "
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR 2025-01-08 09:55:58,066 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 145
+INFO 2025-01-08 10:05:32,424 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 10:05:33,845 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-08 10:06:11,000 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 398, in getreply
+    line = self.file.readline(_MAXLINE + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1729, in post
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 401, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed: "
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR 2025-01-08 10:06:11,010 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 145
+INFO 2025-01-08 10:09:29,116 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 10:09:32,099 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-08 10:10:03,095 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 398, in getreply
+    line = self.file.readline(_MAXLINE + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1729, in post
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 343, in connect
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 401, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed: "
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed: [WinError 10054] An existing connection was forcibly closed by the remote host
+ERROR 2025-01-08 10:10:03,106 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 145
+INFO 2025-01-08 10:11:07,990 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 10:11:09,631 autoreload Watching for file changes with StatReloader
+INFO 2025-01-08 10:11:20,345 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 10:11:22,133 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-08 10:11:54,308 log Internal Server Error: /api/auth/forgot-password-with-otp/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 1729, in post
+    send_mail(
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Error: authentication failed: (reason unavailable)')
+ERROR 2025-01-08 10:11:54,329 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 500 145
+INFO 2025-01-08 10:12:28,033 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myproject\settings.py changed, reloading.
+INFO 2025-01-08 10:12:29,618 autoreload Watching for file changes with StatReloader
+INFO 2025-01-08 10:12:48,036 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+ERROR 2025-01-08 10:17:40,898 log Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 149, in post
+    send_verification_email(request, user)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 229, in send_verification_email
+    email.send()
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 155, in _send
+    self.connection.sendmail(
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 890, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'osa20200503@std.psut.edu.jo': (553, b'5.7.1 <noreply@gmail.com>: Sender address rejected: not owned by user noreply@uni-vote.com')}
+ERROR 2025-01-08 10:17:40,937 basehttp "POST /api/auth/register/ HTTP/1.1" 500 145
+INFO 2025-01-08 10:18:40,450 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2025-01-08 10:18:42,060 autoreload Watching for file changes with StatReloader
+WARNING 2025-01-08 10:18:53,759 log Bad Request: /api/auth/register/
+WARNING 2025-01-08 10:18:53,760 basehttp "POST /api/auth/register/ HTTP/1.1" 400 52
+INFO 2025-01-08 10:19:56,819 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 10:20:04,591 basehttp "POST /api/auth/login/ HTTP/1.1" 200 114
+INFO 2025-01-08 10:20:30,005 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 10:20:33,103 basehttp "POST /api/auth/login/ HTTP/1.1" 200 114
+INFO 2025-01-08 10:23:28,920 basehttp "GET /api/auth/activate/ZWU1MmRlODktNTI5OC00Y2ZkLWIyMjktZWU4NzMwMGUwMWJh/eyJ1c2VyX2lkIjoiZWU1MmRlODktNTI5OC00Y2ZkLWIyMjktZWU4NzMwMGUwMWJhIiwidGltZXN0YW1wIjoxNzM2MzIwNzk3fQ:1tVQM9:BgPmExF6LJvgZbZi2SgmS1zkB4UCiy_aQz807DaU0K4/ HTTP/1.1" 302 0
+INFO 2025-01-08 10:23:28,947 basehttp "GET /api/auth/activation-success/ HTTP/1.1" 200 245
+WARNING 2025-01-08 10:23:29,094 log Not Found: /favicon.ico
+WARNING 2025-01-08 10:23:29,096 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-08 10:23:39,437 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 10:23:40,274 views User osa20200503@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 10:23:40,413 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2025-01-08 10:23:41,549 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 10:23:42,275 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 10:23:42,345 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 10:23:44,960 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 10:24:07,294 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+ERROR 2025-01-08 10:24:08,083 views Invalid login attempt for osa20200503@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2025-01-08 10:24:08,083 log Bad Request: /api/auth/login/
+WARNING 2025-01-08 10:24:08,084 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2025-01-08 10:30:12,170 basehttp "POST /api/auth/forgot-password-with-otp/ HTTP/1.1" 200 45
+INFO 2025-01-08 10:31:54,589 basehttp "POST /api/auth/verify-otp/ HTTP/1.1" 200 72
+INFO 2025-01-08 10:33:35,404 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 10:33:36,208 views User osa20200503@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 10:33:36,386 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2025-01-08 10:33:36,852 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 10:33:38,754 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 10:33:38,941 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 10:33:41,099 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 10:33:48,265 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 10:33:48,350 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 10:33:55,468 basehttp "GET /api/auth/profile/edit-personal-info/ HTTP/1.1" 200 75
+INFO 2025-01-08 10:34:16,764 basehttp "POST /api/auth/profile/edit-personal-info/ HTTP/1.1" 200 42
+INFO 2025-01-08 10:34:18,583 basehttp "GET /api/auth/profile/edit-personal-info/ HTTP/1.1" 200 77
+WARNING 2025-01-08 10:34:47,835 log Bad Request: /api/auth/update-profile-picture/
+WARNING 2025-01-08 10:34:47,835 basehttp "DELETE /api/auth/update-profile-picture/ HTTP/1.1" 400 42
+INFO 2025-01-08 10:34:52,243 basehttp "GET /api/auth/profile/about/ HTTP/1.1" 200 12
+INFO 2025-01-08 10:37:52,246 basehttp "GET /api/auth/profile/edit-personal-info/ HTTP/1.1" 200 77
+INFO 2025-01-08 10:43:29,343 basehttp "POST /api/auth/request-admin-access/ HTTP/1.1" 201 56
+INFO 2025-01-08 10:43:48,837 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4152
+INFO 2025-01-08 10:43:48,904 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-01-08 10:43:48,915 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-01-08 10:43:48,926 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-01-08 10:43:48,928 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-01-08 10:43:48,936 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-01-08 10:43:48,946 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-01-08 10:43:48,961 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+WARNING 2025-01-08 10:43:49,021 log Not Found: /favicon.ico
+WARNING 2025-01-08 10:43:49,022 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-08 10:43:56,809 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-01-08 10:43:57,004 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-08 10:43:57,062 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-01-08 10:43:57,075 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-08 10:43:57,075 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-01-08 10:43:57,117 log Not Found: /favicon.ico
+WARNING 2025-01-08 10:43:57,138 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-08 10:43:59,494 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 10388
+INFO 2025-01-08 10:43:59,546 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-01-08 10:43:59,547 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-01-08 10:43:59,548 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 87533
+INFO 2025-01-08 10:43:59,557 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-01-08 10:43:59,584 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-08 10:43:59,596 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-01-08 10:43:59,607 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-01-08 10:43:59,610 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-01-08 10:43:59,613 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-01-08 10:43:59,617 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-01-08 10:43:59,638 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 163184
+INFO 2025-01-08 10:43:59,653 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-01-08 10:43:59,662 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-01-08 10:43:59,723 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2025-01-08 10:43:59,779 log Not Found: /favicon.ico
+WARNING 2025-01-08 10:43:59,780 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-08 10:44:09,357 basehttp "GET /admin/myapp/adminaccessrequest/2/change/ HTTP/1.1" 200 12301
+INFO 2025-01-08 10:44:09,395 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2025-01-08 10:44:09,413 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-01-08 10:44:09,413 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-01-08 10:44:09,425 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2025-01-08 10:44:09,433 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-08 10:44:09,437 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-01-08 10:44:24,700 basehttp "GET /admin/myapp/users/ee52de89-5298-4cfd-b229-ee87300e01ba/change/?_to_field=user_id HTTP/1.1" 200 19590
+INFO 2025-01-08 10:44:24,769 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-01-08 10:44:24,852 log Not Found: /favicon.ico
+WARNING 2025-01-08 10:44:24,853 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-08 10:44:28,414 basehttp "GET /admin/myapp/adminaccessrequest/2/change/ HTTP/1.1" 200 12301
+WARNING 2025-01-08 10:44:28,526 log Not Found: /favicon.ico
+WARNING 2025-01-08 10:44:28,529 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+WARNING 2025-01-08 11:27:44,552 log Unauthorized: /api/auth/active-elections/
+WARNING 2025-01-08 11:27:44,553 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 401 183
+INFO 2025-01-08 11:27:44,646 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2025-01-08 11:27:44,735 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 11:27:45,440 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:27:45,507 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 11:27:51,863 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 11:28:10,805 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+ERROR 2025-01-08 11:28:11,603 views Invalid login attempt for testnumber1@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2025-01-08 11:28:11,608 log Bad Request: /api/auth/login/
+WARNING 2025-01-08 11:28:11,608 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2025-01-08 11:28:19,401 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2025-01-08 11:28:20,233 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 11:28:20,276 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2025-01-08 11:28:20,683 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 11:28:20,824 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 11:28:22,233 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 714
+INFO 2025-01-08 11:28:23,187 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 11:28:24,192 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 714
+INFO 2025-01-08 11:28:25,504 basehttp "GET /api/auth/admin-election-result/01978a27-b29f-44e1-9eb0-4a26fcc813be/ HTTP/1.1" 200 252
+INFO 2025-01-08 11:28:27,793 basehttp "GET /api/auth/admin-election-result/2194bfa9-d98c-4c94-a370-b24e9dd2c320/ HTTP/1.1" 200 879
+WARNING 2025-01-08 11:28:28,017 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:28:28,018 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+INFO 2025-01-08 11:28:33,075 basehttp "GET /api/auth/admin-election-result/2194bfa9-d98c-4c94-a370-b24e9dd2c320/ HTTP/1.1" 200 879
+WARNING 2025-01-08 11:28:33,265 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:28:33,266 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+INFO 2025-01-08 11:28:36,242 basehttp "GET /api/auth/admin-election-result/510b1cf0-c34b-4204-b97a-b1e7d057ccea/ HTTP/1.1" 200 790
+WARNING 2025-01-08 11:28:36,371 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:28:36,371 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+INFO 2025-01-08 11:28:38,809 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 11:29:43,041 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1692
+INFO 2025-01-08 11:31:56,098 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1692
+WARNING 2025-01-08 11:32:05,872 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:32:05,873 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:32:41,530 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:32:41,530 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+INFO 2025-01-08 11:32:53,275 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1692
+WARNING 2025-01-08 11:32:53,567 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:32:53,567 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+INFO 2025-01-08 11:33:55,828 basehttp "GET /api/auth/get-users/ HTTP/1.1" 200 1692
+WARNING 2025-01-08 11:33:56,104 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:33:56,104 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:33,962 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:33,962 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:33,988 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:33,989 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,048 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,049 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,107 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,110 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,165 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,166 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,219 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,220 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,280 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,281 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,347 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,349 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,408 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,409 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:34,465 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:34,465 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,048 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,048 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,074 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,075 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,130 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,131 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,203 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,204 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,277 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,278 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,330 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,336 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,395 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,396 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,455 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,455 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:47,510 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:47,511 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,180 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,180 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,206 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,208 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,265 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,265 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,326 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,326 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,388 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,389 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,441 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,442 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,505 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,506 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,566 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,569 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,630 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,631 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+WARNING 2025-01-08 11:34:48,697 log Not Found: /media/profile_pics/1000000034.webp
+WARNING 2025-01-08 11:34:48,710 basehttp "GET /media/profile_pics/1000000034.webp HTTP/1.1" 404 179
+INFO 2025-01-08 11:37:23,987 views Admin testnumber1@std.psut.edu.jo is creating an election
+INFO 2025-01-08 11:37:24,291 views Election Cyber Club Election created successfully by admin testnumber1@std.psut.edu.jo
+INFO 2025-01-08 11:37:24,292 basehttp "POST /api/auth/create-election/ HTTP/1.1" 201 126
+INFO 2025-01-08 11:37:24,399 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:40:49,869 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:40:49,938 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 11:40:53,942 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:40:55,077 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:40:55,204 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 11:40:57,131 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 11:41:23,676 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 11:41:24,394 views User osa20200503@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 11:41:24,432 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2025-01-08 11:41:24,890 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:41:29,146 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 928
+WARNING 2025-01-08 11:41:30,124 log Forbidden: /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/
+WARNING 2025-01-08 11:41:30,125 basehttp "GET /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 403 59
+WARNING 2025-01-08 11:42:24,325 log Forbidden: /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/
+WARNING 2025-01-08 11:42:24,326 basehttp "GET /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 403 59
+INFO 2025-01-08 11:42:24,548 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 929
+INFO 2025-01-08 11:44:12,483 basehttp "POST /api/auth/request-withdraw/ HTTP/1.1" 200 69
+INFO 2025-01-08 11:44:19,004 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:44:19,081 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 11:44:20,275 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 11:44:32,135 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2025-01-08 11:44:32,865 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 11:44:32,895 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2025-01-08 11:44:33,206 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:44:33,264 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:44:36,031 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 355
+INFO 2025-01-08 11:46:07,448 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 200 49
+INFO 2025-01-08 11:46:07,503 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 11:46:08,670 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:46:08,733 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 11:46:09,450 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 11:46:27,723 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 11:46:28,426 views User osa20200503@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 11:46:28,436 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2025-01-08 11:46:28,736 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+WARNING 2025-01-08 11:46:30,144 log Forbidden: /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/
+WARNING 2025-01-08 11:46:30,146 basehttp "GET /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 403 59
+INFO 2025-01-08 11:46:30,159 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 793
+INFO 2025-01-08 11:48:43,946 basehttp "POST /api/auth/vote-eligibility-request/ HTTP/1.1" 201 45
+INFO 2025-01-08 11:48:48,286 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:48:48,340 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 11:48:49,026 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 11:49:01,153 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2025-01-08 11:49:01,866 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 11:49:01,880 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2025-01-08 11:49:02,224 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:49:02,252 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:49:03,425 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 793
+INFO 2025-01-08 11:49:06,071 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 349
+INFO 2025-01-08 11:50:10,595 basehttp "POST /api/auth/admin/requests/action/ HTTP/1.1" 200 49
+INFO 2025-01-08 11:50:10,740 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 11:50:11,564 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:50:11,626 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 11:50:14,773 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:50:16,064 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 793
+INFO 2025-01-08 11:50:42,173 basehttp "POST /api/auth/launch-election/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 59
+INFO 2025-01-08 11:50:55,547 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 792
+INFO 2025-01-08 11:51:55,736 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 793
+INFO 2025-01-08 11:52:50,485 basehttp "POST /api/auth/launch-election/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 59
+INFO 2025-01-08 11:55:41,876 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:55:41,917 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 11:55:42,706 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 11:55:57,869 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 11:55:58,641 views User osa20200503@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 11:55:58,765 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2025-01-08 11:55:59,119 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:56:01,017 basehttp "GET /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 55
+INFO 2025-01-08 11:56:01,107 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 792
+INFO 2025-01-08 11:58:28,643 basehttp "POST /api/auth/cast-vote/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 201 36
+INFO 2025-01-08 11:59:14,849 basehttp "GET /api/auth/check-eligibility/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 55
+INFO 2025-01-08 11:59:14,916 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 792
+WARNING 2025-01-08 11:59:22,829 log Bad Request: /api/auth/cast-vote/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/
+WARNING 2025-01-08 11:59:22,830 basehttp "POST /api/auth/cast-vote/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 400 54
+INFO 2025-01-08 11:59:37,075 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 16
+INFO 2025-01-08 11:59:38,008 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:59:38,540 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 16
+INFO 2025-01-08 11:59:39,633 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:59:39,679 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 11:59:40,583 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 16
+INFO 2025-01-08 11:59:42,677 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:59:43,550 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 16
+INFO 2025-01-08 11:59:44,327 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:59:44,381 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 11:59:49,157 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:59:50,108 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:59:50,147 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 11:59:54,393 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 11:59:59,174 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 11:59:59,239 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 12:01:42,351 basehttp "PATCH /api/auth/profile/two-factor/ HTTP/1.1" 200 57
+INFO 2025-01-08 12:02:18,914 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 12:02:35,759 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+ERROR 2025-01-08 12:02:39,628 log Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py", line 82, in post
+    send_2fa_code(user)
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\utils.py", line 52, in send_2fa_code
+    email.send()
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\mail\backends\smtp.py", line 155, in _send
+    self.connection.sendmail(
+  File "C:\Users\Osama\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 890, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'osa20200503@std.psut.edu.jo': (550, b'5.7.27 <noreply@example.com>: Sender address rejected: Domain example.com does not accept mail (nullMX)')}
+ERROR 2025-01-08 12:02:39,648 basehttp "POST /api/auth/login/ HTTP/1.1" 500 145
+INFO 2025-01-08 12:04:11,997 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\utils.py changed, reloading.
+INFO 2025-01-08 12:04:14,260 autoreload Watching for file changes with StatReloader
+INFO 2025-01-08 12:04:20,907 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\utils.py changed, reloading.
+INFO 2025-01-08 12:04:23,045 autoreload Watching for file changes with StatReloader
+INFO 2025-01-08 12:04:29,716 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 12:04:43,061 basehttp "POST /api/auth/login/ HTTP/1.1" 200 111
+INFO 2025-01-08 12:05:25,100 basehttp "POST /api/auth/verify-2fa/ HTTP/1.1" 200 645
+INFO 2025-01-08 12:05:25,245 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 12:05:31,582 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 12:05:31,635 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 12:05:32,441 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 12:05:47,117 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+ERROR 2025-01-08 12:05:47,898 views Invalid login attempt for osa20200503@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2025-01-08 12:05:47,900 log Bad Request: /api/auth/login/
+WARNING 2025-01-08 12:05:47,901 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2025-01-08 12:09:04,936 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 12:09:09,136 basehttp "POST /api/auth/login/ HTTP/1.1" 200 111
+INFO 2025-01-08 12:10:21,066 basehttp "POST /api/auth/verify-2fa/ HTTP/1.1" 200 645
+INFO 2025-01-08 12:10:21,245 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+ERROR 2025-01-08 17:14:55,936 exception Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+WARNING 2025-01-08 17:14:56,418 log Bad Request: /
+WARNING 2025-01-08 17:14:56,440 basehttp "GET / HTTP/1.1" 400 143
+INFO 2025-01-08 17:14:56,772 basehttp code 505, message Invalid HTTP version (2.0)
+ERROR 2025-01-08 17:14:56,773 basehttp "PRI * HTTP/2.0" 505 -
+WARNING 2025-01-08 18:49:45,363 log Unauthorized: /api/auth/voting-history/
+WARNING 2025-01-08 18:49:45,366 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 401 183
+INFO 2025-01-08 18:49:46,194 basehttp "POST /api/auth/refresh/ HTTP/1.1" 200 582
+INFO 2025-01-08 18:49:46,480 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 16
+INFO 2025-01-08 18:49:47,605 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 18:49:48,465 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 18:49:48,574 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 18:49:49,926 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 18:50:13,461 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2025-01-08 18:50:14,449 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 18:50:14,645 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2025-01-08 18:50:15,017 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 18:50:15,103 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 279
+INFO 2025-01-08 18:50:16,486 basehttp "GET /api/auth/election-detail/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 792
+INFO 2025-01-08 18:50:19,663 basehttp "GET /api/auth/election-edit/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 1384
+INFO 2025-01-08 18:50:36,795 basehttp "PUT /api/auth/edit-election/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 43
+INFO 2025-01-08 18:50:37,003 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 18:50:38,850 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 943
+INFO 2025-01-08 18:50:42,514 basehttp "GET /api/auth/admin-election-result/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 742
+INFO 2025-01-08 18:54:04,308 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 18:54:05,128 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 718
+INFO 2025-01-08 18:54:44,477 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 18:54:45,225 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 490
+INFO 2025-01-08 18:55:38,893 basehttp "GET /api/auth/admin-election-result/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 742
+INFO 2025-01-08 18:57:02,309 basehttp "POST /api/auth/approve-election-results/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 55
+INFO 2025-01-08 18:57:05,368 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 18:57:05,434 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 18:57:06,494 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 18:57:47,686 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 18:57:51,888 basehttp "POST /api/auth/login/ HTTP/1.1" 200 111
+INFO 2025-01-08 18:58:05,450 basehttp "POST /api/auth/verify-2fa/ HTTP/1.1" 200 645
+INFO 2025-01-08 18:58:05,700 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 18:58:07,693 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 18:58:07,761 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 18:58:08,855 basehttp "PATCH /api/auth/profile/two-factor/ HTTP/1.1" 200 58
+INFO 2025-01-08 18:58:08,887 basehttp "PATCH /api/auth/profile/two-factor/ HTTP/1.1" 200 57
+INFO 2025-01-08 18:58:10,714 basehttp "PATCH /api/auth/profile/two-factor/ HTTP/1.1" 200 58
+INFO 2025-01-08 18:58:12,047 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 18:58:12,627 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 18:58:14,110 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 18:58:16,750 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 244
+INFO 2025-01-08 18:59:05,644 basehttp "GET /api/auth/user-election-results/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 743
+INFO 2025-01-08 19:16:08,016 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2025-01-08 19:16:12,510 autoreload Watching for file changes with StatReloader
+INFO 2025-01-08 19:16:19,535 basehttp "GET /api/auth/user-election-results/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 743
+INFO 2025-01-08 19:16:24,435 basehttp "GET /api/auth/user-election-results/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 743
+INFO 2025-01-08 19:20:10,128 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 19:20:10,206 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 19:20:11,248 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 19:20:26,963 views Login attempt from IP: 192.168.1.74 for user: testnumber1@std.psut.edu.jo
+INFO 2025-01-08 19:20:27,758 views User testnumber1@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 19:20:27,829 basehttp "POST /api/auth/login/ HTTP/1.1" 200 646
+INFO 2025-01-08 19:20:28,208 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 19:20:28,253 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 19:20:29,488 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 19:20:31,329 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 261
+INFO 2025-01-08 19:21:09,132 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 19:21:09,873 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 261
+INFO 2025-01-08 19:21:11,988 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 19:21:12,621 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 261
+INFO 2025-01-08 19:21:50,374 basehttp "GET /api/auth/admin/requests/pending/ HTTP/1.1" 200 2
+INFO 2025-01-08 19:21:51,005 basehttp "GET /api/auth/admin-voting-history/ HTTP/1.1" 200 490
+INFO 2025-01-08 19:21:52,150 basehttp "GET /api/auth/admin-election-result/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 742
+INFO 2025-01-08 19:22:56,706 basehttp "POST /api/auth/approve-election-results/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 55
+INFO 2025-01-08 19:22:58,825 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 19:22:58,872 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 74
+INFO 2025-01-08 19:23:00,481 basehttp "POST /api/auth/logout/ HTTP/1.1" 200 37
+INFO 2025-01-08 19:23:28,717 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+ERROR 2025-01-08 19:23:29,462 views Invalid login attempt for osa20200503@std.psut.edu.jo: {'non_field_errors': [ErrorDetail(string='Invalid email or password.', code='invalid')]}
+WARNING 2025-01-08 19:23:29,463 log Bad Request: /api/auth/login/
+WARNING 2025-01-08 19:23:29,463 basehttp "POST /api/auth/login/ HTTP/1.1" 400 51
+INFO 2025-01-08 19:23:42,513 views Login attempt from IP: 192.168.1.74 for user: osa20200503@std.psut.edu.jo
+INFO 2025-01-08 19:23:43,348 views User osa20200503@std.psut.edu.jo logged in successfully from IP: 192.168.1.74
+INFO 2025-01-08 19:23:43,414 basehttp "POST /api/auth/login/ HTTP/1.1" 200 645
+INFO 2025-01-08 19:23:43,759 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 19:23:47,166 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 244
+INFO 2025-01-08 19:23:47,971 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 19:23:48,035 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 19:23:48,496 basehttp "GET /api/auth/voting-history/ HTTP/1.1" 200 244
+INFO 2025-01-08 19:23:49,756 basehttp "GET /api/auth/user-election-results/7e35e9de-6e99-4aad-87c3-ddf94eb62b6d/ HTTP/1.1" 200 719
+INFO 2025-01-08 19:24:28,436 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 19:24:28,505 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 19:24:31,179 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-08 19:24:31,953 basehttp "GET /api/auth/profile HTTP/1.1" 301 0
+INFO 2025-01-08 19:24:32,016 basehttp "GET /api/auth/profile/ HTTP/1.1" 200 75
+INFO 2025-01-08 19:24:41,760 basehttp "GET /api/auth/active-elections/ HTTP/1.1" 200 44
+INFO 2025-01-09 08:39:42,568 basehttp - Broken pipe from ('167.94.145.97', 50078)
+INFO 2025-01-09 08:39:42,713 basehttp code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00о\x01\x00\x00к\x03\x03И')
+ERROR 2025-01-09 08:39:43,056 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-01-09 08:39:46,569 exception Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+WARNING 2025-01-09 08:39:46,877 log Bad Request: /
+WARNING 2025-01-09 08:39:46,878 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-01-09 08:39:50,014 exception Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+WARNING 2025-01-09 08:39:50,017 log Bad Request: /
+WARNING 2025-01-09 08:39:50,017 basehttp "GET / HTTP/1.1" 400 143
+INFO 2025-01-09 08:39:50,149 basehttp code 505, message Invalid HTTP version (2.0)
+ERROR 2025-01-09 08:39:50,150 basehttp "PRI * HTTP/2.0" 505 -
+INFO 2025-01-10 12:49:07,410 basehttp - Broken pipe from ('199.45.154.153', 49142)
+INFO 2025-01-10 12:49:07,749 basehttp code 400, message Bad request version ('\x97\x1at[Щ&yкл/NЩ\x9eя\x9f')
+ERROR 2025-01-10 12:49:07,752 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-01-10 12:49:11,829 exception Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+WARNING 2025-01-10 12:49:11,862 log Bad Request: /
+WARNING 2025-01-10 12:49:11,863 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-01-10 12:49:15,554 exception Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\env\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '46.185.159.133:16374'. You may need to add '46.185.159.133' to ALLOWED_HOSTS.
+WARNING 2025-01-10 12:49:15,565 log Bad Request: /
+WARNING 2025-01-10 12:49:15,565 basehttp "GET / HTTP/1.1" 400 143
+INFO 2025-01-10 12:49:16,240 basehttp code 505, message Invalid HTTP version (2.0)
+ERROR 2025-01-10 12:49:16,240 basehttp "PRI * HTTP/2.0" 505 -
+INFO 2025-01-12 15:01:25,904 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\views.py changed, reloading.
+INFO 2025-01-12 15:01:43,234 autoreload Watching for file changes with StatReloader
+WARNING 2025-01-12 12:10:43,421 log Not Found: /favicon.ico
+ERROR 2025-01-12 12:10:51,974 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 256, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/connections.py", line 195, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 444, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 192, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 326, in full_clean
+    self._clean_form()
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 342, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/forms.py", line 356, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1572, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 320, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 296, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 278, in ensure_connection
+    with self.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 256, in get_new_connection
+    connection = Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/connections.py", line 195, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)")
+ERROR 2025-01-12 12:12:25,003 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'voting_system.auth_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 444, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 192, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 326, in full_clean
+    self._clean_form()
+  File "/usr/local/lib/python3.12/site-packages/django/forms/forms.py", line 342, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/forms.py", line 356, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/usr/local/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'voting_system.auth_user' doesn't exist")
+WARNING 2025-01-12 12:48:24,365 log Not Found: /favicon.ico
+WARNING 2025-01-12 13:18:22,154 log Not Found: /favicon.ico
+WARNING 2025-01-12 13:19:09,629 log Not Found: /favicon.ico
+WARNING 2025-01-12 13:19:13,654 log Not Found: /favicon.ico
+WARNING 2025-01-12 13:19:42,620 log Not Found: /favicon.ico
+WARNING 2025-01-12 13:20:23,194 log Not Found: /favicon.ico
+WARNING 2025-01-12 13:23:04,615 log Unauthorized: /api/auth/active-elections/
+WARNING 2025-01-12 13:29:57,297 log Not Found: /favicon.ico
+WARNING 2025-01-12 13:31:05,001 log Not Found: /favicon.ico
+INFO 2025-01-12 16:37:32,148 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:37:46,120 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 302 0
+INFO 2025-01-12 16:37:46,297 basehttp "GET /admin/login/?next=/admin/myapp/superadmin/ HTTP/1.1" 200 4186
+INFO 2025-01-12 16:37:46,381 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-01-12 16:37:46,388 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-01-12 16:37:46,477 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-01-12 16:37:46,592 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-01-12 16:37:46,620 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-01-12 16:37:46,673 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-01-12 16:37:46,712 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+WARNING 2025-01-12 16:37:46,746 log Not Found: /favicon.ico
+WARNING 2025-01-12 16:37:46,763 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-12 16:37:56,290 basehttp "POST /admin/login/?next=/admin/myapp/superadmin/ HTTP/1.1" 302 0
+INFO 2025-01-12 16:37:56,764 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7983
+INFO 2025-01-12 16:37:56,821 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-01-12 16:37:56,824 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-01-12 16:37:56,824 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-01-12 16:37:56,825 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-01-12 16:37:56,828 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 87533
+INFO 2025-01-12 16:37:56,834 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-01-12 16:37:56,837 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-01-12 16:37:56,841 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-01-12 16:37:56,843 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-01-12 16:37:56,845 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 163184
+INFO 2025-01-12 16:37:56,957 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 16:37:56,990 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 16:37:57,039 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2025-01-12 16:37:57,128 log Not Found: /favicon.ico
+WARNING 2025-01-12 16:37:57,130 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-12 16:38:00,094 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:38:00,142 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-01-12 16:38:00,179 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:38:00,193 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:38:01,516 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7983
+INFO 2025-01-12 16:38:01,678 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-01-12 16:38:01,792 log Not Found: /favicon.ico
+INFO 2025-01-12 16:38:01,805 basehttp - Broken pipe from ('127.0.0.1', 54383)
+INFO 2025-01-12 16:38:02,999 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:39:13,269 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:39:16,730 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:39:52,711 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:40:04,861 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:40:04,910 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:04,914 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:04,916 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:04,963 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:04,973 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:04,986 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:05,007 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:05,025 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:40:05,025 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:40:07,307 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:40:08,567 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:40:09,263 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:40:09,907 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:40:11,025 basehttp - Broken pipe from ('127.0.0.1', 54498)
+INFO 2025-01-12 16:40:11,092 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7983
+INFO 2025-01-12 16:40:11,160 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,164 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,165 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,168 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,171 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,171 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,173 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,175 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,198 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,227 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 16:40:11,246 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:40:11,246 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 16:40:11,293 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:40:12,606 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:40:12,737 basehttp "GET /admin/myapp/superadmin/ HTTP/1.1" 200 7983
+INFO 2025-01-12 16:40:14,991 basehttp "GET /admin/myapp/ HTTP/1.1" 200 6474
+INFO 2025-01-12 16:40:16,025 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:17,829 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:18,602 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:19,082 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:19,709 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:20,159 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:20,702 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:21,181 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:21,798 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:40:22,441 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:41:49,976 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:41:55,468 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:43:36,324 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:44:19,865 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:44:33,332 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:45:48,603 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:46:05,027 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:46:05,094 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:46:05,128 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:46:05,149 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:46:05,182 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:46:05,199 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:46:05,229 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:46:05,236 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:46:05,270 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:46:05,271 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:48:17,806 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:48:27,095 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:48:37,042 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:48:37,231 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:48:37,234 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-01-12 16:48:37,242 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-01-12 16:48:37,342 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-01-12 16:48:37,342 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:48:37,423 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-01-12 16:48:37,489 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-01-12 16:48:37,648 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:48:37,686 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+WARNING 2025-01-12 16:48:37,743 log Not Found: /favicon.ico
+INFO 2025-01-12 16:48:37,832 basehttp - Broken pipe from ('127.0.0.1', 55012)
+INFO 2025-01-12 16:49:43,977 basehttp - Broken pipe from ('127.0.0.1', 55011)
+INFO 2025-01-12 16:49:44,869 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:49:44,936 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:49:44,941 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:49:44,968 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:49:44,983 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:49:44,985 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:49:44,992 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:49:44,998 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:49:45,017 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:49:45,018 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:49:49,568 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:50:06,727 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:50:18,492 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:50:19,308 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:50:20,206 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:50:21,058 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:51:53,711 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:51:56,253 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:52:04,308 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:52:04,369 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:52:04,406 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:52:04,443 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:52:04,469 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:52:04,509 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:52:04,520 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:52:04,537 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:52:04,563 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:52:04,564 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:52:05,500 basehttp - Broken pipe from ('127.0.0.1', 55171)
+INFO 2025-01-12 16:52:06,259 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:52:06,913 basehttp - Broken pipe from ('127.0.0.1', 55177)
+INFO 2025-01-12 16:52:07,669 basehttp - Broken pipe from ('127.0.0.1', 55176)
+INFO 2025-01-12 16:52:08,254 basehttp "GET /admin/ HTTP/1.1" 200 7007
+INFO 2025-01-12 16:53:19,765 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:53:23,578 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:54:09,443 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:54:11,593 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:54:19,148 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:54:21,996 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:54:32,455 basehttp "GET /admin/ HTTP/1.1" 200 7844
+INFO 2025-01-12 16:54:32,522 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:32,524 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:32,529 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:32,534 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:32,536 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:32,564 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:32,606 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:32,622 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:54:32,622 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:54:34,634 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 9574
+INFO 2025-01-12 16:54:34,723 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,730 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-01-12 16:54:34,733 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 163184
+INFO 2025-01-12 16:54:34,737 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,746 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,756 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,760 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,763 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 16:54:34,762 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,788 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,802 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:54:34,833 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2025-01-12 16:54:34,863 log Not Found: /favicon.ico
+INFO 2025-01-12 16:54:34,864 basehttp - Broken pipe from ('127.0.0.1', 55299)
+INFO 2025-01-12 16:54:40,875 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 31658
+INFO 2025-01-12 16:54:40,948 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-01-12 16:54:40,951 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2025-01-12 16:54:40,953 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-01-12 16:54:41,010 basehttp - Broken pipe from ('127.0.0.1', 55295)
+INFO 2025-01-12 16:54:41,014 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-01-12 16:54:41,042 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 16:54:41,052 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-01-12 16:54:41,099 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+WARNING 2025-01-12 16:54:41,214 log Not Found: /favicon.ico
+INFO 2025-01-12 16:54:41,216 basehttp - Broken pipe from ('127.0.0.1', 55296)
+INFO 2025-01-12 16:54:41,364 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-01-12 16:54:41,364 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-01-12 16:54:49,693 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 9574
+INFO 2025-01-12 16:54:52,078 basehttp "GET /admin/ HTTP/1.1" 200 7844
+INFO 2025-01-12 16:57:18,231 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:57:20,669 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:57:26,884 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:57:30,123 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:57:35,739 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 16:57:35,781 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:35,789 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:35,797 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:35,802 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:35,808 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:35,820 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:35,824 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:35,855 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:57:35,856 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:57:41,414 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 9135
+INFO 2025-01-12 16:57:41,466 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,477 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,482 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,485 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,488 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,488 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,488 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,491 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,491 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,493 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:57:41,532 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 16:57:41,627 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:57:43,397 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 16:58:10,328 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:58:16,592 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 16:58:32,099 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 16:58:34,789 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:58:41,327 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 16:58:41,362 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:41,372 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:41,405 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:41,432 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:41,440 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:41,454 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:41,461 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:41,489 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 16:58:41,493 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 16:58:42,384 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 16:58:43,585 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 16:58:44,655 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 9135
+INFO 2025-01-12 16:58:44,715 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,718 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,718 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,718 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,718 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,722 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,729 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,731 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,733 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,733 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:44,741 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 16:58:44,821 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-01-12 16:58:49,140 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 16:58:57,053 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 16:59:28,053 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:00:44,989 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:00:48,147 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:00:53,277 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:00:55,744 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:01:04,720 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:01:04,773 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:04,778 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:04,836 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:04,871 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:04,891 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:04,904 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:04,919 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:04,937 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:01:04,944 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:01:05,883 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:01:07,513 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11790
+INFO 2025-01-12 17:01:07,573 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,575 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,589 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,592 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,592 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,593 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,605 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,606 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,607 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,609 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:01:07,621 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:01:07,646 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-01-12 17:01:07,662 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 17:01:07,760 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:01:07,762 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-01-12 17:01:07,763 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-01-12 17:01:15,420 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:01:17,832 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:01:24,640 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:01:30,824 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:01:31,593 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:02:11,206 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:02:14,438 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:02:20,799 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:02:20,863 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:02:20,864 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:02:20,868 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:02:20,877 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:02:20,891 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:02:20,912 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:02:20,924 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:02:20,939 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:02:20,939 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:02:21,889 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:02:46,390 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:02:48,631 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:03:00,003 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:03:00,906 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:03:02,380 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11790
+INFO 2025-01-12 17:03:02,441 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,457 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,469 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,471 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,472 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,474 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,534 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:03:02,573 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,600 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,604 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,616 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:02,619 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-01-12 17:03:02,620 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 17:03:02,672 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-01-12 17:03:02,673 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:03:02,674 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-01-12 17:03:04,064 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:03:04,797 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11790
+INFO 2025-01-12 17:03:06,024 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:03:06,912 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:03:15,688 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:03:22,692 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:03:22,740 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,778 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,802 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,836 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,846 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,850 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,861 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,878 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-01-12 17:03:22,879 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:33,409 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:04:36,301 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:04:42,276 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:04:42,328 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:42,339 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:42,373 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:42,391 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:42,403 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:42,408 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:42,416 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:42,435 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:04:42,440 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:04:43,185 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:04:44,024 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:04:44,770 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:04:45,667 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11790
+INFO 2025-01-12 17:04:45,742 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,744 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,747 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,751 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,752 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,755 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,757 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,759 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,760 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,760 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:04:45,783 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:04:45,785 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 17:04:45,786 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-01-12 17:04:45,902 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:04:45,906 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-01-12 17:04:45,906 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-01-12 17:04:46,613 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:04:48,031 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:04:49,030 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11790
+INFO 2025-01-12 17:04:49,135 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:04:50,733 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:04:58,819 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:05:06,688 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:05:27,153 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-01-12 17:05:27,206 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4152
+INFO 2025-01-12 17:05:27,295 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+WARNING 2025-01-12 17:05:27,817 log Not Found: /favicon.ico
+WARNING 2025-01-12 17:05:27,825 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-12 17:05:34,497 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-01-12 17:05:34,559 basehttp "GET /admin/ HTTP/1.1" 200 7228
+WARNING 2025-01-12 17:05:34,707 log Not Found: /favicon.ico
+WARNING 2025-01-12 17:05:34,707 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-12 17:05:37,336 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 11790
+INFO 2025-01-12 17:05:37,464 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-01-12 17:05:37,668 log Not Found: /favicon.ico
+INFO 2025-01-12 17:05:37,716 basehttp - Broken pipe from ('127.0.0.1', 55901)
+INFO 2025-01-12 17:05:38,469 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:09:54,027 basehttp "GET /admin/auth/ HTTP/1.1" 200 5295
+INFO 2025-01-12 17:09:54,118 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:09:54,124 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:09:54,195 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:09:54,201 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:09:54,222 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:09:54,243 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:09:54,257 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:09:54,274 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:09:54,276 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:09:55,951 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:11:40,034 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:11:42,847 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:11:48,841 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:11:48,890 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:11:48,899 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:11:48,911 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:11:48,916 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:11:48,919 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:11:48,926 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:11:48,931 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:11:48,960 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:11:48,961 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:11:51,128 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:12:02,689 autoreload Watching for file changes with StatReloader
+WARNING 2025-01-12 17:12:12,986 log Not Found: /
+WARNING 2025-01-12 17:12:12,987 basehttp "GET / HTTP/1.1" 404 179
+INFO 2025-01-12 17:12:14,982 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:12:16,552 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:12:17,400 basehttp - Broken pipe from ('127.0.0.1', 56309)
+INFO 2025-01-12 17:12:17,964 basehttp - Broken pipe from ('127.0.0.1', 56320)
+INFO 2025-01-12 17:12:18,532 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:12:19,569 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:12:20,419 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:12:21,122 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:12:31,406 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-01-12 17:12:31,451 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4152
+INFO 2025-01-12 17:12:31,496 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+WARNING 2025-01-12 17:12:31,629 log Not Found: /favicon.ico
+WARNING 2025-01-12 17:12:31,633 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-12 17:12:37,658 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-01-12 17:12:37,696 basehttp "GET /admin/ HTTP/1.1" 200 7228
+WARNING 2025-01-12 17:12:37,868 log Not Found: /favicon.ico
+WARNING 2025-01-12 17:12:37,869 basehttp "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2025-01-12 17:13:09,079 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:13:11,336 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:15:02,304 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:15:04,304 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:15:27,273 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:16:20,449 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:16:28,787 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:16:30,595 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:16:39,637 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:16:41,739 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:16:52,466 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:16:52,534 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:16:52,564 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:16:52,604 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:16:52,610 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:16:52,624 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:16:52,627 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:16:52,634 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:16:52,660 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:16:52,660 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:16:54,038 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:16:55,017 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:16:59,977 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:17:01,292 basehttp "GET /admin/ HTTP/1.1" 200 7228
+INFO 2025-01-12 17:18:29,373 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:18:31,316 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:18:47,022 basehttp "GET /admin/ HTTP/1.1" 200 7859
+INFO 2025-01-12 17:18:47,066 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:47,068 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:47,071 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:47,100 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:47,116 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:47,121 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:47,121 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:47,155 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:18:47,156 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:18:48,488 basehttp "GET /admin/myapp/institutions/ HTTP/1.1" 200 11165
+INFO 2025-01-12 17:18:48,556 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,560 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,562 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,564 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,567 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,567 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,570 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,571 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,588 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:18:48,616 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-01-12 17:18:48,665 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:48,668 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 17:18:48,721 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:18:48,723 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-01-12 17:18:55,300 basehttp "GET /admin/myapp/institutions/add/ HTTP/1.1" 200 10398
+INFO 2025-01-12 17:18:55,372 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:55,381 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:55,385 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:18:55,406 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:18:55,497 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+WARNING 2025-01-12 17:18:55,595 log Not Found: /favicon.ico
+INFO 2025-01-12 17:18:55,602 basehttp - Broken pipe from ('127.0.0.1', 56633)
+INFO 2025-01-12 17:19:09,025 basehttp "POST /admin/myapp/institutions/add/ HTTP/1.1" 302 0
+INFO 2025-01-12 17:19:09,108 basehttp "GET /admin/myapp/institutions/ HTTP/1.1" 200 12020
+INFO 2025-01-12 17:19:09,192 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:19:09,237 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-01-12 17:19:12,081 basehttp "GET /admin/myapp/institutions/53d79e6b-b798-43ae-89df-965e63becae6/change/ HTTP/1.1" 200 10849
+INFO 2025-01-12 17:19:12,159 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:19:14,690 basehttp "GET /admin/myapp/institutions/53d79e6b-b798-43ae-89df-965e63becae6/delete/ HTTP/1.1" 200 8525
+INFO 2025-01-12 17:19:14,748 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-01-12 17:19:16,335 basehttp "POST /admin/myapp/institutions/53d79e6b-b798-43ae-89df-965e63becae6/delete/ HTTP/1.1" 302 0
+INFO 2025-01-12 17:19:16,384 basehttp "GET /admin/myapp/institutions/ HTTP/1.1" 200 11378
+INFO 2025-01-12 17:19:16,484 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:19:21,829 basehttp "GET /admin/myapp/institutions/e3c1a6e6-d604-4e19-b0d8-631fcff808c8/change/ HTTP/1.1" 200 10860
+INFO 2025-01-12 17:19:21,897 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2025-01-12 17:19:21,994 log Not Found: /favicon.ico
+INFO 2025-01-12 17:19:21,995 basehttp - Broken pipe from ('127.0.0.1', 56634)
+INFO 2025-01-12 17:19:24,423 basehttp - Broken pipe from ('127.0.0.1', 56631)
+INFO 2025-01-12 17:19:24,446 basehttp - Broken pipe from ('127.0.0.1', 56635)
+INFO 2025-01-12 17:19:24,501 basehttp "GET /admin/myapp/institutions/53d79e6b-b798-43ae-89df-965e63becae6/change/ HTTP/1.1" 302 0
+INFO 2025-01-12 17:19:24,542 basehttp "GET /admin/ HTTP/1.1" 200 8873
+INFO 2025-01-12 17:19:24,658 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-01-12 17:19:24,658 basehttp "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO 2025-01-12 17:19:29,008 basehttp "GET /admin/ HTTP/1.1" 200 8663
+INFO 2025-01-12 17:20:32,414 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:20:41,296 basehttp "GET /admin/ HTTP/1.1" 200 8663
+INFO 2025-01-12 17:20:41,333 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:20:41,337 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:20:41,347 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:20:41,373 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:20:41,376 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:20:41,384 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:20:41,388 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:20:41,414 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-01-12 17:20:41,414 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:20:41,415 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:20:43,101 basehttp "GET /admin/ HTTP/1.1" 200 8663
+INFO 2025-01-12 17:20:44,072 basehttp "GET /admin/ HTTP/1.1" 200 8663
+INFO 2025-01-12 17:20:44,759 basehttp "GET /admin/ HTTP/1.1" 200 8663
+INFO 2025-01-12 17:20:45,382 basehttp "GET /admin/ HTTP/1.1" 200 8663
+INFO 2025-01-12 17:20:45,918 basehttp "GET /admin/ HTTP/1.1" 200 8663
+INFO 2025-01-12 17:20:51,545 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\admin.py changed, reloading.
+INFO 2025-01-12 17:20:52,936 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:55:02,649 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2025-01-12 17:55:05,256 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:55:12,198 basehttp "GET /admin/ HTTP/1.1" 200 8660
+INFO 2025-01-12 17:55:12,242 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:12,262 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:12,270 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:12,290 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:12,297 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:12,303 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:12,308 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:12,326 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:55:12,326 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-01-12 17:55:12,327 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:55:18,240 basehttp "GET /admin/myapp/institutions/ HTTP/1.1" 200 11158
+INFO 2025-01-12 17:55:18,307 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,310 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,310 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,310 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,310 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,311 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,314 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,316 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,317 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,318 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:55:18,331 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:55:18,333 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 17:55:18,425 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-01-12 17:55:18,426 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:55:24,807 basehttp "GET /admin/ HTTP/1.1" 200 8660
+INFO 2025-01-12 17:56:10,272 autoreload C:\Users\Osama\MyProjects\Senior Project\SecuredVotingApp\myproject\myapp\models.py changed, reloading.
+INFO 2025-01-12 17:56:12,103 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 17:56:22,923 basehttp "GET /admin/ HTTP/1.1" 200 8658
+INFO 2025-01-12 17:56:22,960 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:22,961 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:22,963 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:22,981 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:22,983 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:22,983 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:22,995 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:23,017 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-12 17:56:23,017 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:56:23,036 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-01-12 17:56:24,456 basehttp "GET /admin/myapp/users/ HTTP/1.1" 200 22135
+INFO 2025-01-12 17:56:24,544 basehttp "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,545 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,547 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,550 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,553 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,554 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,556 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,586 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:56:24,638 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,642 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,649 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-12 17:56:24,651 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-01-12 17:56:24,652 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-12 17:56:24,652 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-01-12 17:56:24,752 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-12 17:56:24,753 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-01-12 17:56:24,753 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+WARNING 2025-01-12 17:56:24,805 log Not Found: /favicon.ico
+INFO 2025-01-12 17:56:24,807 basehttp - Broken pipe from ('127.0.0.1', 58117)
+INFO 2025-01-12 17:56:26,899 basehttp "GET /admin/ HTTP/1.1" 200 8658
+INFO 2025-01-12 17:56:27,896 basehttp "GET /admin/myapp/adminaccessrequest/ HTTP/1.1" 200 11071
+INFO 2025-01-12 17:56:27,977 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-12 17:56:30,414 basehttp "GET /admin/ HTTP/1.1" 200 8658

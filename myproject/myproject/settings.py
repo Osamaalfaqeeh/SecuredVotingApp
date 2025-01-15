@@ -29,6 +29,7 @@ SECRET_KEY = 'django-insecure-u!glo4lbeix6-=s0qc5)w)hmd#$+xq*(94w)xq=-t0-+--j(x#
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='*').split(',')
+
 # AUTH_USER_MODEL = 'myapp.Users'
 
 
@@ -144,14 +145,14 @@ CELERY_BEAT_SCHEDULE = {
 
 # Email Settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-# EMAIL_USE_SSL = True
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.privateemail.com'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+# EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = "osamaalfaqeeh55@gmail.com"
-ADMIN_EMAIL = "osamaalfaqeeh55@gmail.com"
+DEFAULT_FROM_EMAIL = "noreply@uni-vote.com"
+ADMIN_EMAIL = "noreply@uni-vote.com"
 
 LOGGING = {
     'version': 1,
